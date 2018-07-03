@@ -169,6 +169,12 @@ gulp.task('copy', function() {
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(gulp.dest(bases.dist))
     .pipe(reload({stream:true}));
+    
+  // copy images to dist directly
+  gulp.src(bases.app + 'images/**/*.*')
+    .pipe(size({ gzip: true, showFiles: true }))
+    .pipe(gulp.dest(bases.dist + 'images'))
+    .pipe(reload({stream:true}));
 
   // copy meta files to dist directly
   gulp.src([bases.app + '*.xml', bases.app + '*.txt'])
