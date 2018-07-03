@@ -8,14 +8,8 @@
 //
 // @source - http://atomicdesign.bradfrost.com/chapter-2/
 
-body{
-	font-family: $font-family-default;
-}
+@import "atomic-html";
 
-button {
-	&.notification {
-		background: $orange;
-		color: $white;
-		border: none;
-	}
-}
+@import "buttons";
+
+

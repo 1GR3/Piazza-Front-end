@@ -6,13 +6,7 @@
 //
 // @source - http://atomicdesign.bradfrost.com/chapter-2/
 
-header {
-	background: $grey-light;
-	.logo {
-		width: 150px;
-		padding: 30px;
-	}
-}
+
 
 
 // ------ Sidebar
@@ -57,6 +51,3 @@ aside {
 	}
 }
 
-.container-fluid.with-sidebar {
-	padding-left: calc( 124px + 15px);
-}
