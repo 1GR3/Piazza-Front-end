@@ -6,6 +6,82 @@ body {
 		.col {
 			header {
 				height: 52px;
+				border-bottom: 1px solid $grey-light;
+			}
+		}
+		
+		#leftthing {
+			nav {
+				background-color: $grey-blue-lighter;
+			}
+			#accordion {
+				.card {
+					.card-header {
+						background-color: $grey-blue-light;
+						padding: 0 20px;
+						
+						h5 {
+							button {
+							font-size : 11px;
+							font-weight: bold;
+							line-height: 30px;
+							color: $grey-dark;
+							padding: 0;
+							}
+						}
+						
+					}
+					.card-body {
+						article {
+							width: 100%;
+							.tag {
+								.indicator {
+									width: 8px;
+									height: 8px;
+									background-color: $grey-dark;
+									display: inline-block;
+								}
+								font-size: 10px; 
+								background-color: $grey-lighter;
+								padding: 4px;
+								&.interview {
+									.indicator {
+										background-color: $turquoise;
+									}
+								}
+							}
+							.date {
+								font-size : 11px;
+								color: $grey-medium;
+							}
+							h6 {
+							  font-weight : bold;
+							  font-size : 12px;
+							  color : #31424D;
+							  color : rgb(49, 66, 77);
+							}
+							p {
+								font-size : 11px;
+							  line-height : 13px;
+							  color : $grey-blue-medium;
+							}
+							ul {
+								padding-left: 15px;
+								li {
+									font-size : 11px;
+									  line-height : 13px;
+									  color : #911D22;
+									&.confirmed {
+										color: $green-dark;
+									}
+									&.pending {
+										color: $red-dark;
+									}
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 		

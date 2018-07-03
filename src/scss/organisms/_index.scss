@@ -10,44 +10,5 @@
 
 
 // ------ Sidebar
-aside {
-	width: 124px;
-	height: 100vh;
-	background: $blue-dark;
-	position: fixed;
-	top:0;
-	left: 0;
-	padding: 10px 5px 10px 14px;
-	.logo {
-		border-bottom: 1px solid $grey-light;
-		img {
-			width: 69px;
-			margin: 10px 0 5px;
-		}
-	}
-	ul {
-		
-		list-style: none;
-		padding: 0;
-		li {
-			font-size : 12px;
-			line-height : 25px;
-			a {
-				color: $grey-light;
-			}
-			&.active a {
-				color: $white;
-			}
-			.notification {
-				font-weight : bold;
-				font-size : 8px;
-				line-height : 10px;
-				padding: 2px 5px;
-				border-radius: 3px;
-				float: right;
-			}
-				
-		}
-	}
-}
+@import "sidebar";
 
