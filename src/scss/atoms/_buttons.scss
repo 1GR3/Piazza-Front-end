@@ -14,12 +14,16 @@ button {
 		color: $white;
 		border: none;
 	}
-	&.btn {
-  	border-radius: 1px;
-  	&.btn-primary {
-    	background-color: $blue;
-    	border-color: $blue;
-  	}
-	}
 }
 
+.btn {
+	border-radius: 1px;
+	&.btn-primary {
+  	background-color: $blue;
+  	border-color: $blue;
+	}
+	&.btn-xs {
+  	font-size: 11px;
+  	padding: 3px 11px;
+	}
+}

@@ -52,6 +52,11 @@
 		<!-- Font Awesome 4 CDN -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0/js/tempusdominus-bootstrap-4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0/css/tempusdominus-bootstrap-4.min.css" />
+
 		<!-- CSS, you gotta have style -->
 		<link rel="stylesheet" href="css/styles.css">
 
@@ -152,7 +157,7 @@
 									<div id="accordion">
 										<div class="card">
 											<div class="card-header" id="headingOne">
-												<h5 class="mb-0">
+												<h5 class="m-0">
 													<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 													WEEK 04/17 - 04/23
 													</button>
@@ -194,7 +199,7 @@
 										</div>
 										<div class="card">
 											<div class="card-header" id="headingTwo">
-												<h5 class="mb-0">
+												<h5 class="m-0">
 													<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 													WEEK 04/10 - 04/16
 													</button>
@@ -209,7 +214,7 @@
 										</div>
 										<div class="card">
 											<div class="card-header" id="headingThree">
-												<h5 class="mb-0">
+												<h5 class="m-0">
 													<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 													WEEK 04/03 - 04/09
 													</button>
@@ -240,12 +245,14 @@
     					<div class="form-row">
   								<div class="col">
                     <h3>This is a schedule of</h3>
-                    <select class="custom-select" id="inputGroupSelect01">
-  										<option selected>interviews</option>
-  										<option value="1">One</option>
-  										<option value="2">Two</option>
-  										<option value="3">Three</option>
-  									</select>
+                    <div class="styled-select">
+                      <select class="custom-select" id="inputGroupSelect01">
+    										<option selected>interviews</option>
+    										<option value="1">One</option>
+    										<option value="2">Two</option>
+    										<option value="3">Three</option>
+    									</select>
+  									</div>
   								</div>
     					</div>
 
@@ -255,7 +262,7 @@
                     <p>What students will see when they sign up and receive notifications for this interview</p>
                   </div>
     					</div>
-    					<div class="row">
+    					<div class="form-row">
   								<div class="col">
                     <input type="text" class="form-control" placeholder="type external name">
                     <a href="#">see</a> allowable characters
@@ -272,7 +279,7 @@
                     <p>You can be more descriptive here. This is the name that will be displayed in your dashboard</p>
                   </div>
     					</div>
-    					<div class="row">
+    					<div class="form-row">
   								<div class="col">
                     <input type="text" class="form-control" placeholder="type internal name">
                     <a href="#">see</a> allowable characters
@@ -284,10 +291,51 @@
     					</div>
 
     					<div class="form-row">
-  								<div class="col">
-                    <h3>What dates are your interviews?</h3>
+          			<div class="col">
+                  <h3>What dates are your interviews?</h3>
                    <p>Approximate ok. You can edit this later.</p>
-  								</div>
+          			</div>
+          		</div>
+    					<div class="form-row">
+          			<div class="col-sm-6">
+                  <div class="form-group mb-1">
+                    <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                      <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
+                      <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                        <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <p class="mt-2">to</p>
+                </div>
+                <script type="text/javascript">
+                    $(function () {
+                        $('#datetimepicker1').datetimepicker({
+                            format: 'L'
+                        });
+                    });
+                </script>
+    					</div>
+    					<div class="form-row">
+          			<div class="col-sm-6">
+                  <div class="form-group">
+                    <div class="input-group date" id="datetimepicker2" data-target-input="nearest">
+                      <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2"/>
+                      <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
+                        <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <script type="text/javascript">
+                    $(function () {
+                        $('#datetimepicker2').datetimepicker({
+                            format: 'L'
+                        });
+                    });
+                </script>
     					</div>
 
     					<div class="form-row">
@@ -300,7 +348,7 @@
     					<div class="form-row">
   								<div class="col border-top">
                     <h4>Next, set the schedule for each day</h4>
-                    <button class="btn btn-primary mr-sm-2" type="">Continue</button>
+                    <button class="btn btn-primary btn-xs" type="">Continue</button>
   								</div>
     					</div>
 
