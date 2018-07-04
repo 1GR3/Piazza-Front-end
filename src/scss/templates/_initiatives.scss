@@ -120,5 +120,15 @@ body {
 			}
 		}
 
+    #rightthing {
+      h2 {
+        margin: 10px 0;
+      }
+
+      .border-top {
+        border-top: 1px solid $grey-light;
+        margin-top: 25px;
+      }
+    }
 	}
 }

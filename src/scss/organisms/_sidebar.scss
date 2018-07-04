@@ -1,7 +1,7 @@
 aside {
 	width: 124px;
 	height: 100vh;
-	background: $blue-dark;
+	background: $blue-darker;
 	position: fixed;
 	top:0;
 	left: 0;
@@ -14,17 +14,17 @@ aside {
 		}
 	}
 	ul {
-		
+
 		list-style: none;
 		padding: 0;
 		li {
 			font-size : 12px;
 			line-height : 25px;
 			a {
-				color: $grey-blue;
+				color: $grey-blue !important;
 			}
 			&.active a {
-				color: $white;
+				color: $white !important;
 			}
 			.notification {
 				font-weight : bold;
@@ -35,7 +35,7 @@ aside {
 				float: right;
 				margin-top: 4px;
 			}
-				
+
 		}
 	}
 }

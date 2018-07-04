@@ -14,5 +14,12 @@ button {
 		color: $white;
 		border: none;
 	}
+	&.btn {
+  	border-radius: 1px;
+  	&.btn-primary {
+    	background-color: $blue;
+    	border-color: $blue;
+  	}
+	}
 }
 
