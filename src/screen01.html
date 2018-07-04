@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<!--[if IE 8]>         
+<!--[if IE 8]>
 <html class="no-js lt-ie9 ie8">
 	<![endif]-->
-	<!--[if IE 9]>         
+	<!--[if IE 9]>
 	<html class="no-js gt-ie9 ie9">
 		<![endif]-->
-		<!--[if gt IE 8]><!--> 
+		<!--[if gt IE 8]><!-->
 <html class="no-js gt-ie9">
 	<!--<![endif]-->
 	<head>
@@ -13,7 +13,7 @@
 			Description:
 			Version:
 			Author:
-			
+
 			//-->
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -77,50 +77,71 @@
 			<div class="row">
 				<!-- left column -->
 				<div id="leftthing" class="col">
-					<div class="row">
-						<header class="container-fluid">
-							<div class="row">
-								<div class="col">
-									<div class="input-group sorting">
-										<div class="input-group-prepend">
-											<label class="input-group-text" for="inputGroupSelect01">Filter on</label>
-										</div>
-										<select class="custom-select" id="inputGroupSelect01">
-											<option selected>Initiative type</option>
-											<option value="1">One</option>
-											<option value="2">Two</option>
-											<option value="3">Three</option>
-										</select>
+
+					<header class="container-fluid">
+						<div class="row">
+							<div class="col">
+								<div class="input-group sorting">
+									<div class="input-group-prepend">
+										<label class="input-group-text" for="inputGroupSelect01">Filter on</label>
 									</div>
-								</div>
-								<div class="col">
-									<div class="input-group sorting">
-										<div class="input-group-prepend">
-											<label class="input-group-text" for="inputGroupSelect01">Sort by</label>
-										</div>
-										<select class="custom-select" id="inputGroupSelect01">
-											<option selected>Initiative creation date</option>
-											<option value="1">One</option>
-											<option value="2">Two</option>
-											<option value="3">Three</option>
-										</select>
-									</div>
+									<select class="custom-select" id="inputGroupSelect01">
+										<option selected>Initiative type</option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+									</select>
 								</div>
 							</div>
-						</header>
-					</div>
-					<div class="row">
-						<nav class="navbar navbar-light bg-light justify-content-between container-fluid">
-							<div class="row">
-								<div class="col">
-									<form class="form-inline">
-									<button class="btn btn-primary mr-sm-2" type="">+ New</button>
-									<input class="form-control" type="search" placeholder="Search initiatives..." aria-label="Search">
-									</form
+							<div class="col">
+								<div class="input-group sorting">
+									<div class="input-group-prepend">
+										<label class="input-group-text" for="inputGroupSelect01">Sort by</label>
+									</div>
+									<select class="custom-select" id="inputGroupSelect01">
+										<option selected>Initiative creation date</option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+									</select>
 								</div>
 							</div>
-						</nav>
-					</div>
+						</div>
+					</header>
+
+					<nav class="navbar justify-content-between container-fluid">
+						<div class="row">
+							<div class="col">
+  							<form class="form-inline">
+  								<button class="btn btn-primary mr-sm-2" type="">
+  									<i class="fas fa-file"></i> + New
+  								</button>
+                  <span class="search">
+  									<input class="form-control" type="search" placeholder="Search initiatives..." aria-label="Search">
+  								</span>
+  							</form>
+
+<!--
+								<form class="form-inline">
+  								<div class="form-row">
+    								<div class="form-group col-md-3">
+      								<button class="btn btn-primary mr-sm-2" type="">
+      									<i class="fas fa-file"></i> + New
+      								</button>
+    								</div>
+    								<div class="form-group col-md-9">
+      								<span class="search">
+      									<input class="form-control" type="search" placeholder="Search initiatives..." aria-label="Search">
+      								</span>
+    								</div>
+  								</div>
+								</form>
+-->
+
+							</div>
+						</div>
+					</nav>
+
 					<div class="row">
 						<div class="container-fluid">
 							<div class="row">
@@ -205,7 +226,7 @@
 					</div>
 				</div>
 				<!-- right column -->
-				<div class="col">
+				<div id="rightthing" class="col">
 					<header>
 						<h2 class="float-left">Create schedule</h2>
 						<button class="btn btn-lg float-right">×</button>

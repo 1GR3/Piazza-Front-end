@@ -1,0 +1,41 @@
+.input-group {
+	&.sorting {
+		label, select {
+			font-size: 10px;
+			font-weight: normal;
+			padding: 0 5px;
+			border: none;
+			background: transparent;
+		}
+		select {
+			font-weight: bold;
+		}
+		&:after {
+			content: "\f078";
+			font-family: FontAwesome;
+			color: $grey-soft;
+			position: absolute;
+			right: 5px;
+			top: 10px;
+			font-size: 12px;
+		}
+	}
+}
+
+.form-inline {
+	.search {
+		position: relative;
+		&:before {
+			content: "\f002";
+			font-family: FontAwesome;
+			color: $grey-soft;
+			position: absolute;
+			left: 5px;
+			top: 2px;
+			font-size: 16px;
+		}
+		input {
+			padding-left: 25px;
+		}
+	}
+}
