@@ -1,0 +1,684 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden], template {
+  display: none;
+}
+
+html {
+  background: #fff;
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  background: transparent;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
+html {
+  background-color: #fff;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  color: #484c55;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  min-height: 100%;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  background: transparent;
+  color: #c69;
+  text-decoration: none;
+  transition: color .2s;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+header.index {
+  background: #8D95A3;
+}
+
+header.index .logo {
+  width: 150px;
+  padding: 30px;
+}
+
+.container-fluid.with-sidebar {
+  padding: 0 15px 0 calc( 124px + 15px);
+}
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+button.notification {
+  background: #F09400;
+  color: #fff;
+  border: none;
+}
+
+.btn {
+  border-radius: 1px;
+}
+
+.btn.btn-primary {
+  background-color: #3E7AAB;
+  border-color: #3E7AAB;
+}
+
+.btn.btn-xs {
+  font-size: 11px;
+  padding: 3px 11px;
+}
+
+body {
+  font-size: 10px;
+  font-family: "Helvetica Nue", Helvetica, Roboto, Ariel, sans-serif;
+}
+
+a {
+  color: #3E7AAB;
+}
+
+a:link {
+  color: #3E7AAB;
+}
+
+a:visited {
+  color: #3E7AAB;
+}
+
+a:hover {
+  color: #3E7AAB;
+}
+
+a:active {
+  color: #3E7AAB;
+}
+
+p {
+  font-size: 9px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 12.5px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+input.form-control {
+  border: 1px solid #919193;
+  font-size: 10px;
+  border-radius: 2px;
+}
+
+.styled-select {
+  position: relative;
+}
+
+.styled-select select {
+  border-radius: 2px;
+}
+
+.styled-select select.custom-select {
+  border: 1px solid #919193;
+  font-size: 10px;
+  line-height: 15px;
+  font-weight: normal;
+  background: transparent;
+  height: 29px;
+}
+
+.styled-select:after {
+  content: "\f078";
+  font-family: FontAwesome;
+  color: #B3B3B3;
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  font-size: 12px;
+}
+
+.input-group.sorting label, .input-group.sorting select {
+  font-size: 10px;
+  font-weight: normal;
+  padding: 0 5px;
+  border: none;
+  background: transparent;
+}
+
+.input-group.sorting select {
+  font-weight: bold;
+}
+
+.input-group.sorting:after {
+  content: "\f078";
+  font-family: FontAwesome;
+  color: #B3B3B3;
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  font-size: 12px;
+}
+
+.form-inline .search {
+  position: relative;
+}
+
+.form-inline .search:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  color: #B3B3B3;
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  font-size: 16px;
+}
+
+.form-inline .search input {
+  padding-left: 25px;
+}
+
+.input-group .input-group-text {
+  border: 1px solid #919193;
+  background: #EEE;
+  border-radius: 2px;
+  padding: 5px 8px;
+}
+
+aside {
+  width: 124px;
+  height: 100vh;
+  background: #141F2B;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px 5px 10px 14px;
+}
+
+aside .logo {
+  border-bottom: 1px solid #8D95A3;
+}
+
+aside .logo img {
+  width: 69px;
+  margin: 10px 0 5px;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside ul li {
+  font-size: 12px;
+  line-height: 25px;
+}
+
+aside ul li a {
+  color: #8D95A3 !important;
+}
+
+aside ul li.active a {
+  color: #fff !important;
+}
+
+aside ul li .notification {
+  font-weight: bold;
+  font-size: 8px;
+  line-height: 10px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  float: right;
+  margin-top: 4px;
+}
+
+@media print {
+  *:before, *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+body #content .col header {
+  height: 52px;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+body #content #leftthing {
+  padding: 0;
+  min-height: 100vh;
+  border-right: 1px solid #CCC;
+}
+
+body #content #leftthing header {
+  padding: 7px 15px;
+}
+
+body #content #leftthing header .col:nth-child(1) {
+  border-right: 1px solid #CCC;
+}
+
+body #content #leftthing nav {
+  background-color: #EEEEF0;
+  border-bottom: 1px solid #CCC;
+  padding: 4px 6px;
+}
+
+body #content #leftthing nav form {
+  width: 100%;
+}
+
+body #content #leftthing nav form button, body #content #leftthing nav form input {
+  font-size: 10px;
+}
+
+body #content #leftthing nav form input.form-control {
+  border-color: white;
+}
+
+body #content #leftthing #accordion .card {
+  border-radius: 0 !important;
+  border: none;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+body #content #leftthing #accordion .card .card-header {
+  background-color: #E8E8EA;
+  padding: 0 20px;
+  border-radius: 0 !important;
+}
+
+body #content #leftthing #accordion .card .card-header h5 button {
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 22px;
+  color: #666;
+  padding: 0px 0px 0px 20px;
+  position: relative;
+}
+
+body #content #leftthing #accordion .card .card-header h5 button:before {
+  content: "\f0d7";
+  font-family: FontAwesome;
+  position: absolute;
+  left: 7px;
+  top: 0px;
+  font-size: 12px;
+}
+
+body #content #leftthing #accordion .card .card-header h5 button.collapsed:before {
+  content: "\f0d8";
+}
+
+body #content #leftthing #accordion .card .card-body {
+  padding: 10px 20px;
+}
+
+body #content #leftthing #accordion .card .card-body article {
+  width: 100%;
+  padding-left: 10px;
+}
+
+body #content #leftthing #accordion .card .card-body article .tag {
+  font-size: 10px;
+  background-color: #EEE;
+  padding: 4px;
+}
+
+body #content #leftthing #accordion .card .card-body article .tag .indicator {
+  width: 8px;
+  height: 8px;
+  background-color: #666;
+  display: inline-block;
+}
+
+body #content #leftthing #accordion .card .card-body article .tag.interview .indicator {
+  background-color: #37BDBF;
+}
+
+body #content #leftthing #accordion .card .card-body article .date {
+  font-size: 11px;
+  color: #808080;
+}
+
+body #content #leftthing #accordion .card .card-body article h6 {
+  font-weight: bold;
+  font-size: 12px;
+  color: #31424D;
+  color: #31424d;
+  margin: 6px 0;
+}
+
+body #content #leftthing #accordion .card .card-body article p {
+  font-size: 11px;
+  line-height: 13px;
+  color: #808589;
+  margin-bottom: 10px;
+}
+
+body #content #leftthing #accordion .card .card-body article ul {
+  padding-left: 15px;
+  margin-bottom: 0;
+}
+
+body #content #leftthing #accordion .card .card-body article ul li {
+  font-size: 11px;
+  line-height: 13px;
+  color: #911D22;
+}
+
+body #content #leftthing #accordion .card .card-body article ul li.confirmed {
+  color: #008001;
+}
+
+body #content #leftthing #accordion .card .card-body article ul li.pending {
+  color: #911D22;
+}
+
+body #content #rightthing h2 {
+  margin: 15px 0;
+}
+
+body #content #rightthing h3 {
+  margin: 18px 0 5px 0;
+}
+
+body #content #rightthing p {
+  margin-bottom: 6px;
+}
+
+body #content #rightthing .border-top {
+  border-top: 1px solid #E6E6E6;
+  margin-top: 25px;
+}
