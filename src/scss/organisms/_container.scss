@@ -9,6 +9,14 @@
     margin-top: 0px;
     padding: 0 15px 0 calc( #{$sidebar-width} + 15px );
   }
+  @include media-breakpoint-down(sm) {
+    #leftthing, #rightthing {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
 }
 
 

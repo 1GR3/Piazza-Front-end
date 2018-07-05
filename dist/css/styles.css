@@ -9464,6 +9464,15 @@ aside ul li .notification {
   }
 }
 
+@media (max-width: 767.98px) {
+  #container #leftthing, #container #rightthing, .container-fluid.with-sidebar #leftthing, .container-fluid.with-sidebar #rightthing {
+    display: none;
+  }
+  #container #leftthing.active, #container #rightthing.active, .container-fluid.with-sidebar #leftthing.active, .container-fluid.with-sidebar #rightthing.active {
+    display: block;
+  }
+}
+
 @media print {
   *:before, *:after {
     background: transparent !important;
