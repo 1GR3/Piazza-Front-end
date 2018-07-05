@@ -3,12 +3,10 @@ body {
 
 	}
 	#container {
-		.col {
 			header {
 				height: 52px;
 				border-bottom: 1px solid $grey-light;
 			}
-		}
 
 		#leftthing {
 			padding: 0;
@@ -129,6 +127,10 @@ body {
 		}
 
     #rightthing {
+      padding: 0;
+      header {
+        padding: 0 0 0 15px;
+      }
       h2 {
         margin: 15px 0;
       }

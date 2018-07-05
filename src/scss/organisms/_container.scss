@@ -5,7 +5,7 @@
   }
   #rightthing {
   }
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(sm) {
     margin-top: 0px;
     padding: 0 15px 0 calc( #{$sidebar-width} + 15px );
   }

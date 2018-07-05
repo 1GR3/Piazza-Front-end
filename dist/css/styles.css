@@ -9223,7 +9223,7 @@ button.notification {
 
 .btn.btn-transparent {
   background-color: transparent;
-  border-color: #3E7AAB;
+  border-color: transparent;
 }
 
 .btn.btn-transparent:active {
@@ -9376,7 +9376,7 @@ aside.expanded {
   left: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   aside {
     left: 0;
   }
@@ -9446,7 +9446,7 @@ aside ul li .notification {
   margin: 10px auto 5px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   #toolbar {
     top: -45px;
   }
@@ -9457,7 +9457,7 @@ aside ul li .notification {
   margin-top: 45px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   #container, .container-fluid.with-sidebar {
     margin-top: 0px;
     padding: 0 15px 0 calc( 124px + 15px);
@@ -9512,7 +9512,7 @@ aside ul li .notification {
   }
 }
 
-body #container .col header {
+body #container header {
   height: 52px;
   border-bottom: 1px solid #E6E6E6;
 }
@@ -9646,6 +9646,14 @@ body #container #leftthing #accordion .card .card-body article ul li.confirmed {
 
 body #container #leftthing #accordion .card .card-body article ul li.pending {
   color: #911D22;
+}
+
+body #container #rightthing {
+  padding: 0;
+}
+
+body #container #rightthing header {
+  padding: 0 0 0 15px;
 }
 
 body #container #rightthing h2 {

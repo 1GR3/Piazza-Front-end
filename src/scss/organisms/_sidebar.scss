@@ -11,7 +11,7 @@ aside {
 	&.expanded {
     left: 0;
   }
-	@include media-breakpoint-up(md) {
+	@include media-breakpoint-up(sm) {
     left: 0;
   }
 	.logo {
