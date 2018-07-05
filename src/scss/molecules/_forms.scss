@@ -21,8 +21,7 @@ input {
     }
   }
   &:after {
-		content: "\f078";
-		font-family: FontAwesome;
+		content: url("../images/chevron.svg");
 		color: $grey-soft;
 		position: absolute;
 		right: 10px;
@@ -44,8 +43,7 @@ input {
 
 		}
     &:after {
-			content: "\f078";
-			font-family: FontAwesome;
+			content: url("../images/chevron.svg");
 			color: $grey-soft;
 			position: absolute;
 			right: 5px;
@@ -59,12 +57,11 @@ input {
 	.search {
 		position: relative;
 		&:before {
-			content: "\f002";
-			font-family: FontAwesome;
+			content: url("../images/search.svg");
 			color: $grey-soft;
 			position: absolute;
 			left: 5px;
-			top: 2px;
+			top: 5px;
 			font-size: 16px;
 		}
 		input {

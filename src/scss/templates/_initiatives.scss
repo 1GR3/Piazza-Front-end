@@ -55,15 +55,15 @@ body {
 								padding: 0px 0px 0px 20px;
 								position: relative;
 								&:before {
-									content: "\f0d7";
-									font-family: FontAwesome;
+									content: url("../images/caret.svg");
 									position: absolute;
 									left: 7px;
-									top: 0px;
+									top: -2px;
 									font-size: 12px;
 								}
 								&.collapsed:before {
-									content: "\f0d8";
+									transform: rotate(180deg);
+									top: 2px;
 								}
 							}
 						}

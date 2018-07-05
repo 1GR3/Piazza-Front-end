@@ -379,8 +379,7 @@ input.form-control {
 }
 
 .styled-select:after {
-  content: "\f078";
-  font-family: FontAwesome;
+  content: url("../images/chevron.svg");
   color: #B3B3B3;
   position: absolute;
   right: 10px;
@@ -401,8 +400,7 @@ input.form-control {
 }
 
 .input-group.sorting:after {
-  content: "\f078";
-  font-family: FontAwesome;
+  content: url("../images/chevron.svg");
   color: #B3B3B3;
   position: absolute;
   right: 5px;
@@ -415,12 +413,11 @@ input.form-control {
 }
 
 .form-inline .search:before {
-  content: "\f002";
-  font-family: FontAwesome;
+  content: url("../images/search.svg");
   color: #B3B3B3;
   position: absolute;
   left: 5px;
-  top: 2px;
+  top: 5px;
   font-size: 16px;
 }
 
@@ -589,16 +586,16 @@ body #content #leftthing #accordion .card .card-header h5 button {
 }
 
 body #content #leftthing #accordion .card .card-header h5 button:before {
-  content: "\f0d7";
-  font-family: FontAwesome;
+  content: url("../images/caret.svg");
   position: absolute;
   left: 7px;
-  top: 0px;
+  top: -2px;
   font-size: 12px;
 }
 
 body #content #leftthing #accordion .card .card-header h5 button.collapsed:before {
-  content: "\f0d8";
+  transform: rotate(180deg);
+  top: 2px;
 }
 
 body #content #leftthing #accordion .card .card-body {
