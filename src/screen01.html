@@ -76,14 +76,8 @@
             		$("aside").toggleClass("expanded");
           		}
         		);
-/*
-        		$(window).on( "swipeleft",
-        		  function( event ) {
-                $("aside").toggleClass("expanded");
-              }
-            );
-*/
-        		</script>
+
+       		</script>
         </div>
     		<div class="col text-center">
       		<div class="logo"><img src="images/logo.svg"></div>
@@ -188,6 +182,7 @@
 							<div class="row">
 								<div class="col">
 									<div id="accordion">
+
 										<div class="card">
 											<div class="card-header" id="headingOne">
 												<h5 class="m-0">
@@ -198,7 +193,7 @@
 											</div>
 											<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
 												<div class="card-body">
-													<article>
+													<article class="event selected">
 														<div class="row">
 															<div class="col">
 																<div class="tag interview float-left">
@@ -225,7 +220,32 @@
 															</div>
 														</div>
 													</article>
-													<article>
+													<article class="event">
+														<div class="row">
+															<div class="col">
+																<div class="tag interview float-left">
+																	<span class="indicator"></span>
+																	Interview Schedule
+																</div>
+																<div class="date float-right">
+																	01/10/17
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col">
+																<h6>Lorem Ipsum Dolor sit</h6>
+																<p>
+																	9/9/18 - 9/10/18<br>
+																	Where: GHC ’18, Dallas<br>
+																	Owner: Elle Bass
+																</p>
+																<ul>
+																	<li class="confirmed">4 confirmed signups</li>
+																	<li class="pending">4 pending signups</li>
+																</ul>
+															</div>
+														</div>
 													</article>
 												</div>
 											</div>
@@ -240,7 +260,7 @@
 											</div>
 											<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
 												<div class="card-body">
-													<article>
+													<article class="event">
 													</article>
 												</div>
 											</div>
@@ -255,7 +275,7 @@
 											</div>
 											<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
 												<div class="card-body">
-													<article>
+													<article class="event">
 													</article>
 												</div>
 											</div>
@@ -292,20 +312,20 @@
     					</div>
 
     					<div class="form-row">
-  								<div class="col">
-                    <h3>Give this an external name</h3>
-                    <p>What students will see when they sign up and receive notifications for this interview</p>
-                  </div>
+								<div class="col">
+                  <h3>Give this an external name</h3>
+                  <p>What students will see when they sign up and receive notifications for this interview</p>
+                </div>
     					</div>
     					<div class="form-row">
-  								<div class="col">
-                    <input type="text" class="form-control" placeholder="type external name">
-                    <a href="#">see</a> allowable characters
-  								</div>
-  								<div class="col">
-                    e.g. &lt;Company Name&gt; Grace Hopper<br>
-                    Full-Time Engineer Interviews: Software
-  								</div>
+								<div class="col">
+                  <input type="text" class="form-control" placeholder="type external name">
+                  <a href="#">see</a> allowable characters
+								</div>
+								<div class="col">
+                  e.g. &lt;Company Name&gt; Grace Hopper<br>
+                  Full-Time Engineer Interviews: Software
+								</div>
     					</div>
 
     					<div class="form-row">
@@ -346,11 +366,13 @@
                   <p class="mt-2">to</p>
                 </div>
                 <script type="text/javascript">
+                  $( document ).ready(
                     $(function () {
                         $('#datetimepicker1').datetimepicker({
                             format: 'L'
                         });
                     });
+                  )
                 </script>
     					</div>
     					<div class="form-row">
@@ -365,11 +387,13 @@
                   </div>
                 </div>
                 <script type="text/javascript">
+                  $( document ).ready(
                     $(function () {
                         $('#datetimepicker2').datetimepicker({
                             format: 'L'
                         });
                     });
+                  )
                 </script>
     					</div>
 

@@ -9584,12 +9584,12 @@ body #container #leftthing #accordion .card .card-header h5 button.collapsed:bef
 }
 
 body #container #leftthing #accordion .card .card-body {
-  padding: 10px 20px;
+  padding: 0px 20px;
 }
 
 body #container #leftthing #accordion .card .card-body article {
   width: 100%;
-  padding-left: 10px;
+  padding: 10px;
 }
 
 body #container #leftthing #accordion .card .card-body article .tag {
@@ -9646,6 +9646,11 @@ body #container #leftthing #accordion .card .card-body article ul li.confirmed {
 
 body #container #leftthing #accordion .card .card-body article ul li.pending {
   color: #911D22;
+}
+
+body #container #leftthing #accordion .card .card-body article.selected {
+  border-left: 5px solid rgba(62, 122, 171, 0.35);
+  background: rgba(62, 122, 171, 0.03);
 }
 
 body #container #rightthing {
