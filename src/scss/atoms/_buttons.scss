@@ -22,8 +22,20 @@ button {
   	background-color: $blue;
   	border-color: $blue;
 	}
+	&.btn-transparent {
+  	background-color: transparent;
+  	border-color: $blue;
+  	&:active {
+      background-color: rgba(black,.25);
+    }
+	}
 	&.btn-xs {
   	font-size: 11px;
   	padding: 3px 11px;
+	}
+	&.upside-down {
+  	img {
+    	transform: rotate(180deg);
+  	}
 	}
 }

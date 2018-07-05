@@ -9202,19 +9202,6 @@ header.index .logo {
   padding: 30px;
 }
 
-#content {
-  margin-top: 45px;
-  /*
-  @include breakpoint(md) {
-    margin-top: 0px;
-  }
-*/
-}
-
-.container-fluid.with-sidebar {
-  padding: 0 15px 0 calc( 124px + 15px);
-}
-
 body {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
@@ -9234,9 +9221,22 @@ button.notification {
   border-color: #3E7AAB;
 }
 
+.btn.btn-transparent {
+  background-color: transparent;
+  border-color: #3E7AAB;
+}
+
+.btn.btn-transparent:active {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
 .btn.btn-xs {
   font-size: 11px;
   padding: 3px 11px;
+}
+
+.btn.upside-down img {
+  transform: rotate(180deg);
 }
 
 body {
@@ -9366,8 +9366,20 @@ aside {
   background: #141F2B;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -124px;
   padding: 10px 5px 10px 14px;
+  z-index: 50;
+  transition: all .5s;
+}
+
+aside.expanded {
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  aside {
+    left: 0;
+  }
 }
 
 aside .logo {
@@ -9416,7 +9428,13 @@ aside ul li .notification {
   z-index: 100;
   top: 0;
   left: 0;
-  padding: 10px 5px 10px 14px;
+  padding: 7px;
+  transition: all .25s;
+}
+
+#toolbar .btn img {
+  width: 50%;
+  height: 50%;
 }
 
 #toolbar .logo {
@@ -9425,7 +9443,25 @@ aside ul li .notification {
 
 #toolbar .logo img {
   width: 69px;
-  margin: 5px auto 5px;
+  margin: 10px auto 5px;
+}
+
+@media (min-width: 768px) {
+  #toolbar {
+    top: -45px;
+  }
+}
+
+#container, .container-fluid.with-sidebar {
+  padding: 0 15px;
+  margin-top: 45px;
+}
+
+@media (min-width: 768px) {
+  #container, .container-fluid.with-sidebar {
+    margin-top: 0px;
+    padding: 0 15px 0 calc( 124px + 15px);
+  }
 }
 
 @media print {
@@ -9476,56 +9512,56 @@ aside ul li .notification {
   }
 }
 
-body #content .col header {
+body #container .col header {
   height: 52px;
   border-bottom: 1px solid #E6E6E6;
 }
 
-body #content #leftthing {
+body #container #leftthing {
   padding: 0;
   min-height: 100vh;
   border-right: 1px solid #CCC;
 }
 
-body #content #leftthing header {
+body #container #leftthing header {
   padding: 7px 15px;
 }
 
-body #content #leftthing header .col:nth-child(1) {
+body #container #leftthing header .col:nth-child(1) {
   border-right: 1px solid #CCC;
 }
 
-body #content #leftthing nav {
+body #container #leftthing nav {
   background-color: #EEEEF0;
   border-bottom: 1px solid #CCC;
   padding: 4px 6px;
 }
 
-body #content #leftthing nav form {
+body #container #leftthing nav form {
   width: 100%;
 }
 
-body #content #leftthing nav form button, body #content #leftthing nav form input {
+body #container #leftthing nav form button, body #container #leftthing nav form input {
   font-size: 10px;
 }
 
-body #content #leftthing nav form input.form-control {
+body #container #leftthing nav form input.form-control {
   border-color: white;
 }
 
-body #content #leftthing #accordion .card {
+body #container #leftthing #accordion .card {
   border-radius: 0 !important;
   border: none;
   border-bottom: 1px solid #E6E6E6;
 }
 
-body #content #leftthing #accordion .card .card-header {
+body #container #leftthing #accordion .card .card-header {
   background-color: #E8E8EA;
   padding: 0 20px;
   border-radius: 0 !important;
 }
 
-body #content #leftthing #accordion .card .card-header h5 button {
+body #container #leftthing #accordion .card .card-header h5 button {
   font-size: 11px;
   font-weight: bold;
   line-height: 22px;
@@ -9534,7 +9570,7 @@ body #content #leftthing #accordion .card .card-header h5 button {
   position: relative;
 }
 
-body #content #leftthing #accordion .card .card-header h5 button:before {
+body #container #leftthing #accordion .card .card-header h5 button:before {
   content: url("../images/caret.svg");
   position: absolute;
   left: 7px;
@@ -9542,43 +9578,43 @@ body #content #leftthing #accordion .card .card-header h5 button:before {
   font-size: 12px;
 }
 
-body #content #leftthing #accordion .card .card-header h5 button.collapsed:before {
+body #container #leftthing #accordion .card .card-header h5 button.collapsed:before {
   transform: rotate(180deg);
   top: 2px;
 }
 
-body #content #leftthing #accordion .card .card-body {
+body #container #leftthing #accordion .card .card-body {
   padding: 10px 20px;
 }
 
-body #content #leftthing #accordion .card .card-body article {
+body #container #leftthing #accordion .card .card-body article {
   width: 100%;
   padding-left: 10px;
 }
 
-body #content #leftthing #accordion .card .card-body article .tag {
+body #container #leftthing #accordion .card .card-body article .tag {
   font-size: 10px;
   background-color: #EEE;
   padding: 4px;
 }
 
-body #content #leftthing #accordion .card .card-body article .tag .indicator {
+body #container #leftthing #accordion .card .card-body article .tag .indicator {
   width: 8px;
   height: 8px;
   background-color: #666;
   display: inline-block;
 }
 
-body #content #leftthing #accordion .card .card-body article .tag.interview .indicator {
+body #container #leftthing #accordion .card .card-body article .tag.interview .indicator {
   background-color: #37BDBF;
 }
 
-body #content #leftthing #accordion .card .card-body article .date {
+body #container #leftthing #accordion .card .card-body article .date {
   font-size: 11px;
   color: #808080;
 }
 
-body #content #leftthing #accordion .card .card-body article h6 {
+body #container #leftthing #accordion .card .card-body article h6 {
   font-weight: bold;
   font-size: 12px;
   color: #31424D;
@@ -9586,45 +9622,45 @@ body #content #leftthing #accordion .card .card-body article h6 {
   margin: 6px 0;
 }
 
-body #content #leftthing #accordion .card .card-body article p {
+body #container #leftthing #accordion .card .card-body article p {
   font-size: 11px;
   line-height: 13px;
   color: #808589;
   margin-bottom: 10px;
 }
 
-body #content #leftthing #accordion .card .card-body article ul {
+body #container #leftthing #accordion .card .card-body article ul {
   padding-left: 15px;
   margin-bottom: 0;
 }
 
-body #content #leftthing #accordion .card .card-body article ul li {
+body #container #leftthing #accordion .card .card-body article ul li {
   font-size: 11px;
   line-height: 13px;
   color: #911D22;
 }
 
-body #content #leftthing #accordion .card .card-body article ul li.confirmed {
+body #container #leftthing #accordion .card .card-body article ul li.confirmed {
   color: #008001;
 }
 
-body #content #leftthing #accordion .card .card-body article ul li.pending {
+body #container #leftthing #accordion .card .card-body article ul li.pending {
   color: #911D22;
 }
 
-body #content #rightthing h2 {
+body #container #rightthing h2 {
   margin: 15px 0;
 }
 
-body #content #rightthing h3 {
+body #container #rightthing h3 {
   margin: 18px 0 5px 0;
 }
 
-body #content #rightthing p {
+body #container #rightthing p {
   margin-bottom: 6px;
 }
 
-body #content #rightthing .border-top {
+body #container #rightthing .border-top {
   border-top: 1px solid #E6E6E6;
   margin-top: 25px;
 }

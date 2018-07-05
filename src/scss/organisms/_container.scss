@@ -1,0 +1,14 @@
+#container, .container-fluid.with-sidebar {
+	padding: 0 15px;
+  margin-top: 45px;
+  #leftthing {
+  }
+  #rightthing {
+  }
+  @include media-breakpoint-up(md) {
+    margin-top: 0px;
+    padding: 0 15px 0 calc( #{$sidebar-width} + 15px );
+  }
+}
+
+

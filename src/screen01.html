@@ -46,6 +46,9 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 		<!-- jQuery CDN -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<!-- 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script> -->
+
 		<!-- Bootstrap 4 -->
 
 		<script src="/js/bootstrap.min.js"></script>
@@ -65,9 +68,32 @@
 		<!-- Add your site or application here -->
 		<div id="toolbar" class="container-fluid">
   		<div class="row">
-    		<div class="col text-left">menu</div>
-    		<div class="col text-center"><div class="logo"><img src="images/logo.svg"></div></div>
-    		<div class="col text-right">up/down</div>
+    		<div class="col text-left">
+      		<button id="menuToggle" class="btn btn-sm btn-transparent"><img src="images/burger.svg"></button>
+      		<script>
+        		$("#menuToggle").click(
+          		function(){
+            		$("aside").toggleClass("expanded");
+          		}
+        		);
+/*
+        		$(window).on( "swipeleft",
+        		  function( event ) {
+                $("aside").toggleClass("expanded");
+              }
+            );
+*/
+        		</script>
+        </div>
+    		<div class="col text-center">
+      		<div class="logo"><img src="images/logo.svg"></div>
+        </div>
+    		<div class="col text-right">
+      		<div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-sm btn-transparent"><img src="images/chevron-big.svg"></button>
+            <button type="button" class="btn btn-sm btn-transparent upside-down"><img src="images/chevron-big.svg"></button>
+          </div>
+    		</div>
   		</div>
   	</div>
 		<!-- sidebar -->
@@ -88,7 +114,7 @@
 			</ul>
 		</aside>
 		<!-- content -->
-		<div id="content" class="container-fluid with-sidebar">
+		<div id="container" class="container-fluid with-sidebar">
 			<div class="row">
 				<!-- left column -->
 				<div id="leftthing" class="col">

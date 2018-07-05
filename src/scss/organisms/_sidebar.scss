@@ -1,11 +1,19 @@
 aside {
-	width: 124px;
+	width: $sidebar-width;
 	height: 100vh;
 	background: $blue-darker;
 	position: fixed;
 	top:0;
-	left: 0;
+	left: -$sidebar-width;
 	padding: 10px 5px 10px 14px;
+	z-index: 50;
+	transition: all .5s;
+	&.expanded {
+    left: 0;
+  }
+	@include media-breakpoint-up(md) {
+    left: 0;
+  }
 	.logo {
 		border-bottom: 1px solid $grey-blue;
 		img {
