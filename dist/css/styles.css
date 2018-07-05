@@ -283,6 +283,15 @@ header.index .logo {
   padding: 30px;
 }
 
+#content {
+  margin-top: 45px;
+  /*
+  @include breakpoint(md) {
+    margin-top: 0px;
+  }
+*/
+}
+
 .container-fluid.with-sidebar {
   padding: 0 15px 0 calc( 124px + 15px);
 }
@@ -477,6 +486,27 @@ aside ul li .notification {
   border-radius: 3px;
   float: right;
   margin-top: 4px;
+}
+
+#toolbar {
+  width: 100vw;
+  height: 45px;
+  background: #3E7AAB;
+  color: white;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  padding: 10px 5px 10px 14px;
+}
+
+#toolbar .logo {
+  margin: auto;
+}
+
+#toolbar .logo img {
+  width: 69px;
+  margin: 5px auto 5px;
 }
 
 @media print {
