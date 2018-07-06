@@ -81,3 +81,7 @@ input {
 
 
 
+.custom-control-label::before {
+  background-color: transparent;
+  border: 1px solid $grey-40;
+}

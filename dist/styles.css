@@ -9416,6 +9416,11 @@ input.form-control {
   padding: 5px 8px;
 }
 
+.custom-control-label::before {
+  background-color: transparent;
+  border: 1px solid #B3B3B3;
+}
+
 aside {
   width: 124px;
   height: 100vh;
@@ -9744,6 +9749,11 @@ body #container #main form h3 {
 
 body #container #main form p {
   margin-bottom: 6px;
+}
+
+body #container #main #collapseTags label {
+  margin: 5px 10px 0 0;
+  padding-top: 4px;
 }
 
 body #container #main .border-top {
