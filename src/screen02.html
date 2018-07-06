@@ -60,7 +60,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0/css/tempusdominus-bootstrap-4.min.css" />
 
 		<!-- CSS, you gotta have style -->
-		<link rel="stylesheet" href="/styles.css">
+		<link rel="stylesheet" href="css/styles.css">
 
 	</head>
 	<body>
@@ -69,7 +69,7 @@
 		<div id="toolbar" class="container-fluid">
   		<div class="row">
     		<div class="col text-left">
-      		<button id="menuToggle" class="btn btn-sm btn-transparent"><span class="icon icon-burger"></span></button>
+      		<button id="menuToggle" class="btn btn-sm btn-transparent"><img src="images/burger.svg"></button>
       		<script>
         		$("#menuToggle").click(
           		function(){
@@ -80,12 +80,12 @@
        		</script>
         </div>
     		<div class="col text-center">
-      		<div class="logo"></div>
+      		<div class="logo"><img src="images/logo.svg"></div>
         </div>
     		<div class="col text-right">
       		<div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-sm btn-transparent"><span class="icon icon-chevron-big"></span></button>
-            <button type="button" class="btn btn-sm btn-transparent upside-down"><span class="icon icon-chevron-big"></span></button>
+            <button type="button" class="btn btn-sm btn-transparent"><img src="images/chevron-big.svg"></button>
+            <button type="button" class="btn btn-sm btn-transparent upside-down"><img src="images/chevron-big.svg"></button>
           </div>
     		</div>
   		</div>
@@ -93,6 +93,7 @@
 		<!-- sidebar -->
 		<aside>
 			<div class="logo">
+				<img src="images/logo.svg">
 			</div>
 			<nav>
   			<ul>
@@ -151,7 +152,7 @@
 							<div class="col">
   							<form class="form-inline">
   								<button class="btn btn-primary mr-sm-2" type="">
-  								  <span class="icon icon-file"></span> + New
+  									<img src="images/file.svg"> + New
   								</button>
                   <span class="search">
   									<input class="form-control" type="search" placeholder="Search initiatives..." aria-label="Search">
@@ -300,128 +301,112 @@
 				<!-- right column -->
 				<div id="main" class="col-xs-12 col-sm-12 col-md-7">
 					<header>
-						<h2 class="float-left">Create schedule</h2>
+						<h2 class="float-left">Create interviews</h2>
 						<button id="close-this" class="btn btn-lg btn-transparent float-right">
-						  <span class="icon icon-x"></span>
+						  <img src="images/x.svg">
 						</button>
 					</header>
 
 					<div class="container-fluid">
+  					<p>Finish creating interviews and entering details for the information you have, or you can come back to this page from the Manage pane at any time.</p>
             <form>
     					<div class="form-row">
   								<div class="col">
-                    <h3>This is a schedule of</h3>
-                    <div class="styled-select">
-                      <select class="custom-select" id="inputGroupSelect01">
-    										<option selected>interviews</option>
-    										<option value="1">One</option>
-    										<option value="2">Two</option>
-    										<option value="3">Three</option>
-    									</select>
-  									</div>
+                    <h3> Monday, September 9, 2018 <a href="#"><img src="images/pen.svg"></a><a href="#"><img src="images/trash.svg"></a></h3>
   								</div>
     					</div>
-
-    					<div class="form-row">
-								<div class="col">
-                  <h3>Give this an external name</h3>
-                  <p>What students will see when they sign up and receive notifications for this interview</p>
-                </div>
-    					</div>
-    					<div class="form-row">
-								<div class="col">
-                  <input type="text" class="form-control" placeholder="type external name">
-                  <a href="#">see</a> allowable characters
-								</div>
-								<div class="col">
-                  e.g. &lt;Company Name&gt; Grace Hopper<br>
-                  Full-Time Engineer Interviews: Software
-								</div>
-    					</div>
-
-    					<div class="form-row">
-  								<div class="col">
-                    <h3>Give this an internal name</h3>
-                    <p>You can be more descriptive here. This is the name that will be displayed in your dashboard</p>
-                  </div>
-    					</div>
-    					<div class="form-row">
-  								<div class="col">
-                    <input type="text" class="form-control" placeholder="type internal name">
-                    <a href="#">see</a> allowable characters
-  								</div>
-  								<div class="col">
-                    e.g. GHC ’18 Software Full-Time<br>
-                    Interviews
-  								</div>
-    					</div>
-
-    					<div class="form-row">
-          			<div class="col">
-                  <h3>What dates are your interviews?</h3>
-                   <p>Approximate ok. You can edit this later.</p>
-          			</div>
-          		</div>
-    					<div class="form-row">
-          			<div class="col-sm-6">
-                  <div class="form-group mb-1">
-                    <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-                      <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
-                      <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
-                        <div class="input-group-text"><span class="icon icon-calendar"></span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <p class="mt-2">to</p>
-                </div>
-                <script type="text/javascript">
-                  $( document ).ready(
-                    $(function () {
-                        $('#datetimepicker1').datetimepicker({
-                            format: 'L'
-                        });
-                    });
-                  )
-                </script>
-    					</div>
-    					<div class="form-row">
-          			<div class="col-sm-6">
+              <div class="form-row">
+                <div class="col-xs-2">
+                  <label for="datetimepicker1">Day<br>Starts</label>
                   <div class="form-group">
-                    <div class="input-group date" id="datetimepicker2" data-target-input="nearest">
-                      <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2"/>
-                      <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
-                        <div class="input-group-text"><span class="icon icon-calendar"></span></div>
-                      </div>
+                    <div class='input-group date' id='datetimepicker1'>
+                      <input type='text' class="form-control" />
+                      <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                      </span>
                     </div>
                   </div>
-                </div>
-                <script type="text/javascript">
-                  $( document ).ready(
+                  <script type="text/javascript">
                     $(function () {
-                        $('#datetimepicker2').datetimepicker({
-                            format: 'L'
-                        });
+                      $('#datetimepicker1').datetimepicker({
+                        format: 'LT'
+                      });
                     });
-                  )
-                </script>
-    					</div>
-
-    					<div class="form-row">
-  								<div class="col">
-                    <h3>Where is this happening (internal)?</h3>
-                    <input type="text" class="form-control" placeholder="Add where">
-  								</div>
-    					</div>
-
-    					<div class="form-row">
-  								<div class="col border-top">
-                    <h4>Next, set the schedule for each day</h4>
-                    <button class="btn btn-primary btn-xs" type="">Continue</button>
-  								</div>
-    					</div>
-
+                  </script>
+                </div>
+                <div class="col-xs-2">
+                  <label for="datetimepicker2">Day<br>Ends</label>
+                  <div class="form-group">
+                    <div class='input-group date' id='datetimepicker2'>
+                      <input type='text' class="form-control" />
+                      <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                      </span>
+                    </div>
+                  </div>
+                  <script type="text/javascript">
+                    $(function () {
+                      $('#datetimepicker2').datetimepicker({
+                        format: 'LT'
+                      });
+                    });
+                  </script>
+                </div>
+                <div class="col-xs-2">
+                  <label for="datetimepicker3">Each<br>block is</label>
+                  <div class="form-group">
+                    <div class='input-group date' id='datetimepicker3'>
+                      <input type='text' class="form-control" />
+                      <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                      </span>
+                    </div>
+                  </div>
+                  <script type="text/javascript">
+                    $(function () {
+                      $('#datetimepicker3').datetimepicker({
+                        format: 'LT'
+                      });
+                    });
+                  </script>
+                </div>
+                <div class="col-xs-2">
+                  <label for="datetimepicker4">Time between<br>blocks are</label>
+                  <div class="form-group">
+                    <div class='input-group date' id='datetimepicker4'>
+                      <input type='text' class="form-control" />
+                      <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                      </span>
+                    </div>
+                  </div>
+                  <script type="text/javascript">
+                    $(function () {
+                      $('#datetimepicker4').datetimepicker({
+                        format: 'LT'
+                      });
+                    });
+                  </script>
+                </div>
+                <div class="col-xs-2">
+                  <label for="datetimepicker5">Multiple tracks<br>per block</label>
+                  <div class="form-group">
+                    <div class='input-group date' id='datetimepicker5'>
+                      <input type='text' class="form-control" />
+                      <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>vurica
+                      </span>
+                    </div>
+                  </div>
+                  <script type="text/javascript">
+                    $(function () {
+                      $('#datetimepicker5').datetimepicker({
+                        format: 'LT'
+                      });
+                    });
+                  </script>
+                </div>
+              </div>
             </form>
 					</div>
 

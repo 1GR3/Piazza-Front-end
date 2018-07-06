@@ -9235,7 +9235,7 @@ button.notification {
   padding: 3px 11px;
 }
 
-.btn.upside-down img {
+.btn.upside-down {
   transform: rotate(180deg);
 }
 
@@ -9283,6 +9283,58 @@ h4 {
   font-weight: normal;
 }
 
+.logo {
+  background-image: url("/images/careers_v2/logo.svg");
+  background-repeat: no-repeat;
+  background-size: 69px;
+  height: 18px;
+  margin: 10px 0 5px;
+}
+
+span.icon, i.icon {
+  background-repeat: no-repeat;
+}
+
+span.icon.icon-burger:after, i.icon.icon-burger:after {
+  content: url("/images/careers_v2/burger.svg");
+}
+
+span.icon.icon-calendar:after, i.icon.icon-calendar:after {
+  content: url("/images/careers_v2/calendar.svg");
+}
+
+span.icon.icon-caret:after, i.icon.icon-caret:after {
+  content: url("/images/careers_v2/caret.svg");
+}
+
+span.icon.icon-chevron:after, i.icon.icon-chevron:after {
+  content: url("/images/careers_v2/chevron.svg");
+}
+
+span.icon.icon-chevron-big:after, i.icon.icon-chevron-big:after {
+  content: url("/images/careers_v2/chevron-big.svg");
+}
+
+span.icon.icon-file:after, i.icon.icon-file:after {
+  content: url("/images/careers_v2/file.svg");
+}
+
+span.icon.icon-pen:after, span.icon.icon-edit:after, i.icon.icon-pen:after, i.icon.icon-edit:after {
+  content: url("/images/careers_v2/pen.svg");
+}
+
+span.icon.icon-search:after, i.icon.icon-search:after {
+  content: url("/images/careers_v2/search.svg");
+}
+
+span.icon.icon-trash:after, i.icon.icon-trash:after {
+  content: url("/images/careers_v2/trash.svg");
+}
+
+span.icon.icon-x:after, i.icon.icon-x:after {
+  content: url("/images/careers_v2/x.svg");
+}
+
 input.form-control {
   border: 1px solid #919193;
   font-size: 10px;
@@ -9307,7 +9359,7 @@ input.form-control {
 }
 
 .styled-select:after {
-  content: url("../images/chevron.svg");
+  content: url("/images/careers_v2/chevron.svg");
   color: #B3B3B3;
   position: absolute;
   right: 10px;
@@ -9328,7 +9380,7 @@ input.form-control {
 }
 
 .input-group.sorting:after {
-  content: url("../images/chevron.svg");
+  content: url("/images/careers_v2/chevron.svg");
   color: #B3B3B3;
   position: absolute;
   right: 5px;
@@ -9341,7 +9393,7 @@ input.form-control {
 }
 
 .form-inline .search:before {
-  content: url("../images/search.svg");
+  content: url("/images/careers_v2/search.svg");
   color: #B3B3B3;
   position: absolute;
   left: 5px;
@@ -9439,9 +9491,6 @@ aside ul li .notification {
 
 #toolbar .logo {
   margin: auto;
-}
-
-#toolbar .logo img {
   width: 69px;
   margin: 10px auto 5px;
 }
@@ -9585,7 +9634,7 @@ body #container #feed #accordion .card .card-header h5 button {
 }
 
 body #container #feed #accordion .card .card-header h5 button:before {
-  content: url("../images/caret.svg");
+  content: url("/images/careers_v2/caret.svg");
   position: absolute;
   left: 7px;
   top: -2px;
@@ -9680,11 +9729,16 @@ body #container #main h2 {
   margin: 15px 0;
 }
 
-body #container #main h3 {
+body #container #main p {
+  margin-top: 16px;
+  font-size: 12px;
+}
+
+body #container #main form h3 {
   margin: 18px 0 5px 0;
 }
 
-body #container #main p {
+body #container #main form p {
   margin-bottom: 6px;
 }
 

@@ -95,7 +95,7 @@ gulp.task('styles', function() {
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(prefix(prefixerOptions))
     .pipe(rename('styles.css'))
-    .pipe(gulp.dest(bases.dist + 'css'))
+    .pipe(gulp.dest(bases.dist))
     .pipe(reload({stream:true}))
     .pipe(cleanCSS({debug: true}, function(details) {
       console.log(details.name + ': ' + details.stats.originalSize);

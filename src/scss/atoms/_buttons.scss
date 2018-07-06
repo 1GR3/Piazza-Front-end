@@ -34,8 +34,6 @@ button {
   	padding: 3px 11px;
 	}
 	&.upside-down {
-  	img {
-    	transform: rotate(180deg);
-  	}
+  	transform: rotate(180deg);
 	}
 }

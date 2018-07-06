@@ -1,0 +1,64 @@
+.logo {
+  background-image: url("/images/careers_v2/logo.svg");
+  background-repeat: no-repeat;
+  background-size: 69px;
+  height: 18px;
+  margin: 10px 0 5px;
+}
+
+span, i {
+  &.icon {
+    background-repeat: no-repeat;
+
+    &.icon-burger {
+      &:after {
+        content: url("/images/careers_v2/burger.svg");
+      }
+    }
+    &.icon-calendar {
+      &:after {
+        content: url("/images/careers_v2/calendar.svg");
+      }
+    }
+    &.icon-caret {
+      &:after {
+        content: url("/images/careers_v2/caret.svg");
+      }
+    }
+    &.icon-chevron {
+      &:after {
+        content: url("/images/careers_v2/chevron.svg");
+      }
+    }
+    &.icon-chevron-big {
+      &:after {
+        content: url("/images/careers_v2/chevron-big.svg");
+      }
+    }
+    &.icon-file {
+      &:after {
+        content: url("/images/careers_v2/file.svg");
+      }
+    }
+    &.icon-pen, &.icon-edit {
+      &:after {
+        content: url("/images/careers_v2/pen.svg");
+      }
+    }
+    &.icon-search {
+      &:after {
+        content: url("/images/careers_v2/search.svg");
+      }
+    }
+    &.icon-trash {
+      &:after {
+        content: url("/images/careers_v2/trash.svg");
+      }
+    }
+    &.icon-x {
+      &:after {
+        content: url("/images/careers_v2/x.svg");
+      }
+    }
+  }
+}

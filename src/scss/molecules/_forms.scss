@@ -21,7 +21,7 @@ input {
     }
   }
   &:after {
-		content: url("../images/chevron.svg");
+		content: url("/images/careers_v2/chevron.svg");
 		color: $grey-40;
 		position: absolute;
 		right: 10px;
@@ -43,7 +43,7 @@ input {
 
 		}
     &:after {
-			content: url("../images/chevron.svg");
+			content: url("/images/careers_v2/chevron.svg");
 			color: $grey-40;
 			position: absolute;
 			right: 5px;
@@ -57,7 +57,7 @@ input {
 	.search {
 		position: relative;
 		&:before {
-			content: url("../images/search.svg");
+			content: url("/images/careers_v2/search.svg");
 			color: $grey-40;
 			position: absolute;
 			left: 5px;
