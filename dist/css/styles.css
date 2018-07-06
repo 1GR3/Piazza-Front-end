@@ -9446,6 +9446,11 @@ aside ul li .notification {
   margin: 10px auto 5px;
 }
 
+#toolbar .btn-group button {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
 @media (min-width: 576px) {
   #toolbar {
     top: -45px;
@@ -9593,12 +9598,13 @@ body #container #feed #accordion .card .card-header h5 button.collapsed:before {
 }
 
 body #container #feed #accordion .card .card-body {
-  padding: 0px 20px;
+  padding: 0px 0 0 10px;
 }
 
 body #container #feed #accordion .card .card-body article {
   width: 100%;
-  padding: 10px;
+  padding: 10px 30px 10px 20px;
+  transition: all .25s;
 }
 
 body #container #feed #accordion .card .card-body article .tag {
@@ -9662,27 +9668,27 @@ body #container #feed #accordion .card .card-body article.selected {
   background: rgba(62, 122, 171, 0.03);
 }
 
-body #container #rightthing {
+body #container #main {
   padding: 0;
 }
 
-body #container #rightthing header {
+body #container #main header {
   padding: 0 0 0 15px;
 }
 
-body #container #rightthing h2 {
+body #container #main h2 {
   margin: 15px 0;
 }
 
-body #container #rightthing h3 {
+body #container #main h3 {
   margin: 18px 0 5px 0;
 }
 
-body #container #rightthing p {
+body #container #main p {
   margin-bottom: 6px;
 }
 
-body #container #rightthing .border-top {
+body #container #main .border-top {
   border-top: 1px solid #E6E6E6;
   margin-top: 25px;
 }

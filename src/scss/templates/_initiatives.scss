@@ -68,10 +68,12 @@ body {
 
 					}
 					.card-body {
-  					padding: 0px 20px;
+  					padding: 0px 0 0 10px ;
+
 						article {
 							width: 100%;
-							padding: 10px;
+							padding: 10px 30px 10px 20px;
+							transition: all .25s;
 							.tag {
 								.indicator {
 									width: 8px;
@@ -130,7 +132,7 @@ body {
 			}
 		}
 
-    #rightthing {
+    #main {
       padding: 0;
       header {
         padding: 0 0 0 15px;

@@ -20,6 +20,12 @@
 			margin: 10px auto 5px;
 		}
 	}
+	.btn-group {
+  	button {
+    	padding-left: 2px;
+    	padding-right: 2px;
+  	}
+	}
   @include media-breakpoint-up(sm) {
     top: -45px;
   }
