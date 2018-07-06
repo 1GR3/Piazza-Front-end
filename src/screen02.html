@@ -60,7 +60,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0/css/tempusdominus-bootstrap-4.min.css" />
 
 		<!-- CSS, you gotta have style -->
-		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="/styles.css">
 
 	</head>
 	<body>
@@ -69,7 +69,7 @@
 		<div id="toolbar" class="container-fluid">
   		<div class="row">
     		<div class="col text-left">
-      		<button id="menuToggle" class="btn btn-sm btn-transparent"><img src="images/burger.svg"></button>
+      		<button id="menuToggle" class="btn btn-sm btn-transparent"><span class="icon icon-burger"></span></button>
       		<script>
         		$("#menuToggle").click(
           		function(){
@@ -80,12 +80,12 @@
        		</script>
         </div>
     		<div class="col text-center">
-      		<div class="logo"><img src="images/logo.svg"></div>
+      		<div class="logo"></div>
         </div>
     		<div class="col text-right">
       		<div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-sm btn-transparent"><img src="images/chevron-big.svg"></button>
-            <button type="button" class="btn btn-sm btn-transparent upside-down"><img src="images/chevron-big.svg"></button>
+            <button type="button" class="btn btn-sm btn-transparent"><span class="icon icon-chevron-big"></span></button>
+            <button type="button" class="btn btn-sm btn-transparent upside-down"><span class="icon icon-chevron-big"></span></button>
           </div>
     		</div>
   		</div>
@@ -93,7 +93,6 @@
 		<!-- sidebar -->
 		<aside>
 			<div class="logo">
-				<img src="images/logo.svg">
 			</div>
 			<nav>
   			<ul>
@@ -152,7 +151,7 @@
 							<div class="col">
   							<form class="form-inline">
   								<button class="btn btn-primary mr-sm-2" type="">
-  									<img src="images/file.svg"> + New
+  								  <span class="icon icon-file"></span> + New
   								</button>
                   <span class="search">
   									<input class="form-control" type="search" placeholder="Search initiatives..." aria-label="Search">
@@ -303,7 +302,7 @@
 					<header>
 						<h2 class="float-left">Create interviews</h2>
 						<button id="close-this" class="btn btn-lg btn-transparent float-right">
-						  <img src="images/x.svg">
+						  <span class="icon icon-x"></span>
 						</button>
 					</header>
 
@@ -312,18 +311,19 @@
             <form>
     					<div class="form-row">
   								<div class="col">
-                    <h3> Monday, September 9, 2018 <a href="#"><img src="images/pen.svg"></a><a href="#"><img src="images/trash.svg"></a></h3>
+                    <h3> Monday, September 9, 2018
+                      <a href="#"><span class="icon icon-edit"></span></a>
+                      <a href="#"><span class="icon icon-trash"></span></a>
+                    </h3>
   								</div>
     					</div>
               <div class="form-row">
                 <div class="col-xs-2">
                   <label for="datetimepicker1">Day<br>Starts</label>
-                  <div class="form-group">
-                    <div class='input-group date' id='datetimepicker1'>
-                      <input type='text' class="form-control" />
-                      <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-time"></span>
-                      </span>
+                  <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                    <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
+                    <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                      <div class="input-group-text"><span class="icon icon-clock"></span></div>
                     </div>
                   </div>
                   <script type="text/javascript">
@@ -336,12 +336,10 @@
                 </div>
                 <div class="col-xs-2">
                   <label for="datetimepicker2">Day<br>Ends</label>
-                  <div class="form-group">
-                    <div class='input-group date' id='datetimepicker2'>
-                      <input type='text' class="form-control" />
-                      <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-time"></span>
-                      </span>
+                  <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                    <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2"/>
+                    <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
+                      <div class="input-group-text"><span class="icon icon-clock"></span></div>
                     </div>
                   </div>
                   <script type="text/javascript">
@@ -354,12 +352,10 @@
                 </div>
                 <div class="col-xs-2">
                   <label for="datetimepicker3">Each<br>block is</label>
-                  <div class="form-group">
-                    <div class='input-group date' id='datetimepicker3'>
-                      <input type='text' class="form-control" />
-                      <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-time"></span>
-                      </span>
+                  <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                    <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3"/>
+                    <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
+                      <div class="input-group-text"><span class="icon icon-clock"></span></div>
                     </div>
                   </div>
                   <script type="text/javascript">
@@ -372,12 +368,10 @@
                 </div>
                 <div class="col-xs-2">
                   <label for="datetimepicker4">Time between<br>blocks are</label>
-                  <div class="form-group">
-                    <div class='input-group date' id='datetimepicker4'>
-                      <input type='text' class="form-control" />
-                      <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-time"></span>
-                      </span>
+                  <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                    <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4"/>
+                    <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                      <div class="input-group-text"><span class="icon icon-clock"></span></div>
                     </div>
                   </div>
                   <script type="text/javascript">
@@ -389,23 +383,26 @@
                   </script>
                 </div>
                 <div class="col-xs-2">
-                  <label for="datetimepicker5">Multiple tracks<br>per block</label>
-                  <div class="form-group">
-                    <div class='input-group date' id='datetimepicker5'>
-                      <input type='text' class="form-control" />
-                      <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-time"></span>vurica
-                      </span>
-                    </div>
+                  <label for="select1">Multiple tracks<br>per block</label>
+                  <div class="input-group date" id="select1">
+                    <select class="custom-select" id="select1">
+  										<option selected>Initiative type</option>
+  										<option value="1">One</option>
+  										<option value="2">Two</option>
+  										<option value="3">Three</option>
+  									</select>
                   </div>
-                  <script type="text/javascript">
-                    $(function () {
-                      $('#datetimepicker5').datetimepicker({
-                        format: 'LT'
-                      });
-                    });
-                  </script>
                 </div>
+                <div class="col-xs-2">
+                  <label for="datetimepicker5">yo&nbsp;<br>yo&nbsp;</label>
+                  <div class="input-group date" id="select1">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                  </div>
+                </div>
+              </div>
+            <div class="form-row">
+  						<div class="col">
+                <p><a href="#">Set focus tags</a></p>
               </div>
             </form>
 					</div>

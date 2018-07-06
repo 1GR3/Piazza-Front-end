@@ -9315,6 +9315,10 @@ span.icon.icon-chevron-big:after, i.icon.icon-chevron-big:after {
   content: url("/images/careers_v2/chevron-big.svg");
 }
 
+span.icon.icon-clock:after, i.icon.icon-clock:after {
+  content: url("/images/careers_v2/clock.svg");
+}
+
 span.icon.icon-file:after, i.icon.icon-file:after {
   content: url("/images/careers_v2/file.svg");
 }

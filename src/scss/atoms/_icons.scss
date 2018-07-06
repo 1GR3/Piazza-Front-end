@@ -35,6 +35,11 @@ span, i {
         content: url("/images/careers_v2/chevron-big.svg");
       }
     }
+    &.icon-clock {
+      &:after {
+        content: url("/images/careers_v2/clock.svg");
+      }
+    }
     &.icon-file {
       &:after {
         content: url("/images/careers_v2/file.svg");
