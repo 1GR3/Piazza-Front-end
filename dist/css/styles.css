@@ -9465,10 +9465,10 @@ aside ul li .notification {
 }
 
 @media (max-width: 767.98px) {
-  #container #leftthing, #container #rightthing, .container-fluid.with-sidebar #leftthing, .container-fluid.with-sidebar #rightthing {
+  #container #feed, #container #main, .container-fluid.with-sidebar #feed, .container-fluid.with-sidebar #main {
     display: none;
   }
-  #container #leftthing.active, #container #rightthing.active, .container-fluid.with-sidebar #leftthing.active, .container-fluid.with-sidebar #rightthing.active {
+  #container #feed.active, #container #main.active, .container-fluid.with-sidebar #feed.active, .container-fluid.with-sidebar #main.active {
     display: block;
   }
 }
@@ -9526,51 +9526,51 @@ body #container header {
   border-bottom: 1px solid #E6E6E6;
 }
 
-body #container #leftthing {
+body #container #feed {
   padding: 0;
   min-height: 100vh;
   border-right: 1px solid #CCC;
 }
 
-body #container #leftthing header {
+body #container #feed header {
   padding: 7px 15px;
 }
 
-body #container #leftthing header .col:nth-child(1) {
+body #container #feed header .col:nth-child(1) {
   border-right: 1px solid #CCC;
 }
 
-body #container #leftthing nav {
+body #container #feed nav {
   background-color: #EEEEF0;
   border-bottom: 1px solid #CCC;
   padding: 4px 6px;
 }
 
-body #container #leftthing nav form {
+body #container #feed nav form {
   width: 100%;
 }
 
-body #container #leftthing nav form button, body #container #leftthing nav form input {
+body #container #feed nav form button, body #container #feed nav form input {
   font-size: 10px;
 }
 
-body #container #leftthing nav form input.form-control {
+body #container #feed nav form input.form-control {
   border-color: white;
 }
 
-body #container #leftthing #accordion .card {
+body #container #feed #accordion .card {
   border-radius: 0 !important;
   border: none;
   border-bottom: 1px solid #E6E6E6;
 }
 
-body #container #leftthing #accordion .card .card-header {
+body #container #feed #accordion .card .card-header {
   background-color: #E8E8EA;
   padding: 0 20px;
   border-radius: 0 !important;
 }
 
-body #container #leftthing #accordion .card .card-header h5 button {
+body #container #feed #accordion .card .card-header h5 button {
   font-size: 11px;
   font-weight: bold;
   line-height: 22px;
@@ -9579,7 +9579,7 @@ body #container #leftthing #accordion .card .card-header h5 button {
   position: relative;
 }
 
-body #container #leftthing #accordion .card .card-header h5 button:before {
+body #container #feed #accordion .card .card-header h5 button:before {
   content: url("../images/caret.svg");
   position: absolute;
   left: 7px;
@@ -9587,43 +9587,43 @@ body #container #leftthing #accordion .card .card-header h5 button:before {
   font-size: 12px;
 }
 
-body #container #leftthing #accordion .card .card-header h5 button.collapsed:before {
+body #container #feed #accordion .card .card-header h5 button.collapsed:before {
   transform: rotate(180deg);
   top: 2px;
 }
 
-body #container #leftthing #accordion .card .card-body {
+body #container #feed #accordion .card .card-body {
   padding: 0px 20px;
 }
 
-body #container #leftthing #accordion .card .card-body article {
+body #container #feed #accordion .card .card-body article {
   width: 100%;
   padding: 10px;
 }
 
-body #container #leftthing #accordion .card .card-body article .tag {
+body #container #feed #accordion .card .card-body article .tag {
   font-size: 10px;
   background-color: #EEE;
   padding: 4px;
 }
 
-body #container #leftthing #accordion .card .card-body article .tag .indicator {
+body #container #feed #accordion .card .card-body article .tag .indicator {
   width: 8px;
   height: 8px;
   background-color: #666;
   display: inline-block;
 }
 
-body #container #leftthing #accordion .card .card-body article .tag.interview .indicator {
+body #container #feed #accordion .card .card-body article .tag.interview .indicator {
   background-color: #37BDBF;
 }
 
-body #container #leftthing #accordion .card .card-body article .date {
+body #container #feed #accordion .card .card-body article .date {
   font-size: 11px;
   color: #808080;
 }
 
-body #container #leftthing #accordion .card .card-body article h6 {
+body #container #feed #accordion .card .card-body article h6 {
   font-weight: bold;
   font-size: 12px;
   color: #31424D;
@@ -9631,33 +9631,33 @@ body #container #leftthing #accordion .card .card-body article h6 {
   margin: 6px 0;
 }
 
-body #container #leftthing #accordion .card .card-body article p {
+body #container #feed #accordion .card .card-body article p {
   font-size: 11px;
   line-height: 13px;
   color: #808589;
   margin-bottom: 10px;
 }
 
-body #container #leftthing #accordion .card .card-body article ul {
+body #container #feed #accordion .card .card-body article ul {
   padding-left: 15px;
   margin-bottom: 0;
 }
 
-body #container #leftthing #accordion .card .card-body article ul li {
+body #container #feed #accordion .card .card-body article ul li {
   font-size: 11px;
   line-height: 13px;
   color: #911D22;
 }
 
-body #container #leftthing #accordion .card .card-body article ul li.confirmed {
+body #container #feed #accordion .card .card-body article ul li.confirmed {
   color: #008001;
 }
 
-body #container #leftthing #accordion .card .card-body article ul li.pending {
+body #container #feed #accordion .card .card-body article ul li.pending {
   color: #911D22;
 }
 
-body #container #leftthing #accordion .card .card-body article.selected {
+body #container #feed #accordion .card .card-body article.selected {
   border-left: 5px solid rgba(62, 122, 171, 0.35);
   background: rgba(62, 122, 171, 0.03);
 }

@@ -15,7 +15,7 @@ aside {
     left: 0;
   }
 	.logo {
-		border-bottom: 1px solid $grey-blue;
+		border-bottom: 1px solid $grey-blue-20;
 		img {
 			width: 69px;
 			margin: 10px 0 5px;
@@ -29,7 +29,7 @@ aside {
 			font-size : 12px;
 			line-height : 25px;
 			a {
-				color: $grey-blue !important;
+				color: $grey-blue-20 !important;
 			}
 			&.active a {
 				color: $white !important;

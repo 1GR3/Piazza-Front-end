@@ -112,7 +112,7 @@
 			<div class="row">
 
 				<!-- left column -->
-				<div id="leftthing" class="col-xs-12 col-sm-12 col-md-5 active">
+				<div id="feed" class="col-xs-12 col-sm-12 col-md-5 active">
 
 					<header class="container-fluid">
 						<div class="row">
@@ -285,8 +285,8 @@
                     		function(){
                       		$("#accordion article").removeClass("selected");
                       		$(this).addClass("selected");
-                      		$("#leftthing").removeClass("active");
-                          $("#rightthing").addClass("active");
+                      		$("#feed").removeClass("active");
+                          $("#main").addClass("active");
                     		}
                   		);
                     </script>
@@ -297,7 +297,7 @@
 					</div>
 				</div>
 				<!-- right column -->
-				<div id="rightthing" class="col-xs-12 col-sm-12 col-md-7">
+				<div id="main" class="col-xs-12 col-sm-12 col-md-7">
 					<header>
 						<h2 class="float-left">Create schedule</h2>
 						<button id="close-this" class="btn btn-lg btn-transparent float-right">
@@ -433,8 +433,8 @@
 		<script type="text/javascript">
         $("#close-this").click(
       		function(){
-        		$("#leftthing").addClass("active");
-        		$("#rightthing").removeClass("active");
+        		$("#feed").addClass("active");
+        		$("#main").removeClass("active");
       		}
     		);
     </script>
