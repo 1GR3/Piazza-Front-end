@@ -59,6 +59,10 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0/js/tempusdominus-bootstrap-4.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0/css/tempusdominus-bootstrap-4.min.css" />
 
+    <!-- CSS, you gotta have style -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
 		<!-- CSS, you gotta have style -->
 		<link rel="stylesheet" href="/styles.css">
 
@@ -406,7 +410,7 @@
                   Set focus tags</a></p>
               </div>
             </div>
-            <div class="form-row">
+            <div class="form-row pb-3">
   						<div class="col">
                 <div class="collapse container" id="collapseTags">
                   <div class="row mb-2">
@@ -446,6 +450,61 @@
                   </div>
                 </div>
 
+              </div>
+            </div>
+              <div class="form-row">
+                <div class="col-sm-12">
+                  <table id="table-interviews" class="display">
+                    <thead>
+                        <tr>
+                            <th>Start Time</th>
+                            <th>End Time</th>
+                            <th>Interview details</th>
+                            <th>Manage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>9:00am</td>
+                        <td>10:00am</td>
+                        <td>Andrew Smith, Room 303</td>
+                        <td>
+                          <a href="#"><span class="icon icon-edit"></span></a>
+                          <a href="#"><span class="icon icon-trash"></span></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>10:00am</td>
+                        <td>11:00am</td>
+                        <td>Not set</td>
+                        <td>
+                          <a href="#"><span class="icon icon-edit"></span></a>
+                          <a href="#"><span class="icon icon-trash"></span></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <script>
+                  $(document).ready( function () {
+                    $('#table-interviews').DataTable({
+                      paging: false,
+                      searching: false
+                    });
+                  } );
+                </script>
               </div>
             </form>
 					</div>
