@@ -36,4 +36,7 @@ button {
 	&.upside-down {
   	transform: rotate(180deg);
 	}
+	&.btn-dashed{
+  	border-style: dashed;
+	}
 }

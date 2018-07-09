@@ -9240,6 +9240,10 @@ button.notification {
   transform: rotate(180deg);
 }
 
+.btn.btn-dashed {
+  border-style: dashed;
+}
+
 body {
   font-size: 10px;
   font-family: "Helvetica Nue", Helvetica, Roboto, Ariel, sans-serif;
@@ -9929,4 +9933,11 @@ body .modal h5, body .modal h6 {
   line-height: 13px;
   font-weight: bold;
   color: #2C2D30;
+}
+
+body .modal .btn-dashed {
+  border-width: 1px;
+  border-color: #CCC;
+  margin-top: -1px;
+  color: #B3B3B3;
 }

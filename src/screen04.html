@@ -399,6 +399,7 @@
   									</select>
                   </div>
                 </div>
+
                 <div class="col-xs-2">
                   <label for="datetimepicker5">&nbsp;<br>&nbsp;</label>
                   <div class="input-group date" id="select1">
@@ -467,7 +468,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td>09:00am</td>
+                        <td>9:00am</td>
                         <td>10:00am</td>
                         <td>Andrew Smith, Room 303</td>
                         <td>
@@ -567,21 +568,34 @@
                     </button>
                   </div>
                   <div class="modal-body">
+
                     <form>
                       <h6>8:00am - 9:00am</h6>
 
                       <div class="input-group labels-above">
                         <div class="form-control interviewer">
-                        <input type="text" placeholder="type interviewer">
+                          <input type="text" placeholder="type interviewer">
+                        </div>
+                        <div class="form-control">
+                          <input type="button" value="+ add interviewer">
                         </div>
                         <div class="form-control location">
-                        <input type="text" placeholder="type location">
+                          <input type="text" placeholder="type location">
                         </div>
                         <div class="form-control duration">
-                        <input type="text" placeholder="type duration" value="1 h">
+                          <input type="text" placeholder="type duration" value="1 h">
                         </div>
+                        <button class="btn btn-xs btn-block btn-dashed">+ add another interviewer/location/duration row</button>
                       </div>
-                      <a href="#" class="float-right">custom structure</a>
+                      <div class="custom-control custom-checkbox col-xs-4 mb-3 mt-3">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Send the student a confirmation email when they sign up</label>
+                      </div>
+                      <div class="col-xs-2">
+                        <label for="select1">Give this interview structure a name</label>
+                        <input type="text" class="form-control" placeholder="type a name">
+                      </div>
+
 
                       <h6>9:00am - 10:00am</h6>
                       <div class="custom-control custom-checkbox col-xs-4 mb-3">
@@ -590,13 +604,13 @@
                       </div>
                       <div class="input-group labels-above">
                         <div class="form-control interviewer">
-                        <input type="text" placeholder="type interviewer">
+                          <input type="text" placeholder="type interviewer">
                         </div>
                         <div class="form-control location">
-                        <input type="text" placeholder="type location">
+                          <input type="text" placeholder="type location">
                         </div>
                         <div class="form-control duration">
-                        <input type="text" placeholder="type duration" value="1 h">
+                          <input type="text" placeholder="type duration" value="1 h">
                         </div>
                       </div>
                       <a href="#" class="float-right">custom structure</a>
@@ -608,20 +622,21 @@
                       </div>
                       <div class="input-group labels-above">
                         <div class="form-control interviewer">
-                        <input type="text" placeholder="type interviewer">
+                          <input type="text" placeholder="type interviewer">
                         </div>
                         <div class="form-control location">
-                        <input type="text" placeholder="type location">
+                          <input type="text" placeholder="type location">
                         </div>
                         <div class="form-control duration">
-                        <input type="text" placeholder="type duration" value="1 h">
+                          <input type="text" placeholder="type duration" value="1 h">
                         </div>
                       </div>
                       <a href="#" class="float-right">custom structure</a>
                     </form>
+
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-primary float-left">Save</button>
+                    <button type="button" class="btn btn-primary float-left ">Save</button>
                   </div>
                 </div>
               </div>

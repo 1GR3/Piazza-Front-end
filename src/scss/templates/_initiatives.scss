@@ -187,5 +187,11 @@ body {
       font-weight: bold;
       color: $grey-blue-05;
   	}
+  	.btn-dashed {
+    	border-width: 1px;
+      border-color: $grey-40;
+      margin-top: -1px;
+      color: $grey-30;
+  	}
 	}
 }
