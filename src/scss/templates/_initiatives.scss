@@ -171,4 +171,21 @@ body {
 
     }
 	}
+
+	.modal {
+  	font-size : 10px;
+  	border-color: $grey-50;
+  	background-color: rgba(white,.75);
+  	.modal-dialog {
+    	margin-right: 25px;
+    	width: 50vw;
+    	max-width: 55vw;
+  	}
+  	h5, h6 {
+  	  font-size : 12px;
+      line-height : 13px;
+      font-weight: bold;
+      color: $grey-blue-05;
+  	}
+	}
 }

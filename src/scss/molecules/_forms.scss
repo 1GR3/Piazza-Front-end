@@ -1,3 +1,16 @@
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $grey-30;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $grey-30;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $grey-30;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $grey-30;
+}
+
 input {
 
   &.form-control {
@@ -56,6 +69,7 @@ input {
 .form-inline {
 	.search {
 		position: relative;
+
 		&:before {
 			content: url("/images/careers_v2/search.svg");
 			color: $grey-30;
@@ -77,6 +91,38 @@ input {
     border-radius: 2px;
     padding: 5px 8px;
   }
+
+  &.labels-above {
+    div.form-control {
+      padding: 0;
+      position: relative;
+      border-color: $grey-blue-30;
+      input {
+        width: 100%;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        font-size : 10px;
+      }
+      &:before {
+        position: absolute;
+        font-size : 10px;
+        top:-25px;
+        left: 5px;
+      }
+      &.interviewer:before {
+        content: "Interviewer";
+      }
+      &.location:before {
+        content: "Location";
+      }
+      &.duration:before {
+        content: "Duration";
+      }
+    }
+
+
+  }
 }
 
 
@@ -85,3 +131,6 @@ input {
   background-color: transparent;
   border: 1px solid $grey-30;
 }
+
+
+

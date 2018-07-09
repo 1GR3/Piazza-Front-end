@@ -471,7 +471,7 @@
                         <td>10:00am</td>
                         <td>Andrew Smith, Room 303</td>
                         <td>
-                          <a href="#"><span class="icon icon-edit"></span></a>
+                          <a href="#" data-toggle="modal" data-target="#exampleModal"><span class="icon icon-edit"></span></a>
                           <a href="#"><span class="icon icon-trash"></span></a>
                         </td>
                       </tr>
@@ -480,7 +480,7 @@
                         <td>11:00am</td>
                         <td>Not set</td>
                         <td>
-                          <a href="#"><span class="icon icon-edit"></span></a>
+                          <a href="#" data-toggle="modal" data-target="#exampleModal"><span class="icon icon-edit"></span></a>
                           <a href="#"><span class="icon icon-trash"></span></a>
                         </td>
                       </tr>
@@ -489,7 +489,7 @@
                         <td>12:00am</td>
                         <td>Not set</td>
                         <td>
-                          <a href="#"><span class="icon icon-edit"></span></a>
+                          <a href="#" data-toggle="modal" data-target="#exampleModal"><span class="icon icon-edit"></span></a>
                           <a href="#"><span class="icon icon-trash"></span></a>
                         </td>
                       </tr>
@@ -498,7 +498,7 @@
                         <td>01:00pm</td>
                         <td>Not set</td>
                         <td>
-                          <a href="#"><span class="icon icon-edit"></span></a>
+                          <a href="#" data-toggle="modal" data-target="#exampleModal"><span class="icon icon-edit"></span></a>
                           <a href="#"><span class="icon icon-trash"></span></a>
                         </td>
                       </tr>
@@ -507,7 +507,7 @@
                         <td>02:00pm</td>
                         <td>Not set</td>
                         <td>
-                          <a href="#"><span class="icon icon-edit"></span></a>
+                          <a href="#" data-toggle="modal" data-target="#exampleModal"><span class="icon icon-edit"></span></a>
                           <a href="#"><span class="icon icon-trash"></span></a>
                         </td>
                       </tr>
@@ -516,7 +516,7 @@
                         <td>03:00pm</td>
                         <td>Not set</td>
                         <td>
-                          <a href="#"><span class="icon icon-edit"></span></a>
+                          <a href="#" data-toggle="modal" data-target="#exampleModal"><span class="icon icon-edit"></span></a>
                           <a href="#"><span class="icon icon-trash"></span></a>
                         </td>
                       </tr>
@@ -525,7 +525,7 @@
                         <td>04:00pm</td>
                         <td>Not set</td>
                         <td>
-                          <a href="#"><span class="icon icon-edit"></span></a>
+                          <a href="#" data-toggle="modal" data-target="#exampleModal"><span class="icon icon-edit"></span></a>
                           <a href="#"><span class="icon icon-trash"></span></a>
                         </td>
                       </tr>
@@ -556,6 +556,72 @@
                 </script>
               </div>
             </form>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit interview details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+
+                    <h6>8:00am - 9:00am</h6>
+
+                    <div class="input-group labels-above">
+                      <div class="form-control interviewer">
+                      <input type="text" placeholder="type interviewer">
+                      </div>
+                      <div class="form-control location">
+                      <input type="text" placeholder="type location">
+                      </div>
+                      <div class="form-control duration">
+                      <input type="text" placeholder="type duration" value="1 h">
+                      </div>
+                    </div>
+                    <a href="#" class="float-right">custom structure</a>
+
+                    <h6>9:00am - 10:00am</h6>
+
+                    <div class="input-group labels-above">
+                      <div class="form-control interviewer">
+                      <input type="text" placeholder="type interviewer">
+                      </div>
+                      <div class="form-control location">
+                      <input type="text" placeholder="type location">
+                      </div>
+                      <div class="form-control duration">
+                      <input type="text" placeholder="type duration" value="1 h">
+                      </div>
+                    </div>
+                    <a href="#" class="float-right">custom structure</a>
+
+                    <h6>10:00am - 11:00am</h6>
+
+                    <div class="input-group labels-above">
+                      <div class="form-control interviewer">
+                      <input type="text" placeholder="type interviewer">
+                      </div>
+                      <div class="form-control location">
+                      <input type="text" placeholder="type location">
+                      </div>
+                      <div class="form-control duration">
+                      <input type="text" placeholder="type duration" value="1 h">
+                      </div>
+                    </div>
+                    <a href="#" class="float-right">custom structure</a>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary float-left">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
 					</div>
 
 				</div>
