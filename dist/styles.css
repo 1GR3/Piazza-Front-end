@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -9593,6 +9594,30 @@ aside ul li .notification {
   background: #FAFAFC;
 }
 
+.dataTables_wrapper table.dataTable.empty {
+  position: relative;
+}
+
+.dataTables_wrapper table.dataTable.empty tbody tr.odd, .dataTables_wrapper table.dataTable.empty tbody tr.even {
+  background: white;
+}
+
+.dataTables_wrapper table.dataTable.empty tbody tr.odd .sorting_1, .dataTables_wrapper table.dataTable.empty tbody tr.even .sorting_1 {
+  background: white;
+}
+
+.dataTables_wrapper table.dataTable.empty:before {
+  content: "Blocks will show here once you’ve entered the details above";
+  position: absolute;
+  border: 1px solid #B3B3B3;
+  padding: 15px 32px;
+  background: white;
+  margin: auto;
+  left: 50%;
+  transform: translate(-50%);
+  color: #B3B3B3;
+}
+
 .dataTables_wrapper .dataTables_info {
   display: none;
 }
@@ -9793,6 +9818,10 @@ body #container #main {
 
 body #container #main header {
   padding: 0 0 0 15px;
+}
+
+body #container #main header #close-this {
+  padding-top: 15px;
 }
 
 body #container #main h2 {

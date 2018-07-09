@@ -59,6 +59,30 @@
         }
       }
     }
+
+    &.empty {
+      tbody tr {
+        &.odd, &.even {
+          background: white;
+          .sorting_1 {
+            background: white;
+          }
+        }
+      }
+      position: relative;
+      &:before {
+        content: "Blocks will show here once you’ve entered the details above";
+        position: absolute;
+        border: 1px solid $grey-30;
+        padding: 15px 32px;
+        background: white;
+        margin: auto;
+        left: 50%;
+        transform: translate(-50%);
+        color: $grey-30;
+      }
+    }
+
   }
   .dataTables_info {
     display: none;
