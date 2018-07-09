@@ -107,7 +107,7 @@ input {
       &:before {
         position: absolute;
         font-size : 10px;
-        top:-25px;
+        top:-20px;
         left: 5px;
       }
       &.interviewer:before {
@@ -130,6 +130,17 @@ input {
 .custom-control-label::before {
   background-color: transparent;
   border: 1px solid $grey-30;
+}
+
+.custom-checkbox {
+  label {
+    padding-top: 3px;
+  }
+  .tab {
+    .custom-control-label {
+      margin-left: 22px;
+    }
+  }
 }
 
 
