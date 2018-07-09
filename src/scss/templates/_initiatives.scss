@@ -11,18 +11,18 @@ body {
 		#feed {
 			padding: 0;
 			min-height: 100vh;
-			border-right: 1px solid $grey-30;
+			border-right: 1px solid $grey-40;
 
 			header {
 				padding: 7px 15px;
 				.col:nth-child(1) {
-					border-right: 1px solid $grey-30;
+					border-right: 1px solid $grey-40;
 				}
 
 			}
 			nav {
 				background-color: $grey-blue-50;
-				border-bottom: 1px solid $grey-30;
+				border-bottom: 1px solid $grey-40;
 				padding: 4px 6px;
 				form {
 					width: 100%;

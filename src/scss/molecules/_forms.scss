@@ -22,7 +22,7 @@ input {
   }
   &:after {
 		content: url("/images/careers_v2/chevron.svg");
-		color: $grey-40;
+		color: $grey-30;
 		position: absolute;
 		right: 10px;
 		top: 6px;
@@ -44,7 +44,7 @@ input {
 		}
     &:after {
 			content: url("/images/careers_v2/chevron.svg");
-			color: $grey-40;
+			color: $grey-30;
 			position: absolute;
 			right: 5px;
 			top: 10px;
@@ -58,7 +58,7 @@ input {
 		position: relative;
 		&:before {
 			content: url("/images/careers_v2/search.svg");
-			color: $grey-40;
+			color: $grey-30;
 			position: absolute;
 			left: 5px;
 			top: 5px;
@@ -83,5 +83,5 @@ input {
 
 .custom-control-label::before {
   background-color: transparent;
-  border: 1px solid $grey-40;
+  border: 1px solid $grey-30;
 }

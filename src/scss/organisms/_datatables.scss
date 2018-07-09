@@ -1,0 +1,67 @@
+
+.dataTables_wrapper {
+  table.dataTable {
+    border-bottom: none;
+    thead {
+      tr {
+        th {
+          border: none;
+
+          &.sorting, &.sorting_disabled, &.sorting_asc, &.sorting_desc {
+            background-image: none;
+            color: $grey-30;
+            text-decoration: underline;
+            position: relative;
+          }
+          &.sorting_disabled {
+            text-decoration: none;
+          }
+          &.sorting_asc, &.sorting_desc {
+            &:after {
+              content: url("/images/careers_v2/chevron.svg");
+              position: absolute;
+              width: 10px;
+              height: 10px;
+              top: 15px;
+              right: 5px;
+              z-index: 5;
+              transform: rotate(180deg);
+            }
+          }
+          &.sorting_desc:after {
+              top: 10px;
+              right: 3px;
+              z-index: 5;
+              transform: rotate(0deg);
+          }
+
+        }
+      }
+    }
+    tbody {
+      tr {
+        &.odd {
+          background: $grey-blue-60;
+          &.sorting_1 {
+            background: $grey-blue-50;
+          }
+        }
+        &.even {
+          background: white;
+          &.sorting_1 {
+            background: $grey-blue-60;
+          }
+        }
+        td {
+          &.sorting_1 {
+            background: $grey-blue-60;
+          }
+        }
+      }
+    }
+  }
+  .dataTables_info {
+    display: none;
+  }
+}
+
