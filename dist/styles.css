@@ -9396,6 +9396,15 @@ input.form-control {
   font-size: 12px;
 }
 
+.styled-select.select-xs select {
+  padding: 0px 10px;
+  height: 24px;
+}
+
+.styled-select.select-xs:after {
+  top: 3px;
+}
+
 .input-group.sorting label, .input-group.sorting select {
   font-size: 10px;
   font-weight: normal;
@@ -9485,6 +9494,11 @@ input.form-control {
 
 .custom-checkbox .tab .custom-control-label {
   margin-left: 22px;
+}
+
+.panel {
+  background: white;
+  border: 1px solid #D2D7DE;
 }
 
 aside {
@@ -9914,6 +9928,155 @@ body #container #main #collapseTags label {
 body #container #main .border-top {
   border-top: 1px solid #E6E6E6;
   margin-top: 25px;
+}
+
+body #container #main.view {
+  background: #EAEEF4;
+  padding: 15px 12px;
+}
+
+body #container #main.view .panel header {
+  font-size: 11px;
+  height: auto;
+}
+
+body #container #main.view .panel header .indicator {
+  font-size: 10px;
+  position: relative;
+  padding-left: 15px;
+}
+
+body #container #main.view .panel header .indicator:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 4px;
+  top: 2px;
+  border-radius: 100%;
+}
+
+body #container #main.view .panel header .indicator.open:before {
+  border: 1px solid #CCC;
+}
+
+body #container #main.view .panel footer span {
+  padding-left: 15px;
+}
+
+body #container #main.view .panel footer span:before {
+  width: 12px;
+  height: 12px;
+  content: "";
+  position: absolute;
+  border: 1px solid;
+  left: 12px;
+}
+
+body #container #main.view .panel footer .hardware:before {
+  border-color: #37BDBF;
+  background-color: #ECF7F9;
+}
+
+body #container #main.view .panel footer .software:before {
+  border-color: #F37867;
+  background-color: #FEE9E7;
+}
+
+body #container #main.view .panel footer .student:before {
+  border-color: #83C441;
+  background-color: #ECF4DD;
+}
+
+body #container #main.view .confirmed:before {
+  background: #CCC;
+}
+
+body #container #main.view .pending:before {
+  background: #911D22;
+}
+
+body #container #main.view .open:before {
+  background: white;
+  border: 1px solid #CCC;
+}
+
+body #container #main.view article ul.edit-things {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+body #container #main.view article ul.edit-things li {
+  display: inline-block;
+  padding-left: 10px;
+  position: relative;
+}
+
+body #container #main.view article ul.edit-things li:before {
+  content: "•";
+  position: absolute;
+  left: 5px;
+}
+
+body #container #main.view article .timesheet {
+  font-size: 12px;
+  text-align: right;
+}
+
+body #container #main.view article .timesheet .cell {
+  font-size: 9px;
+  line-height: 9px;
+  height: 25px;
+  border: 1px solid;
+  border-radius: 3px;
+  text-align: left;
+  padding: 2px 12px;
+  position: relative;
+  display: block;
+  width: 40%;
+}
+
+body #container #main.view article .timesheet .cell:before {
+  position: absolute;
+  content: "";
+  height: 23px;
+  width: 6px;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+body #container #main.view article .timesheet .cell.hardware {
+  border-color: #37BDBF;
+  background-color: #ECF7F9;
+}
+
+body #container #main.view article .timesheet .cell.software {
+  border-color: #F37867;
+  background-color: #FEE9E7;
+}
+
+body #container #main.view article .timesheet .cell.student {
+  border-color: #83C441;
+  background-color: #ECF4DD;
+}
+
+body #container #main.view article .timesheet .cell.confirmed:before {
+  background: #CCC;
+}
+
+body #container #main.view article .timesheet .cell.pending:before {
+  background: #911D22;
+}
+
+body #container #main.view article .timesheet .cell.open:before {
+  background: white;
+  border: 1px solid #CCC;
+}
+
+body #container #main.view article .timesheet .cell.icon {
+  background-image: url("/images/careers_v2/caret.svg");
 }
 
 body .modal {

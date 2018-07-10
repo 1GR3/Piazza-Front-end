@@ -86,7 +86,7 @@ body {
 								padding: 4px;
 								&.interview {
 									.indicator {
-										background-color: $turquoise;
+										background-color: $turquoise-20;
 									}
 								}
 							}
@@ -115,16 +115,16 @@ body {
 									  line-height : 13px;
 									  color : #911D22;
 									&.confirmed {
-										color: $green-dark;
+										color: $green-10;
 									}
 									&.pending {
-										color: $red-dark;
+										color: $red-10;
 									}
 								}
 							}
 							&.selected {
-  							border-left: 5px solid rgba($blue,.35);
-  							background: rgba($blue,.03);
+  							border-left: 5px solid rgba($blue-30,.35);
+  							background: rgba($blue-30,.03);
 							}
 						}
 					}
@@ -168,7 +168,148 @@ body {
         margin-top: 25px;
       }
 
+      &.view {
+        background: $blue-60;
+        padding: 15px 12px;
 
+        .panel {
+          header {
+            font-size: 11px;
+            height: auto;
+            .indicator {
+              font-size: 10px;
+              position: relative;
+              padding-left: 15px;
+
+              &:before {
+                content: "";
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                left: 4px;
+                top: 2px;
+                border-radius: 100%;
+              }
+              &.confirmed:before {
+              }
+              &.pending:before {
+              }
+              &.open:before {
+                border: 1px solid $grey-40;
+              }
+            }
+          }
+
+          footer {
+            span {
+              padding-left: 15px;
+            }
+            span:before{
+              width: 12px;
+              height: 12px;
+              content: "";
+              position: absolute;
+              border: 1px solid;
+              left: 12px;
+            }
+            .hardware:before {
+              border-color: $turquoise-20;
+              background-color: $turquoise-50;
+            }
+            .software:before {
+              border-color: $red-30;
+              background-color: $red-50;
+            }
+            .student:before {
+              border-color: $green-30;
+              background-color: $green-50;
+            }
+          }
+        }
+
+        .confirmed:before {
+          background: $grey-40;
+        }
+        .pending:before {
+          background: $red-10;
+        }
+        .open:before {
+          background: white;
+          border: 1px solid $grey-40;
+        }
+
+
+        article {
+          ul.edit-things {
+            padding-left: 0;
+            list-style-type: none;
+            li {
+              display: inline-block;
+              padding-left: 10px;
+              position: relative;
+              &:before {
+                content: "•";
+                position: absolute;
+                left: 5px;
+              }
+            }
+          }
+          .timesheet {
+            font-size: 12px;
+            text-align: right;
+            .border-right {
+
+            }
+            .cell {
+              font-size: 9px;
+              line-height: 9px;
+              height: 25px;
+              border: 1px solid;
+              border-radius: 3px;
+              text-align: left;
+              padding: 2px 12px;
+              position: relative;
+              display: block;
+              width: 40%;
+              &:before {
+                position: absolute;
+                content: "";
+                height: 23px;
+                width: 6px;
+                position: absolute;
+                left: 0px;
+                top: 0;
+                border-radius: 2px 0 0 2px;
+              }
+              &.hardware {
+                border-color: $turquoise-20;
+                background-color: $turquoise-50;
+              }
+              &.software {
+                border-color: $red-30;
+                background-color: $red-50;
+              }
+              &.student {
+                border-color: $green-30;
+                background-color: $green-50;
+              }
+              &.confirmed:before {
+                background: $grey-40;
+              }
+              &.pending:before {
+                background: $red-10;
+              }
+              &.open:before {
+                background: white;
+                border: 1px solid $grey-40;
+              }
+              &.icon {
+                background-image: url("/images/careers_v2/caret.svg");
+              }
+            }
+          }
+        }
+      }
     }
 	}
 
