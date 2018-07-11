@@ -50,6 +50,12 @@ input {
       top: 3px;
     }
 	}
+	&.red select {
+  	border-color: $red-10;
+	}
+	&.borderless select {
+  	border-color: transparent;
+	}
 }
 .input-group {
 	&.sorting {

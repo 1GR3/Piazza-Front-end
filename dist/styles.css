@@ -9418,6 +9418,14 @@ input.form-control {
   top: 3px;
 }
 
+.styled-select.red select {
+  border-color: #911D22;
+}
+
+.styled-select.borderless select {
+  border-color: transparent;
+}
+
 .input-group.sorting label, .input-group.sorting select {
   font-size: 10px;
   font-weight: normal;
