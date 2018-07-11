@@ -163,17 +163,12 @@ body {
         }
       }
 
-      .border-top {
-        border-top: 1px solid $grey-50;
-        margin-top: 25px;
-      }
-
       &.view {
         background: $blue-60;
         padding: 15px 12px;
 
         .panel {
-          header {
+          &>header {
             font-size: 11px;
             height: auto;
             .indicator {
@@ -199,8 +194,36 @@ body {
               }
             }
           }
+          form.control {
 
-          footer {
+            input, select {
+              border: 1px solid $grey-40;
+            }
+            #searchField {
+              position: relative;
+              &:before{
+                content: "";
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                border: 1px solid $grey-40;
+                border-bottom: none;
+                border-right: none;
+                background: white;
+                transform: rotate(45deg);
+                right: 15px;
+                top: -5px;
+                z-index: 5;
+              }
+              input {
+                //border: 1px solid $grey-40;
+                position: absolute;
+                right: 0;
+              }
+            }
+          }
+
+          &>footer {
             padding-bottom: 20px;
             span {
               padding-left: 15px;
@@ -261,8 +284,13 @@ body {
             .border-right {
 
             }
+            .col-sm-1 {
+              text-align: right;
+              display: block;
+            }
             .col-sm-5 {
               display: flex;
+              justify-content: center;
             }
             .cell {
               font-size: 9px;
@@ -278,6 +306,8 @@ body {
               align-items: center;
               width: 50%;
               margin: 3px;
+
+
               &:before {
                 position: absolute;
                 content: "";
@@ -322,6 +352,76 @@ body {
                   height: 10px;
                 }
               }
+
+              .info {
+                display: none;
+                position: absolute;
+                font-size: 11px;
+                width: 270px;
+                right: -100%;
+                top: -8px;
+                z-index: 300;
+                &:before {
+                  content: "";
+                  width: 10px;
+                  height: 10px;
+                  position: absolute;
+                  border: 1px solid $grey-40;
+                  border-bottom: none;
+                  border-right: none;
+                  background: white;
+                  transform: rotate(-45deg);
+                  left: -5px;
+                  top: 15px;
+                  z-index: 5;
+                }
+                .card {
+                  border: 1px solid $grey-40;
+                  line-height: 15px;
+                  header {
+                    padding: 0;
+                    height: auto;
+                    p {
+                      margin: 0;
+                    }
+                  }
+                  span {
+                    padding-left: 15px;
+                    position: relative;
+                    display: block;
+                    &:before {
+                      position: absolute;
+                      left: 0px;
+                      color: $grey-30;
+                    }
+
+                    &.e:before {
+                      content: "E:";
+
+                    }
+                    &.i:before {
+                      content: "I:";
+
+                    }
+                    &.note:before {
+                      content: url("/images/careers_v2/filter-list.svg");
+                      width: 10px;
+
+                    }
+                  }
+                  footer {
+
+                  }
+                }
+
+              }
+              &.active {
+                .info {
+                  display: block;
+                }
+              }
+
+
             }
           }
         }

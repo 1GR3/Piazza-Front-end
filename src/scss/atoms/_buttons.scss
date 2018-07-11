@@ -18,6 +18,16 @@ button {
 
 .btn {
 	border-radius: 1px;
+	&.active {
+  	background: $grey-50;
+	}
+	&.btn-light {
+    background: white;
+    border-color: $grey-40;
+    &.active {
+      background-color: $grey-50 !important;
+    }
+  }
 	&.btn-primary {
   	background-color: $blue-30;
   	border-color: $blue-30;

@@ -9217,6 +9217,19 @@ button.notification {
   border-radius: 1px;
 }
 
+.btn.active {
+  background: #E6E6E6;
+}
+
+.btn.btn-light {
+  background: white;
+  border-color: #CCC;
+}
+
+.btn.btn-light.active {
+  background-color: #E6E6E6 !important;
+}
+
 .btn.btn-primary {
   background-color: #3E7AAB;
   border-color: #3E7AAB;
@@ -9925,28 +9938,23 @@ body #container #main #collapseTags label {
   padding-top: 4px;
 }
 
-body #container #main .border-top {
-  border-top: 1px solid #E6E6E6;
-  margin-top: 25px;
-}
-
 body #container #main.view {
   background: #EAEEF4;
   padding: 15px 12px;
 }
 
-body #container #main.view .panel header {
+body #container #main.view .panel > header {
   font-size: 11px;
   height: auto;
 }
 
-body #container #main.view .panel header .indicator {
+body #container #main.view .panel > header .indicator {
   font-size: 10px;
   position: relative;
   padding-left: 15px;
 }
 
-body #container #main.view .panel header .indicator:before {
+body #container #main.view .panel > header .indicator:before {
   content: "";
   position: absolute;
   width: 8px;
@@ -9956,19 +9964,47 @@ body #container #main.view .panel header .indicator:before {
   border-radius: 100%;
 }
 
-body #container #main.view .panel header .indicator.open:before {
+body #container #main.view .panel > header .indicator.open:before {
   border: 1px solid #CCC;
 }
 
-body #container #main.view .panel footer {
+body #container #main.view .panel form.control input, body #container #main.view .panel form.control select {
+  border: 1px solid #CCC;
+}
+
+body #container #main.view .panel form.control #searchField {
+  position: relative;
+}
+
+body #container #main.view .panel form.control #searchField:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border: 1px solid #CCC;
+  border-bottom: none;
+  border-right: none;
+  background: white;
+  transform: rotate(45deg);
+  right: 15px;
+  top: -5px;
+  z-index: 5;
+}
+
+body #container #main.view .panel form.control #searchField input {
+  position: absolute;
+  right: 0;
+}
+
+body #container #main.view .panel > footer {
   padding-bottom: 20px;
 }
 
-body #container #main.view .panel footer span {
+body #container #main.view .panel > footer span {
   padding-left: 15px;
 }
 
-body #container #main.view .panel footer span:before {
+body #container #main.view .panel > footer span:before {
   width: 12px;
   height: 12px;
   content: "";
@@ -9977,17 +10013,17 @@ body #container #main.view .panel footer span:before {
   left: 12px;
 }
 
-body #container #main.view .panel footer .hardware:before {
+body #container #main.view .panel > footer .hardware:before {
   border-color: #37BDBF;
   background-color: #ECF7F9;
 }
 
-body #container #main.view .panel footer .software:before {
+body #container #main.view .panel > footer .software:before {
   border-color: #F37867;
   background-color: #FEE9E7;
 }
 
-body #container #main.view .panel footer .student:before {
+body #container #main.view .panel > footer .student:before {
   border-color: #83C441;
   background-color: #ECF4DD;
 }
@@ -10027,9 +10063,16 @@ body #container #main.view article .timesheet {
   text-align: right;
 }
 
+body #container #main.view article .timesheet .col-sm-1 {
+  text-align: right;
+  display: block;
+}
+
 body #container #main.view article .timesheet .col-sm-5 {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 body #container #main.view article .timesheet .cell {
@@ -10094,6 +10137,74 @@ body #container #main.view article .timesheet .cell.filter-list:after {
   right: 3px;
   width: 10px;
   height: 10px;
+}
+
+body #container #main.view article .timesheet .cell .info {
+  display: none;
+  position: absolute;
+  font-size: 11px;
+  width: 270px;
+  right: -100%;
+  top: -8px;
+  z-index: 300;
+}
+
+body #container #main.view article .timesheet .cell .info:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border: 1px solid #CCC;
+  border-bottom: none;
+  border-right: none;
+  background: white;
+  transform: rotate(-45deg);
+  left: -5px;
+  top: 15px;
+  z-index: 5;
+}
+
+body #container #main.view article .timesheet .cell .info .card {
+  border: 1px solid #CCC;
+  line-height: 15px;
+}
+
+body #container #main.view article .timesheet .cell .info .card header {
+  padding: 0;
+  height: auto;
+}
+
+body #container #main.view article .timesheet .cell .info .card header p {
+  margin: 0;
+}
+
+body #container #main.view article .timesheet .cell .info .card span {
+  padding-left: 15px;
+  position: relative;
+  display: block;
+}
+
+body #container #main.view article .timesheet .cell .info .card span:before {
+  position: absolute;
+  left: 0px;
+  color: #B3B3B3;
+}
+
+body #container #main.view article .timesheet .cell .info .card span.e:before {
+  content: "E:";
+}
+
+body #container #main.view article .timesheet .cell .info .card span.i:before {
+  content: "I:";
+}
+
+body #container #main.view article .timesheet .cell .info .card span.note:before {
+  content: url("/images/careers_v2/filter-list.svg");
+  width: 10px;
+}
+
+body #container #main.view article .timesheet .cell.active .info {
+  display: block;
 }
 
 body .modal {
