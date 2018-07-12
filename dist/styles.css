@@ -9530,6 +9530,64 @@ input.form-control {
   border: 1px solid #D2D7DE;
 }
 
+.confirm-box {
+  position: relative;
+}
+
+#decline-layer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#decline-box {
+  width: 240px;
+  position: absolute;
+  z-index: 250;
+  right: 17px;
+  top: 45px;
+}
+
+#decline-box:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border: 1px solid #CCC;
+  border-bottom: none;
+  border-right: none;
+  background: white;
+  transform: rotate(45deg);
+  right: 15px;
+  top: -5px;
+  z-index: 5;
+}
+
+#decline-box .card {
+  padding: 8px;
+  border-color: #CCC;
+}
+
+#decline-box .card h4 {
+  margin: 2px 0;
+  text-align: left;
+}
+
+#decline-box .card textarea {
+  border-color: #CCC;
+}
+
+.alert {
+  margin: 0;
+}
+
+.alert.alert-success {
+  border-color: #008001;
+  color: #008001;
+}
+
 aside {
   width: 124px;
   height: 100vh;

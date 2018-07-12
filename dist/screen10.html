@@ -33,13 +33,34 @@
                           $("#feed").removeClass("active");
                           $("#main").addClass("active");
                         }
-                      );</script></div></div></div></div></div></div><!-- right column --><div id="main" class="col-xs-12 col-sm-12 col-md-7"><header><h2 class="float-left">Confirm pending signups</h2><button id="close-this" class="btn btn-lg btn-transparent float-right"><span class="icon icon-x"></span></button></header><div class="container-fluid"><form><div class="form-row border-bottom pb-2"><div class="col"><h3>Monday, September 9, 2018</h3></div></div><div class="form-row"><div class="col"><table id="table-details" class="display"><thead><tr><th>Time/type</th><th>Student name/email</th><th>Confirm</th></tr></thead><tbody><tr><td>9:00am - 9:30am<br>GHC ’18 Hardware Internship Interviews</td><td>Andrew Smith<br>asmith@cornell.edu<br><a href="">Piazza Profile</a></td><td class="text-center"><a href="#" class="mx-2"><span class="icon icon-confirm"></span></a> <a href="#" class="mx-2"><span class="icon icon-decline"></span></a></td></tr><tr><td>9:00am - 9:30am<br>GHC ’18 Hardware Internship Interviews</td><td>Kayla Davis<br>kayla@cornell.edu<br><a href="">Piazza Profile</a></td><td class="text-center"><a href="#" class="mx-2"><span class="icon icon-confirm"></span></a> <a href="#" class="mx-2"><span class="icon icon-decline"></span></a></td></tr><tr><td>9:30am - 10:00am<br>GHC ’18 Hardware Internship Interviews</td><td>Patrick Stevens<br>pstevens@cornell.edu<br><a href="">Piazza Profile</a></td><td class="text-center"><a href="#" class="mx-2"><span class="icon icon-confirm"></span></a> <a href="#" class="mx-2"><span class="icon icon-decline"></span></a></td></tr><tr><td>10:00am - 10:30am<br>GHC ’18 Hardware Internship Interviews</td><td>Tara Rodgers<br>trodgers@cornell.edu<br><a href="">Piazza Profile</a></td><td class="text-center"><a href="#" class="mx-2"><span class="icon icon-confirm"></span></a> <a href="#" class="mx-2"><span class="icon icon-decline"></span></a></td></tr></tbody></table></div><script>$(document).ready( function () {
+                      );</script></div></div></div></div></div></div><!-- right column --><div id="main" class="col-xs-12 col-sm-12 col-md-7"><header><h2 class="float-left">Confirm pending signups</h2><button id="close-this" class="btn btn-lg btn-transparent float-right"><span class="icon icon-x"></span></button></header><div class="container-fluid"><form><div class="form-row border-bottom pb-2"><div class="col"><h3>Monday, September 9, 2018</h3></div></div><div class="form-row"><div class="col"><table id="table-details" class="display"><thead><tr><th>Time/type</th><th>Student name/email</th><th>Confirm</th></tr></thead><tbody><tr><td>9:00am - 9:30am<br>GHC ’18 Hardware Internship Interviews</td><td>Andrew Smith<br>asmith@cornell.edu<br><a href="">Piazza Profile</a></td><td class="text-center confirm-box"><a href="#" class="mx-2"><span class="icon icon-confirm"></span></a> <a href="#" class="mx-2 decline-button"><span class="icon icon-decline"></span></a></td></tr><tr><td>9:00am - 9:30am<br>GHC ’18 Hardware Internship Interviews</td><td>Kayla Davis<br>kayla@cornell.edu<br><a href="">Piazza Profile</a></td><td class="text-center confirm-box"><a href="#" class="mx-2"><span class="icon icon-confirm"></span></a> <a href="#" class="mx-2 decline-button"><span class="icon icon-decline"></span></a></td></tr><tr><td>9:30am - 10:00am<br>GHC ’18 Hardware Internship Interviews</td><td>Patrick Stevens<br>pstevens@cornell.edu<br><a href="">Piazza Profile</a></td><td class="text-center confirm-box"><a href="#" class="mx-2"><span class="icon icon-confirm"></span></a> <a href="#" class="mx-2 decline-button"><span class="icon icon-decline"></span></a></td></tr><tr><td>10:00am - 10:30am<br>GHC ’18 Hardware Internship Interviews</td><td>Tara Rodgers<br>trodgers@cornell.edu<br><a href="">Piazza Profile</a></td><td class="text-center confirm-box"><a href="#" class="mx-2"><span class="icon icon-confirm"></span></a> <a href="#" class="mx-2 decline-button"><span class="icon icon-decline"></span></a></td></tr></tbody></table></div><script>$(document).ready( function () {
                     $('#table-details').DataTable({
                       paging: false,
                       searching: false,
                       "order": [ 0, 'desc' ],
                       "columnDefs": [{ "orderable": false, "targets": 2 }]
                     });
+
+                    $('.decline-button').click(
+                      function () {
+                        event.preventDefault();
+                        $(this).parent().append('<div id="decline-layer"></div>');
+                        $(this).parent().append('<div id="decline-box"><div class="card card-body"><h4>Decline confirmation - include a note</h4><textarea name="message" rows="2" cols="25">Hi Andrew, sorry this time no longer works.</textarea><div class="text-right mt-2"><a href="#">cancel</a><button class="btn btn-danger btn-xs ml-3" type="">Save</button></div></div></div>');
+                      }
+                    );
+
+                    $(document).on('click', '#decline-layer', function() {
+                      $(this).parent().find("#decline-box").remove();
+                      $(this).remove();
+                    });
+
+                    $(document).on('click', '#decline-box a, #decline-box button', function() {
+                      event.preventDefault();
+                      $(this).parent().parent().parent().parent().find("#decline-box").remove();
+                      $(this).parent().parent().parent().parent().find("#decline-layer").remove();
+                    });
+
+
                   } );</script></div><div class="form-row border-top mt-4 pt-3"><div class="col"><button class="btn btn-primary btn-xs mr-3" type="">Save</button></div></div></form></div></div></div></div><!-- SCRIPTS --><!-- Google Analytics --><script type="text/javascript">$("#close-this").click(
           function(){
             $("#feed").addClass("active");

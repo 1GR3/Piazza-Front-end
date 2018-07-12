@@ -340,6 +340,17 @@
                     <tbody>
 
                       <tr>
+                        <td colspan="4">
+                          <div class="alert alert-success" role="alert">
+                            <span class="icon icon-confirm"></span> Confirmed!
+                          </div>
+                        </td>
+                        <td style="display: none;"></td>
+                        <td style="display: none;"></td>
+                        <td style="display: none;"></td>
+                      </tr>
+
+                      <tr>
                         <td>
                           9:00am - 9:30am<br>
                           GHC ’18 Hardware Internship Interviews
@@ -352,9 +363,9 @@
                         <td>
                           If needed this column is for answers to questions that the recruiter asks at the time of signup
                         </td>
-                        <td class="text-center">
+                        <td class="text-center confirm-box">
                           <a href="#" class="mx-2"><span class="icon icon-confirm"></span></a>
-                          <a href="#" class="mx-2"><span class="icon icon-decline"></span></a>
+                          <a href="#" class="mx-2 decline-button"><span class="icon icon-decline"></span></a>
                         </td>
                       </tr>
 
@@ -370,9 +381,9 @@
                         </td>
                         <td>
                         </td>
-                        <td class="text-center">
+                        <td class="text-center confirm-box">
                           <a href="#" class="mx-2"><span class="icon icon-confirm"></span></a>
-                          <a href="#" class="mx-2"><span class="icon icon-decline"></span></a>
+                          <a href="#" class="mx-2 decline-button"><span class="icon icon-decline"></span></a>
                         </td>
                       </tr>
 
@@ -388,9 +399,9 @@
                         </td>
                         <td>
                         </td>
-                        <td class="text-center">
+                        <td class="text-center confirm-box">
                           <a href="#" class="mx-2"><span class="icon icon-confirm"></span></a>
-                          <a href="#" class="mx-2"><span class="icon icon-decline"></span></a>
+                          <a href="#" class="mx-2 decline-button"><span class="icon icon-decline"></span></a>
                         </td>
                       </tr>
 
@@ -406,9 +417,9 @@
                         </td>
                         <td>
                         </td>
-                        <td class="text-center">
+                        <td class="text-center confirm-box">
                           <a href="#" class="mx-2"><span class="icon icon-confirm"></span></a>
-                          <a href="#" class="mx-2"><span class="icon icon-decline"></span></a>
+                          <a href="#" class="mx-2 decline-button"><span class="icon icon-decline"></span></a>
                         </td>
                       </tr>
 
@@ -424,6 +435,29 @@
                       "order": [ 0, 'desc' ],
                       "columnDefs": [{ "orderable": false, "targets": 3 }]
                     });
+
+                    $('.decline-button').click(
+                      function () {
+                        event.preventDefault();
+                        console.log("kdqdwe");
+/*
+                        $(this).parent().append('<div id="decline-layer"></div>');
+                        $(this).parent().append('<div id="decline-box"><div class="card card-body"><h4>Decline confirmation - include a note</h4><textarea name="message" rows="2" cols="25">Hi Andrew, sorry this time no longer works.</textarea><div class="text-right mt-2"><a href="#">cancel</a><button class="btn btn-danger btn-xs ml-3" type="">Save</button></div></div></div>');
+*/
+                      }
+                    );
+
+                    $(document).on('click', '#decline-layer', function() {
+                      $(this).parent().find("#decline-box").remove();
+                      $(this).remove();
+                    });
+
+                    $(document).on('click', '#decline-box a, #decline-box button', function() {
+                      event.preventDefault();
+                      $(this).parent().parent().parent().parent().find("#decline-box").remove();
+                      $(this).parent().parent().parent().parent().find("#decline-layer").remove();
+                    });
+
                   } );
                 </script>
               </div>

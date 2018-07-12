@@ -348,9 +348,9 @@
                           asmith@cornell.edu<br>
                           <a href="">Piazza Profile</a>
                         </td>
-                        <td class="text-center">
+                        <td class="text-center confirm-box">
                           <a href="#" class="mx-2"><span class="icon icon-confirm"></span></a>
-                          <a href="#" class="mx-2"><span class="icon icon-decline"></span></a>
+                          <a href="#" class="mx-2 decline-button"><span class="icon icon-decline"></span></a>
                         </td>
                       </tr>
 
@@ -364,9 +364,9 @@
                           kayla@cornell.edu<br>
                           <a href="">Piazza Profile</a>
                         </td>
-                        <td class="text-center">
+                        <td class="text-center confirm-box">
                           <a href="#" class="mx-2"><span class="icon icon-confirm"></span></a>
-                          <a href="#" class="mx-2"><span class="icon icon-decline"></span></a>
+                          <a href="#" class="mx-2 decline-button"><span class="icon icon-decline"></span></a>
                         </td>
                       </tr>
 
@@ -380,9 +380,9 @@
                           pstevens@cornell.edu<br>
                           <a href="">Piazza Profile</a>
                         </td>
-                        <td class="text-center">
+                        <td class="text-center confirm-box">
                           <a href="#" class="mx-2"><span class="icon icon-confirm"></span></a>
-                          <a href="#" class="mx-2"><span class="icon icon-decline"></span></a>
+                          <a href="#" class="mx-2 decline-button"><span class="icon icon-decline"></span></a>
                         </td>
                       </tr>
 
@@ -396,15 +396,16 @@
                           trodgers@cornell.edu<br>
                           <a href="">Piazza Profile</a>
                         </td>
-                        <td class="text-center">
+                        <td class="text-center confirm-box">
                           <a href="#" class="mx-2"><span class="icon icon-confirm"></span></a>
-                          <a href="#" class="mx-2"><span class="icon icon-decline"></span></a>
+                          <a href="#" class="mx-2 decline-button"><span class="icon icon-decline"></span></a>
                         </td>
                       </tr>
 
                     </tbody>
 
                   </table>
+
                 </div>
                 <script>
                   $(document).ready( function () {
@@ -414,6 +415,27 @@
                       "order": [ 0, 'desc' ],
                       "columnDefs": [{ "orderable": false, "targets": 2 }]
                     });
+
+                    $('.decline-button').click(
+                      function () {
+                        event.preventDefault();
+                        $(this).parent().append('<div id="decline-layer"></div>');
+                        $(this).parent().append('<div id="decline-box"><div class="card card-body"><h4>Decline confirmation - include a note</h4><textarea name="message" rows="2" cols="25">Hi Andrew, sorry this time no longer works.</textarea><div class="text-right mt-2"><a href="#">cancel</a><button class="btn btn-danger btn-xs ml-3" type="">Save</button></div></div></div>');
+                      }
+                    );
+
+                    $(document).on('click', '#decline-layer', function() {
+                      $(this).parent().find("#decline-box").remove();
+                      $(this).remove();
+                    });
+
+                    $(document).on('click', '#decline-box a, #decline-box button', function() {
+                      event.preventDefault();
+                      $(this).parent().parent().parent().parent().find("#decline-box").remove();
+                      $(this).parent().parent().parent().parent().find("#decline-layer").remove();
+                    });
+
+
                   } );
                 </script>
               </div>
