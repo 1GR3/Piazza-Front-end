@@ -1503,8 +1503,7 @@
                       $(this).addClass("class");
                     }
                   );
-                  $(".close-this").click(
-                    function() {
+                  $(document).on('click', '.close-this', function() {
                       $(this).parent().parent().parent().parent().removeClass("active");
                       $(this).parent().parent().parent().parent().removeClass("class");
                     }
