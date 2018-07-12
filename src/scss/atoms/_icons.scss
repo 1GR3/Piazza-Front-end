@@ -40,6 +40,16 @@ span, i {
         content: url("/images/careers_v2/clock.svg");
       }
     }
+    &.icon-confirm {
+      &:after {
+        content: url("/images/careers_v2/confirm.svg");
+      }
+    }
+    &.icon-decline {
+      &:after {
+        content: url("/images/careers_v2/decline.svg");
+      }
+    }
     &.icon-file {
       &:after {
         content: url("/images/careers_v2/file.svg");

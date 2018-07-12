@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="8px" viewBox="0 0 9 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>confirm</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-1" transform="translate(-929.000000, -199.000000)" fill="#39B54A" fill-rule="nonzero">
+            <g id="Group-57" transform="translate(0.000000, -0.955000)">
+                <path d="M936.636726,201.141246 C936.911904,200.83165 937.385957,200.803748 937.695554,201.078926 C938.00515,201.354104 938.033052,201.828157 937.757874,202.137754 L932.968874,207.525754 C932.679564,207.85125 932.174785,207.862736 931.870969,207.550735 L929.717969,205.339735 C929.428994,205.042976 929.435305,204.568144 929.732065,204.279169 C930.028824,203.990194 930.503656,203.996505 930.792631,204.293265 L932.383253,205.926736 L936.636726,201.141246 Z" id="confirm"></path>
+            </g>
+        </g>
+    </g>
+</svg>
