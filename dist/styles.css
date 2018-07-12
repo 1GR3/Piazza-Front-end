@@ -9337,6 +9337,14 @@ span.icon.icon-clock:after, i.icon.icon-clock:after {
   content: url("/images/careers_v2/clock.svg");
 }
 
+span.icon.icon-confirm:after, i.icon.icon-confirm:after {
+  content: url("/images/careers_v2/confirm.svg");
+}
+
+span.icon.icon-decline:after, i.icon.icon-decline:after {
+  content: url("/images/careers_v2/decline.svg");
+}
+
 span.icon.icon-file:after, i.icon.icon-file:after {
   content: url("/images/careers_v2/file.svg");
 }
