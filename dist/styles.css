@@ -9349,6 +9349,10 @@ span.icon.icon-file:after, i.icon.icon-file:after {
   content: url("/images/careers_v2/file.svg");
 }
 
+span.icon.icon-notes:after, i.icon.icon-notes:after {
+  content: url("/images/careers_v2/notes.svg");
+}
+
 span.icon.icon-pen:after, span.icon.icon-edit:after, i.icon.icon-pen:after, i.icon.icon-edit:after {
   content: url("/images/careers_v2/pen.svg");
 }
@@ -9586,6 +9590,89 @@ input.form-control {
 .alert.alert-success {
   border-color: #008001;
   color: #008001;
+}
+
+span.pre {
+  padding-left: 15px;
+  position: relative;
+  display: block;
+}
+
+span.pre:before {
+  position: absolute;
+  left: 0px;
+  color: #B3B3B3;
+}
+
+span.pre.e:before {
+  content: "E:";
+}
+
+span.pre.i:before {
+  content: "I:";
+}
+
+.popover .info {
+  position: absolute;
+  font-size: 11px;
+  width: 270px;
+  right: -100%;
+  top: -8px;
+  z-index: 300;
+}
+
+.popover .info:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border: 1px solid #CCC;
+  border-bottom: none;
+  border-right: none;
+  background: white;
+  transform: rotate(-45deg);
+  left: -5px;
+  top: 15px;
+  z-index: 5;
+}
+
+.popover .info .card {
+  border: 1px solid #CCC;
+  line-height: 15px;
+}
+
+.popover .info .card header {
+  padding: 0;
+  height: auto;
+}
+
+.popover .info .card header p {
+  margin: 0;
+}
+
+.popover .info .card span {
+  padding-left: 15px;
+  position: relative;
+  display: block;
+}
+
+.popover .info .card span:before {
+  position: absolute;
+  left: 0px;
+  color: #B3B3B3;
+}
+
+.popover .info .card span.e:before {
+  content: "E:";
+}
+
+.popover .info .card span.i:before {
+  content: "I:";
+}
+
+.popover .info .card span.note:before {
+  content: url("/images/careers_v2/notes.svg");
+  width: 10px;
 }
 
 aside {
@@ -10087,17 +10174,17 @@ body #container #main.view .panel > footer span:before {
   left: 12px;
 }
 
-body #container #main.view .panel > footer .hardware:before {
+body #container #main.view .panel > footer .blue:before {
   border-color: #37BDBF;
   background-color: #ECF7F9;
 }
 
-body #container #main.view .panel > footer .software:before {
+body #container #main.view .panel > footer .red:before {
   border-color: #F37867;
   background-color: #FEE9E7;
 }
 
-body #container #main.view .panel > footer .student:before {
+body #container #main.view .panel > footer .green:before {
   border-color: #83C441;
   background-color: #ECF4DD;
 }
@@ -10137,6 +10224,23 @@ body #container #main.view article .timesheet {
   text-align: right;
 }
 
+body #container #main.view article .timesheet .timesheet-head {
+  height: 30px;
+  width: 100%;
+}
+
+body #container #main.view article .timesheet .timesheet-timeline .hour {
+  height: 60px;
+}
+
+body #container #main.view article .timesheet .timesheet-timeline .row {
+  padding: 0 13px;
+}
+
+body #container #main.view article .timesheet .timesheet-timeline .row .col {
+  padding: 0 1px;
+}
+
 body #container #main.view article .timesheet .col-sm-1 {
   text-align: right;
   display: block;
@@ -10152,8 +10256,8 @@ body #container #main.view article .timesheet .col-sm-5 {
 body #container #main.view article .timesheet .cell {
   font-size: 9px;
   line-height: 9px;
-  height: 25px;
-  border: 1px solid;
+  height: 30px;
+  border: 2px solid;
   border-radius: 3px;
   text-align: left;
   padding: 2px 12px;
@@ -10164,19 +10268,40 @@ body #container #main.view article .timesheet .cell {
       justify-content: left;
   -ms-flex-align: center;
       align-items: center;
-  width: 50%;
-  margin: 3px;
+  /*
+              &.notes {
+                &:after {
+                  position: absolute;
+                  content: url("/images/careers_v2/notes.svg");
+                  bottom: 3px;
+                  right: 3px;
+                  width: 10px;
+                  height: 10px;
+                }
+              }
+*/
 }
 
 body #container #main.view article .timesheet .cell:before {
   position: absolute;
   content: "";
-  height: 23px;
+  height: 100%;
   width: 6px;
   position: absolute;
   left: 0px;
   top: 0;
-  border-radius: 2px 0 0 2px;
+  border-radius: 1px 0 0 1px;
+}
+
+body #container #main.view article .timesheet .cell:after {
+  position: absolute;
+  content: "";
+  border: 1px solid white;
+  left: -2px;
+  right: -2px;
+  top: -2px;
+  bottom: -2px;
+  border-radius: 3px;
 }
 
 body #container #main.view article .timesheet .cell.empty {
@@ -10185,17 +10310,17 @@ body #container #main.view article .timesheet .cell.empty {
   color: transparent;
 }
 
-body #container #main.view article .timesheet .cell.hardware {
+body #container #main.view article .timesheet .cell.blue {
   border-color: #37BDBF;
   background-color: #ECF7F9;
 }
 
-body #container #main.view article .timesheet .cell.software {
+body #container #main.view article .timesheet .cell.red {
   border-color: #F37867;
   background-color: #FEE9E7;
 }
 
-body #container #main.view article .timesheet .cell.student {
+body #container #main.view article .timesheet .cell.green {
   border-color: #83C441;
   background-color: #ECF4DD;
 }
@@ -10204,81 +10329,8 @@ body #container #main.view article .timesheet .cell.open:before {
   border: none;
 }
 
-body #container #main.view article .timesheet .cell.filter-list:after {
-  position: absolute;
-  content: url("/images/careers_v2/filter-list.svg");
-  bottom: 3px;
-  right: 3px;
-  width: 10px;
-  height: 10px;
-}
-
 body #container #main.view article .timesheet .cell .info {
   display: none;
-  position: absolute;
-  font-size: 11px;
-  width: 270px;
-  right: -100%;
-  top: -8px;
-  z-index: 300;
-}
-
-body #container #main.view article .timesheet .cell .info:before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  border: 1px solid #CCC;
-  border-bottom: none;
-  border-right: none;
-  background: white;
-  transform: rotate(-45deg);
-  left: -5px;
-  top: 15px;
-  z-index: 5;
-}
-
-body #container #main.view article .timesheet .cell .info .card {
-  border: 1px solid #CCC;
-  line-height: 15px;
-}
-
-body #container #main.view article .timesheet .cell .info .card header {
-  padding: 0;
-  height: auto;
-}
-
-body #container #main.view article .timesheet .cell .info .card header p {
-  margin: 0;
-}
-
-body #container #main.view article .timesheet .cell .info .card span {
-  padding-left: 15px;
-  position: relative;
-  display: block;
-}
-
-body #container #main.view article .timesheet .cell .info .card span:before {
-  position: absolute;
-  left: 0px;
-  color: #B3B3B3;
-}
-
-body #container #main.view article .timesheet .cell .info .card span.e:before {
-  content: "E:";
-}
-
-body #container #main.view article .timesheet .cell .info .card span.i:before {
-  content: "I:";
-}
-
-body #container #main.view article .timesheet .cell .info .card span.note:before {
-  content: url("/images/careers_v2/filter-list.svg");
-  width: 10px;
-}
-
-body #container #main.view article .timesheet .cell.active .info {
-  display: block;
 }
 
 body .modal {

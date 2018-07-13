@@ -55,6 +55,12 @@ span, i {
         content: url("/images/careers_v2/file.svg");
       }
     }
+    &.icon-notes {
+      &:after {
+        content: url("/images/careers_v2/notes.svg");
+        //content: url("/images/careers_v2/decline.svg");
+      }
+    }
     &.icon-pen, &.icon-edit {
       &:after {
         content: url("/images/careers_v2/pen.svg");

@@ -47,12 +47,12 @@
     <!-- Modernizer, cause some browsers suck -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <!-- jQuery CDN -->
-<!--     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script> -->
 
     <!-- Bootstrap 4 -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="/js/bootstrap.min.js"></script>
 
 
@@ -401,1098 +401,124 @@
               <div class="timesheet mb-3">
 
                 <div class="row mb-2">
-                  <div class="col-sm-1">
-                  </div>
-                  <div class="col-sm-5 text-center">
-                    <button class="btn btn-xs active">Mon - Sept 9</button>
-                  </div>
-                  <div class="col-sm-5 text-center">
-                    <button class="btn btn-xs">Tues - Sept 10</button>
-                  </div>
-                  <div class="col-sm-1">
 
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-1 border-right">
-                    9am
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell empty">
+                  <div class="col-2 col-md-1">
+                    <div class="timesheet-head">
                     </div>
-                    <div class="cell empty">
+                    <div class="timesheet-timeline">
+                      <div class="hour">9am</div>
+                      <div class="hour">10am</div>
+                      <div class="hour">11am</div>
+                      <div class="hour">12am</div>
+                      <div class="hour">1pm</div>
+                      <div class="hour">2pm</div>
+                      <div class="hour">3pm</div>
+                      <div class="hour">4pm</div>
+                      <div class="hour">5pm</div>
                     </div>
                   </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell student confirmed">
-                      David Tilleshowski
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              Prithvi Ramakrishnan<br>
-                              (<a href="">prithvir@cs.stanford.edu</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                              <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                          <footer class="border-top pt-2">
-                            <span class="note">
-                              This kid was pretty quick. He did well on the algorithms interviews. A little fast to talk..</span>
-                          </footer>
+
+                  <div class="col-10 col-md-5 text-center border-left">
+                    <div class="timesheet-head">
+                      <button class="btn btn-xs active">Mon - Sept 9</button>
+                    </div>
+                    <div class="timesheet-timeline">
+                      <div class="row">
+                        <div class="col">
+                          <div class="cell empty"></div>
+                          <div class="cell green confirmed">David Tilleshowski</div>
+                          <div class="cell green confirmed">Prithvi Ramakrishn</div>
+                          <div class="cell green pending">Spencer Hood</div>
+                          <div class="cell green confirmed">Zachary Gottlieb</div>
+                          <div class="cell green confirmed">Rachel Lam <span class="icon icon-notes"></span></div>
+                          <div class="cell empty"></div>
+                          <div class="cell empty"></div>
+                          <div class="cell green open">OPEN</div>
+                          <div class="cell green open">OPEN</div>
+                          <div class="cell empty"></div>
+                          <div class="cell green open">OPEN</div>
+                          <div class="cell green open">OPEN</div>
+                          <div class="cell green open">OPEN</div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="cell empty">
-                    </div>
-                  </div>
-                  <div class="col-sm-1 border-right">
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-sm-1 border-right">
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell student confirmed filter-list">
-                      David Tilleshowski
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              Prithvi Ramakrishnan<br>
-                              (<a href="">prithvir@cs.stanford.edu</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                          <footer class="border-top pt-2">
-                            <span class="note">
-                              This kid was pretty quick. He did well on the algorithms interviews. A little fast to talk..</span>
-                          </footer>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="cell hardware open">
-                      OPEN
-
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              OPEN<br>
-                              (<a href="">Manage</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell student confirmed">
-                      Prithvi Ramakrishn...
-
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              Prithvi Ramakrishnan<br>
-                              (<a href="">prithvir@cs.stanford.edu</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                          <footer class="border-top pt-2">
-                            <span class="note">
-                              This kid was pretty quick. He did well on the algorithms interviews. A little fast to talk..</span>
-                          </footer>
-                        </div>
-                      </div>
-
-                    </div>
-                    <div class="cell hardware open">
-                      OPEN
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              OPEN<br>
-                              (<a href="">Manage</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
+                        <div class="col">
+                          <div class="cell empty"></div>
+                          <div class="cell blue open">OPEN</div>
+                          <div class="cell blue open">OPEN</div>
+                          <div class="cell blue open">OPEN</div>
+                          <div class="cell blue open">OPEN</div>
+                          <div class="cell blue open">OPEN</div>
+                          <div class="cell empty"></div>
+                          <div class="cell empty"></div>
+                          <div class="cell blue open">OPEN</div>
+                          <div class="cell blue confirmed">Steven Johnson</div>
+                          <div class="cell blue confirmed">Rick Siger</div>
+                          <div class="cell blue pending">Ashwin Fujii</div>
+                          <div class="cell blue open">OPEN</div>
+                          <div class="cell blue open">OPEN</div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-1 border-right">
+
+                  <div class="col-10 order-2 col-md-5 order-md-1 text-center border-left">
+                    <div class="timesheet-head">
+                      <button class="btn btn-xs">Tues - Sept 10</button>
+                    </div>
+                    <div class="timesheet-timeline">
+                      <div class="row">
+                        <div class="col">
+                          <div class="cell empty"></div>
+                          <div class="cell green confirmed">David Tilleshowski</div>
+                          <div class="cell green confirmed">Prithvi Ramakrishn</div>
+                          <div class="cell green pending">Spencer Hood</div>
+                          <div class="cell green confirmed">Zachary Gottlieb</div>
+                          <div class="cell green confirmed"> Rachel Lam</div>
+                          <div class="cell empty"></div>
+                          <div class="cell empty"></div>
+                          <div class="cell green open">OPEN</div>
+                          <div class="cell green open">OPEN</div>
+                          <div class="cell empty"></div>
+                          <div class="cell green open">OPEN</div>
+                          <div class="cell green open">OPEN</div>
+                          <div class="cell green open">OPEN</div>
+                        </div>
+                        <div class="col">
+                          <div class="cell empty"></div>
+                          <div class="cell red open" style="height: 60px">OPEN</div>
+                          <div class="cell red open" style="height: 60px">OPEN</div>
+                          <div class="cell empty" style="height: 90px"></div>
+                          <div class="cell red open">OPEN</div>
+                          <div class="cell red confirmed">Steven Johnson</div>
+                          <div class="cell red open">OPEN</div>
+
+                        </div>
+                      </div>
+                    </div>
                   </div>
+
+                  <div class="col-2 order-1 col-md-1 order-md-2">
+                    <div class="timesheet-head">
+                    </div>
+                    <div class="timesheet-timeline">
+                      <div class="timesheet-timeline d-md-none">
+                      <div class="hour">9am</div>
+                      <div class="hour">10am</div>
+                      <div class="hour">11am</div>
+                      <div class="hour">12am</div>
+                      <div class="hour">1pm</div>
+                      <div class="hour">2pm</div>
+                      <div class="hour">3pm</div>
+                      <div class="hour">4pm</div>
+                      <div class="hour">5pm</div>
+                    </div>
+                    </div>
+                  </div>
+
                 </div>
 
-                <div class="row">
-                  <div class="col-sm-1 border-right">
-                    10am
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell student confirmed filter-list">
-                      David Tilleshowski
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              Prithvi Ramakrishnan<br>
-                              (<a href="">prithvir@cs.stanford.edu</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                          <footer class="border-top pt-2">
-                            <span class="note">
-                              This kid was pretty quick. He did well on the algorithms interviews. A little fast to talk..</span>
-                          </footer>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="cell hardware open">
-                      OPEN
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              OPEN<br>
-                              (<a href="">Manage</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell student pending">
-                      Spencer Hood
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              Prithvi Ramakrishnan<br>
-                              (<a href="">prithvir@cs.stanford.edu</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                          <footer class="border-top pt-2">
-                            <span class="note">
-                              This kid was pretty quick. He did well on the algorithms interviews. A little fast to talk..</span>
-                          </footer>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="cell hardware open">
-                      OPEN
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              OPEN<br>
-                              (<a href="">Manage</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-1 border-right">
-                  </div>
-                </div>
 
-                <div class="row">
-                  <div class="col-sm-1 border-right">
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell student confirmed filter-list">
-                      David Tilleshowski
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              Prithvi Ramakrishnan<br>
-                              (<a href="">prithvir@cs.stanford.edu</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                          <footer class="border-top pt-2">
-                            <span class="note">
-                              This kid was pretty quick. He did well on the algorithms interviews. A little fast to talk..</span>
-                          </footer>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="cell hardware open">
-                      OPEN
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              OPEN<br>
-                              (<a href="">Manage</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell student confirmed">
-                      Prithvi Ramakrishn...
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              Prithvi Ramakrishnan<br>
-                              (<a href="">prithvir@cs.stanford.edu</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                          <footer class="border-top pt-2">
-                            <span class="note">
-                              This kid was pretty quick. He did well on the algorithms interviews. A little fast to talk..</span>
-                          </footer>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="cell hardware open">
-                      OPEN
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              OPEN<br>
-                              (<a href="">Manage</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-1 border-right">
-                  </div>
-                </div>
 
-                <div class="row">
-                  <div class="col-sm-1 border-right">
-                    11am
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell student confirmed">
-                      Prithvi Ramakrishn...
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              Prithvi Ramakrishnan<br>
-                              (<a href="">prithvir@cs.stanford.edu</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                          <footer class="border-top pt-2">
-                            <span class="note">
-                              This kid was pretty quick. He did well on the algorithms interviews. A little fast to talk..</span>
-                          </footer>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="cell hardware open">
-                      OPEN
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              OPEN<br>
-                              (<a href="">Manage</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell student confirmed">
-                      Zachary Gottlieb
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              Prithvi Ramakrishnan<br>
-                              (<a href="">prithvir@cs.stanford.edu</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                          <footer class="border-top pt-2">
-                            <span class="note">
-                              This kid was pretty quick. He did well on the algorithms interviews. A little fast to talk..</span>
-                          </footer>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="cell hardware open">
-                      OPEN
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              OPEN<br>
-                              (<a href="">Manage</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-1 border-right">
-                  </div>
-                </div>
 
-                <div class="row">
-                  <div class="col-sm-1 border-right">
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell student confirmed filter-list">
-                      David Tilleshowski
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              Prithvi Ramakrishnan<br>
-                              (<a href="">prithvir@cs.stanford.edu</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                          <footer class="border-top pt-2">
-                            <span class="note">
-                              This kid was pretty quick. He did well on the algorithms interviews. A little fast to talk..</span>
-                          </footer>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="cell hardware open">
-                      OPEN
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              OPEN<br>
-                              (<a href="">Manage</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell student confirmed">
-                      Prithvi Ramakrishn...
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              Prithvi Ramakrishnan<br>
-                              (<a href="">prithvir@cs.stanford.edu</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                          <footer class="border-top pt-2">
-                            <span class="note">
-                              This kid was pretty quick. He did well on the algorithms interviews. A little fast to talk..</span>
-                          </footer>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="cell hardware open">
-                      OPEN
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              OPEN<br>
-                              (<a href="">Manage</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-1 border-right">
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-sm-1 border-right">
-                    12am
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell empty">
-                    </div>
-                    <div class="cell empty">
-                    </div>
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell empty">
-                    </div>
-                    <div class="cell empty">
-                    </div>
-                  </div>
-                  <div class="col-sm-1 border-right">
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-sm-1 border-right">
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell empty">
-                    </div>
-                    <div class="cell empty">
-                    </div>
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell empty">
-                    </div>
-                    <div class="cell empty">
-                    </div>
-                  </div>
-                  <div class="col-sm-1 border-right">
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-sm-1 border-right">
-                    1pm
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell student open">
-                      OPEN
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              OPEN<br>
-                              (<a href="">Manage</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="cell hardware open">
-                      OPEN
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              OPEN<br>
-                              (<a href="">Manage</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell student open">
-                      OPEN
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              OPEN<br>
-                              (<a href="">Manage</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="cell hardware open">
-                      OPEN
-                    </div>
-                  </div>
-                  <div class="col-sm-1 border-right">
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-sm-1 border-right">
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell student open">
-                      OPEN
-                    </div>
-                    <div class="cell hardware confirmed">
-                       Steven Johnson
-                       <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              Prithvi Ramakrishnan<br>
-                              (<a href="">prithvir@cs.stanford.edu</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                          <footer class="border-top pt-2">
-                            <span class="note">
-                              This kid was pretty quick. He did well on the algorithms interviews. A little fast to talk..</span>
-                          </footer>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell student open">
-                      OPEN
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              OPEN<br>
-                              (<a href="">Manage</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="cell hardware confirmed">
-                       Rick Siger
-                       <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              Prithvi Ramakrishnan<br>
-                              (<a href="">prithvir@cs.stanford.edu</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                          <footer class="border-top pt-2">
-                            <span class="note">
-                              This kid was pretty quick. He did well on the algorithms interviews. A little fast to talk..</span>
-                          </footer>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-1 border-right">
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-sm-1 border-right">
-                    2pm
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell empty">
-                    </div>
-                    <div class="cell hardware open">
-                      OPEN
-                    </div>
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell student open">
-                      OPEN
-                    </div>
-                    <div class="cell hardware open">
-                      OPEN
-                    </div>
-                  </div>
-                  <div class="col-sm-1 border-right">
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-sm-1 border-right">
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell student open">
-                      OPEN
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              OPEN<br>
-                              (<a href="">Manage</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="cell hardware pending">
-                       Ashwin Fujii
-                       <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              Prithvi Ramakrishnan<br>
-                              (<a href="">prithvir@cs.stanford.edu</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                          <footer class="border-top pt-2">
-                            <span class="note">
-                              This kid was pretty quick. He did well on the algorithms interviews. A little fast to talk..</span>
-                          </footer>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell student open">
-                      OPEN
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              OPEN<br>
-                              (<a href="">Manage</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="cell hardware open">
-                       Rick Siger
-                       <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              Prithvi Ramakrishnan<br>
-                              (<a href="">prithvir@cs.stanford.edu</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                          <footer class="border-top pt-2">
-                            <span class="note">
-                              This kid was pretty quick. He did well on the algorithms interviews. A little fast to talk..</span>
-                          </footer>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-1 border-right">
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-sm-1 border-right">
-                    3pm
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell student open">
-                      OPEN
-                    </div>
-                    <div class="cell hardware open">
-                      OPEN
-                    </div>
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell student open">
-                      OPEN
-                    </div>
-                    <div class="cell empty">
-                    </div>
-                  </div>
-                  <div class="col-sm-1 border-right">
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-sm-1 border-right">
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell student open">
-                      OPEN
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              OPEN<br>
-                              (<a href="">Manage</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="cell hardware pending">
-                      Ashwin Fujii
-                      <div class="info">
-                        <div class="card card-body">
-                          <header>
-                            <p class="float-left">
-                              Prithvi Ramakrishnan<br>
-                              (<a href="">prithvir@cs.stanford.edu</a>)
-                            </p>
-                            <button class="btn btn-transparent float-right close-this">
-                              <span class="icon icon-x"></span>
-                            </button>
-                          </header>
-                          <div class="pt-3">
-                            <strong>10:00am-10:30am</strong><br>
-                            <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                            <p>Room 34, Gates Hall</p>
-                            <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                          </div>
-                          <footer class="border-top pt-2">
-                            <span class="note">
-                              This kid was pretty quick. He did well on the algorithms interviews. A little fast to talk..</span>
-                          </footer>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell empty">
-                    </div>
-                    <div class="cell empty">
-                    </div>
-                  </div>
-                  <div class="col-sm-1 border-right">
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-sm-1 border-right">
-                    4pm
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell empty">
-                    </div>
-                    <div class="cell empty">
-                    </div>
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell empty">
-                    </div>
-                    <div class="cell empty">
-                    </div>
-                  </div>
-                  <div class="col-sm-1 border-right">
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-sm-1 border-right">
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell empty">
-                    </div>
-                   <div class="cell empty">
-                    </div>
-                  </div>
-                  <div class="col-sm-5 border-right">
-                    <div class="cell empty">
-                    </div>
-                    <div class="cell empty">
-                    </div>
-                  </div>
-                  <div class="col-sm-1 border-right">
-                  </div>
-                </div>
 
               </div>
 
@@ -1531,7 +557,7 @@
               </div>
               <div class="row">
                 <div class="col-sm-6 text-left">
-                  <span class="hardware">GHC ’18 Hardware Internship Interviews</span>
+                  <span class="blue">GHC ’18 Hardware Internship Interviews</span>
                 </div>
                 <div class="col-sm-2 text-center border-right">
                   34
@@ -1545,7 +571,7 @@
               </div>
               <div class="row">
                 <div class="col-sm-6 text-left">
-                  <span class="software">GHC ’18 Software Full-Time Interviews</span>
+                  <span class="red">GHC ’18 Software Full-Time Interviews</span>
                 </div>
                 <div class="col-sm-2 text-center border-right">
                   17
@@ -1559,7 +585,7 @@
               </div>
               <div class="row">
                 <div class="col-sm-6 text-left">
-                  <span class="student">Student Accelerator Interviews: UIUC</span>
+                  <span class="green">Student Accelerator Interviews: UIUC</span>
                 </div>
                 <div class="col-sm-2 text-center border-right">
                   77
@@ -1579,26 +605,37 @@
             </footer>
 
 
+
+
+          </div>
+
             <a href="#popupBottom" role="button" class="btn btn-default" data-toggle="modal-popover" data-placement="bottom">Bottom</a>
 
             <div id="popupBottom" class="popover">
-                <div class="arrow"></div>
-                <h3 class="popover-title">Bottom</h3>
-
-                <div class="popover-content">
-                    <p>Sed posuere consectetur est at lobortis. Aenean
-                        eu leo quam. Pellentesque ornare sem lacinia
-                        quam venenatis vestibulum.
-                        <a href="#" class="btn btn-default helloWorld">Click me</a>
+              <div class="info">
+                <div class="card card-body">
+                  <header>
+                    <p class="float-left">
+                      Prithvi Ramakrishnan<br>
+                      (<a href="">prithvir@cs.stanford.edu</a>)
                     </p>
+
+                  </header>
+                  <div class="pt-3">
+                    <strong>10:00am-10:30am</strong><br>
+                    <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
+                    <p>Room 34, Gates Hall</p>
+                    <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
+                      <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
+                  </div>
+                  <footer class="border-top pt-2">
+                    <span class="note">
+                      This kid was pretty quick. He did well on the algorithms interviews. A little fast to talk..</span>
+                  </footer>
                 </div>
+              </div>
             </div>
 
-            <script type="text/javascript">
-
-            </script>
-
-          </div>
 
         </div>
       </div>
