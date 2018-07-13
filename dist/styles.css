@@ -10237,7 +10237,7 @@ body #container #main.view article .timesheet .timesheet-timeline .row {
   padding: 0 13px;
 }
 
-body #container #main.view article .timesheet .timesheet-timeline .row .col {
+body #container #main.view article .timesheet .timesheet-timeline .row .col, body #container #main.view article .timesheet .timesheet-timeline .row .col-6, body #container #main.view article .timesheet .timesheet-timeline .row .col-4 {
   padding: 0 1px;
 }
 
