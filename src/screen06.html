@@ -47,23 +47,25 @@
     <!-- Modernizer, cause some browsers suck -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <!-- jQuery CDN -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!--     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
 
 <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script> -->
 
     <!-- Bootstrap 4 -->
-
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
 
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0/js/tempusdominus-bootstrap-4.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0/css/tempusdominus-bootstrap-4.min.css" />
 
-    <!-- CSS, you gotta have style -->
+    <!-- DataTables -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+    <!-- DataTables  -->
+    <script type="text/javascript" src="/js/bootstrap-modal-popover.js"></script>
 
     <!-- CSS, you gotta have style -->
     <link rel="stylesheet" href="/styles.css">
@@ -440,7 +442,7 @@
                             <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
                             <p>Room 34, Gates Hall</p>
                             <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                                <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
+                              <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
                           </div>
                           <footer class="border-top pt-2">
                             <span class="note">
@@ -1575,6 +1577,26 @@
                 </div>
               </div>
             </footer>
+
+
+            <a href="#popupBottom" role="button" class="btn btn-default" data-toggle="modal-popover" data-placement="bottom">Bottom</a>
+
+            <div id="popupBottom" class="popover">
+                <div class="arrow"></div>
+                <h3 class="popover-title">Bottom</h3>
+
+                <div class="popover-content">
+                    <p>Sed posuere consectetur est at lobortis. Aenean
+                        eu leo quam. Pellentesque ornare sem lacinia
+                        quam venenatis vestibulum.
+                        <a href="#" class="btn btn-default helloWorld">Click me</a>
+                    </p>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+
+            </script>
 
           </div>
 
