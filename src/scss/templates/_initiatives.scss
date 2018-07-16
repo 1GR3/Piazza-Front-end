@@ -86,7 +86,7 @@ body {
 								padding: 4px;
 								&.interview {
 									.indicator {
-										background-color: $turquoise;
+										background-color: $turquoise-20;
 									}
 								}
 							}
@@ -115,16 +115,16 @@ body {
 									  line-height : 13px;
 									  color : #911D22;
 									&.confirmed {
-										color: $green-dark;
+										color: $green-10;
 									}
 									&.pending {
-										color: $red-dark;
+										color: $red-10;
 									}
 								}
 							}
 							&.selected {
-  							border-left: 5px solid rgba($blue,.35);
-  							background: rgba($blue,.03);
+  							border-left: 5px solid rgba($blue-30,.35);
+  							background: rgba($blue-30,.03);
 							}
 						}
 					}
@@ -163,12 +163,237 @@ body {
         }
       }
 
-      .border-top {
-        border-top: 1px solid $grey-50;
-        margin-top: 25px;
+      &.view {
+        background: $blue-60;
+        padding: 15px 12px;
+
+        .panel {
+          &>header {
+            font-size: 11px;
+            height: auto;
+            .indicator {
+              font-size: 10px;
+              position: relative;
+              padding-left: 15px;
+
+              &:before {
+                content: "";
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                left: 4px;
+                top: 2px;
+                border-radius: 100%;
+              }
+              &.confirmed:before {
+              }
+              &.pending:before {
+              }
+              &.open:before {
+                border: 1px solid $grey-40;
+              }
+            }
+          }
+          form.control {
+
+            input, select {
+              border: 1px solid $grey-40;
+            }
+            #searchField {
+              position: relative;
+              &:before{
+                content: "";
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                border: 1px solid $grey-40;
+                border-bottom: none;
+                border-right: none;
+                background: white;
+                transform: rotate(45deg);
+                right: 15px;
+                top: -5px;
+                z-index: 5;
+              }
+              input {
+                //border: 1px solid $grey-40;
+                position: absolute;
+                right: 0;
+              }
+            }
+          }
+
+          &>footer {
+            padding-bottom: 20px;
+            span {
+              padding-left: 15px;
+            }
+            span:before{
+              width: 12px;
+              height: 12px;
+              content: "";
+              position: absolute;
+              border: 1px solid;
+              left: 12px;
+            }
+            .blue:before {
+              border-color: $turquoise-20;
+              background-color: $turquoise-50;
+            }
+            .red:before {
+              border-color: $red-30;
+              background-color: $red-50;
+            }
+            .green:before {
+              border-color: $green-30;
+              background-color: $green-50;
+            }
+          }
+        }
+
+        .confirmed:before {
+          background: $grey-40;
+        }
+        .pending:before {
+          background: $red-10;
+        }
+        .open:before {
+          background: white;
+          border: 1px solid $grey-40;
+        }
+
+
+        article {
+          ul.edit-things {
+            padding-left: 0;
+            list-style-type: none;
+            li {
+              display: inline-block;
+              padding-left: 10px;
+              position: relative;
+              &:before {
+                content: "•";
+                position: absolute;
+                left: 5px;
+              }
+            }
+          }
+
+
+
+
+
+          .timesheet {
+            font-size: 12px;
+            text-align: right;
+            .timesheet-head {
+              height: 30px;
+              width: 100%;
+            }
+            .timesheet-timeline {
+              .hour {
+                height: 60px;
+              }
+              .row {
+                padding: 0 13px;
+                .col, .col-6, .col-4 {
+                  padding: 0 1px;
+                }
+              }
+            }
+
+            .col-sm-1 {
+              text-align: right;
+              display: block;
+            }
+            .col-sm-5 {
+              display: flex;
+              justify-content: center;
+            }
+
+
+            .cell {
+              font-size: 9px;
+              line-height: 9px;
+              height: 30px;
+              border: 2px solid;
+              border-radius: 3px;
+              text-align: left;
+              padding: 2px 12px;
+              position: relative;
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              text-decoration: none;
+              color: $grey-10;
+
+
+              &:before {
+                position: absolute;
+                content: "";
+                height: 100%;
+                width: 6px;
+                position: absolute;
+                left: 0px;
+                top: 0;
+                border-radius: 1px 0 0 1px;
+              }
+              &:after {
+                position: absolute;
+                content: "";
+                border: 1px solid white;
+                left: -2px;
+                right: -2px;
+                top: -2px;
+                bottom: -2px;
+                border-radius: 3px;
+              }
+              &.empty {
+                border-color: transparent;
+                background: transparent;
+                color: transparent;
+              }
+              &.blue {
+                border-color: $turquoise-20;
+                background-color: $turquoise-50;
+              }
+              &.red {
+                border-color: $red-30;
+                background-color: $red-50;
+              }
+              &.green {
+                border-color: $green-30;
+                background-color: $green-50;
+              }
+              &.confirmed:before {
+              }
+              &.pending:before {
+              }
+              &.open:before {
+                border: none;
+              }
+/*
+              &.notes {
+                &:after {
+                  position: absolute;
+                  content: url("/images/careers_v2/notes.svg");
+                  bottom: 3px;
+                  right: 3px;
+                  width: 10px;
+                  height: 10px;
+                }
+              }
+*/
+            }
+          }
+
+          .popover.hidden {
+            display: none;
+          }
+
+
+        }
       }
-
-
     }
 	}
 

@@ -3,18 +3,18 @@ body {
   font-family: "Helvetica Nue", Helvetica, Roboto, Ariel, sans-serif;
 }
 a {
-  color: $blue;
+  color: $blue-30;
   &:link{
-    color: $blue;
+    color: $blue-30;
   }
   &:visited{
-    color: $blue;
+    color: $blue-30;
   }
   &:hover{
-    color: $blue;
+    color: $blue-30;
   }
   &:active{
-    color: $blue;
+    color: $blue-30;
   }
 }
 p {

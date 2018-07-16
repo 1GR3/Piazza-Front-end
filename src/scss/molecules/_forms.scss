@@ -41,6 +41,21 @@ input {
 		top: 6px;
 		font-size: 12px;
 	}
+	&.select-xs {
+    select {
+      padding: 0px 10px;
+      height: 24px;
+    }
+    &:after {
+      top: 3px;
+    }
+	}
+	&.red select {
+  	border-color: $red-10;
+	}
+	&.borderless select {
+  	border-color: transparent;
+	}
 }
 .input-group {
 	&.sorting {

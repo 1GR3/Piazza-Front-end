@@ -9217,6 +9217,19 @@ button.notification {
   border-radius: 1px;
 }
 
+.btn.active {
+  background: #E6E6E6;
+}
+
+.btn.btn-light {
+  background: white;
+  border-color: #CCC;
+}
+
+.btn.btn-light.active {
+  background-color: #E6E6E6 !important;
+}
+
 .btn.btn-primary {
   background-color: #3E7AAB;
   border-color: #3E7AAB;
@@ -9324,8 +9337,20 @@ span.icon.icon-clock:after, i.icon.icon-clock:after {
   content: url("/images/careers_v2/clock.svg");
 }
 
+span.icon.icon-confirm:after, i.icon.icon-confirm:after {
+  content: url("/images/careers_v2/confirm.svg");
+}
+
+span.icon.icon-decline:after, i.icon.icon-decline:after {
+  content: url("/images/careers_v2/decline.svg");
+}
+
 span.icon.icon-file:after, i.icon.icon-file:after {
   content: url("/images/careers_v2/file.svg");
+}
+
+span.icon.icon-notes:after, i.icon.icon-notes:after {
+  content: url("/images/careers_v2/notes.svg");
 }
 
 span.icon.icon-pen:after, span.icon.icon-edit:after, i.icon.icon-pen:after, i.icon.icon-edit:after {
@@ -9394,6 +9419,23 @@ input.form-control {
   right: 10px;
   top: 6px;
   font-size: 12px;
+}
+
+.styled-select.select-xs select {
+  padding: 0px 10px;
+  height: 24px;
+}
+
+.styled-select.select-xs:after {
+  top: 3px;
+}
+
+.styled-select.red select {
+  border-color: #911D22;
+}
+
+.styled-select.borderless select {
+  border-color: transparent;
 }
 
 .input-group.sorting label, .input-group.sorting select {
@@ -9485,6 +9527,133 @@ input.form-control {
 
 .custom-checkbox .tab .custom-control-label {
   margin-left: 22px;
+}
+
+.panel {
+  background: white;
+  border: 1px solid #D2D7DE;
+}
+
+.confirm-box {
+  position: relative;
+}
+
+#decline-layer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#decline-box {
+  width: 240px;
+  position: absolute;
+  z-index: 250;
+  right: 17px;
+  top: 45px;
+}
+
+#decline-box:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border: 1px solid #CCC;
+  border-bottom: none;
+  border-right: none;
+  background: white;
+  transform: rotate(45deg);
+  right: 15px;
+  top: -5px;
+  z-index: 5;
+}
+
+#decline-box .card {
+  padding: 8px;
+  border-color: #CCC;
+}
+
+#decline-box .card h4 {
+  margin: 2px 0;
+  text-align: left;
+}
+
+#decline-box .card textarea {
+  border-color: #CCC;
+}
+
+.alert {
+  margin: 0;
+}
+
+.alert.alert-success {
+  border-color: #008001;
+  color: #008001;
+}
+
+span.pre {
+  padding-left: 15px;
+  position: relative;
+  display: block;
+}
+
+span.pre:before {
+  position: absolute;
+  left: 0px;
+  color: #B3B3B3;
+}
+
+span.pre.e:before {
+  content: "E:";
+}
+
+span.pre.i:before {
+  content: "I:";
+}
+
+.popover {
+  position: absolute;
+  font-size: 11px;
+  width: 270px;
+  right: -100%;
+  top: -8px;
+  z-index: 300;
+}
+
+.popover .popover-heading {
+  padding: 0;
+  height: 0;
+  display: none;
+}
+
+.popover .popover-body {
+  line-height: 15px;
+}
+
+.popover .popover-body span {
+  padding-left: 15px;
+  position: relative;
+  display: block;
+}
+
+.popover .popover-body span:before {
+  position: absolute;
+  left: 0px;
+  color: #B3B3B3;
+}
+
+.popover .popover-body span.e:before {
+  content: "E:";
+}
+
+.popover .popover-body span.i:before {
+  content: "I:";
+}
+
+.popover .popover-body span.note:before {
+  content: url("/images/careers_v2/notes.svg");
+  width: 10px;
 }
 
 aside {
@@ -9911,9 +10080,240 @@ body #container #main #collapseTags label {
   padding-top: 4px;
 }
 
-body #container #main .border-top {
-  border-top: 1px solid #E6E6E6;
-  margin-top: 25px;
+body #container #main.view {
+  background: #EAEEF4;
+  padding: 15px 12px;
+}
+
+body #container #main.view .panel > header {
+  font-size: 11px;
+  height: auto;
+}
+
+body #container #main.view .panel > header .indicator {
+  font-size: 10px;
+  position: relative;
+  padding-left: 15px;
+}
+
+body #container #main.view .panel > header .indicator:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 4px;
+  top: 2px;
+  border-radius: 100%;
+}
+
+body #container #main.view .panel > header .indicator.open:before {
+  border: 1px solid #CCC;
+}
+
+body #container #main.view .panel form.control input, body #container #main.view .panel form.control select {
+  border: 1px solid #CCC;
+}
+
+body #container #main.view .panel form.control #searchField {
+  position: relative;
+}
+
+body #container #main.view .panel form.control #searchField:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border: 1px solid #CCC;
+  border-bottom: none;
+  border-right: none;
+  background: white;
+  transform: rotate(45deg);
+  right: 15px;
+  top: -5px;
+  z-index: 5;
+}
+
+body #container #main.view .panel form.control #searchField input {
+  position: absolute;
+  right: 0;
+}
+
+body #container #main.view .panel > footer {
+  padding-bottom: 20px;
+}
+
+body #container #main.view .panel > footer span {
+  padding-left: 15px;
+}
+
+body #container #main.view .panel > footer span:before {
+  width: 12px;
+  height: 12px;
+  content: "";
+  position: absolute;
+  border: 1px solid;
+  left: 12px;
+}
+
+body #container #main.view .panel > footer .blue:before {
+  border-color: #37BDBF;
+  background-color: #ECF7F9;
+}
+
+body #container #main.view .panel > footer .red:before {
+  border-color: #F37867;
+  background-color: #FEE9E7;
+}
+
+body #container #main.view .panel > footer .green:before {
+  border-color: #83C441;
+  background-color: #ECF4DD;
+}
+
+body #container #main.view .confirmed:before {
+  background: #CCC;
+}
+
+body #container #main.view .pending:before {
+  background: #911D22;
+}
+
+body #container #main.view .open:before {
+  background: white;
+  border: 1px solid #CCC;
+}
+
+body #container #main.view article ul.edit-things {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+body #container #main.view article ul.edit-things li {
+  display: inline-block;
+  padding-left: 10px;
+  position: relative;
+}
+
+body #container #main.view article ul.edit-things li:before {
+  content: "•";
+  position: absolute;
+  left: 5px;
+}
+
+body #container #main.view article .timesheet {
+  font-size: 12px;
+  text-align: right;
+}
+
+body #container #main.view article .timesheet .timesheet-head {
+  height: 30px;
+  width: 100%;
+}
+
+body #container #main.view article .timesheet .timesheet-timeline .hour {
+  height: 60px;
+}
+
+body #container #main.view article .timesheet .timesheet-timeline .row {
+  padding: 0 13px;
+}
+
+body #container #main.view article .timesheet .timesheet-timeline .row .col, body #container #main.view article .timesheet .timesheet-timeline .row .col-6, body #container #main.view article .timesheet .timesheet-timeline .row .col-4 {
+  padding: 0 1px;
+}
+
+body #container #main.view article .timesheet .col-sm-1 {
+  text-align: right;
+  display: block;
+}
+
+body #container #main.view article .timesheet .col-sm-5 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+body #container #main.view article .timesheet .cell {
+  font-size: 9px;
+  line-height: 9px;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 3px;
+  text-align: left;
+  padding: 2px 12px;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: left;
+      justify-content: left;
+  -ms-flex-align: center;
+      align-items: center;
+  text-decoration: none;
+  color: #666;
+  /*
+              &.notes {
+                &:after {
+                  position: absolute;
+                  content: url("/images/careers_v2/notes.svg");
+                  bottom: 3px;
+                  right: 3px;
+                  width: 10px;
+                  height: 10px;
+                }
+              }
+*/
+}
+
+body #container #main.view article .timesheet .cell:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 6px;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  border-radius: 1px 0 0 1px;
+}
+
+body #container #main.view article .timesheet .cell:after {
+  position: absolute;
+  content: "";
+  border: 1px solid white;
+  left: -2px;
+  right: -2px;
+  top: -2px;
+  bottom: -2px;
+  border-radius: 3px;
+}
+
+body #container #main.view article .timesheet .cell.empty {
+  border-color: transparent;
+  background: transparent;
+  color: transparent;
+}
+
+body #container #main.view article .timesheet .cell.blue {
+  border-color: #37BDBF;
+  background-color: #ECF7F9;
+}
+
+body #container #main.view article .timesheet .cell.red {
+  border-color: #F37867;
+  background-color: #FEE9E7;
+}
+
+body #container #main.view article .timesheet .cell.green {
+  border-color: #83C441;
+  background-color: #ECF4DD;
+}
+
+body #container #main.view article .timesheet .cell.open:before {
+  border: none;
+}
+
+body #container #main.view article .popover.hidden {
+  display: none;
 }
 
 body .modal {

@@ -1,0 +1,124 @@
+.panel {
+  background: white;
+  border: 1px solid $grey-blue-35;
+}
+.confirm-box {
+  position: relative;
+}
+#decline-layer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#decline-box{
+  width: 240px;
+  position: absolute;
+  z-index: 250;
+  right: 17px;
+  top: 45px;
+  &:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 1px solid $grey-40;
+    border-bottom: none;
+    border-right: none;
+    background: white;
+    transform: rotate(45deg);
+    right: 15px;
+    top: -5px;
+    z-index: 5;
+  }
+  .card {
+    padding: 8px;
+    border-color: $grey-40;
+    h4 {
+      margin: 2px 0;
+      text-align: left;
+    }
+    textarea {
+      border-color: $grey-40;
+    }
+  }
+}
+
+.alert {
+  margin: 0;
+  &.alert-success {
+    border-color: $green-10;
+    color: $green-10;
+  }
+}
+
+
+
+span.pre {
+  padding-left: 15px;
+  position: relative;
+  display: block;
+  &:before {
+    position: absolute;
+    left: 0px;
+    color: $grey-30;
+  }
+
+  &.e:before {
+    content: "E:";
+
+  }
+  &.i:before {
+    content: "I:";
+
+  }
+}
+
+.popover {
+  position: absolute;
+  font-size: 11px;
+  width: 270px;
+  right: -100%;
+  top: -8px;
+  z-index: 300;
+
+  .popover-heading {
+    padding: 0;
+    height: 0;
+    display: none;
+
+  }
+  .popover-body {
+    line-height: 15px;
+
+    span {
+      padding-left: 15px;
+      position: relative;
+      display: block;
+      &:before {
+        position: absolute;
+        left: 0px;
+        color: $grey-30;
+      }
+
+      &.e:before {
+        content: "E:";
+
+      }
+      &.i:before {
+        content: "I:";
+
+      }
+      &.note:before {
+        content: url("/images/careers_v2/notes.svg");
+        width: 10px;
+
+      }
+    }
+    footer {
+
+    }
+  }
+
+}
