@@ -47,13 +47,17 @@
     <!-- Modernizer, cause some browsers suck -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <!-- jQuery CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
 
 <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script> -->
 
     <!-- Bootstrap 4 -->
 <!--     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-    <script src="/js/bootstrap.min.js"></script>
+<!--     <script src="/js/bootstrap.min.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
@@ -64,8 +68,8 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
-    <!-- DataTables  -->
-    <script type="text/javascript" src="/js/bootstrap-modal-popover.js"></script>
+    <!-- Popper  -->
+<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script> -->
 
     <!-- CSS, you gotta have style -->
     <link rel="stylesheet" href="/styles.css">
@@ -425,36 +429,36 @@
                     <div class="timesheet-timeline">
                       <div class="row">
                         <div class="col">
-                          <div class="cell empty"></div>
-                          <div class="cell green confirmed">David Tilleshowski</div>
-                          <div class="cell green confirmed">Prithvi Ramakrishn</div>
-                          <div class="cell green pending">Spencer Hood</div>
-                          <div class="cell green confirmed">Zachary Gottlieb</div>
-                          <div class="cell green confirmed">Rachel Lam <span class="icon icon-notes"></span></div>
-                          <div class="cell empty"></div>
-                          <div class="cell empty"></div>
-                          <div class="cell green open">OPEN</div>
-                          <div class="cell green open">OPEN</div>
-                          <div class="cell empty"></div>
-                          <div class="cell green open">OPEN</div>
-                          <div class="cell green open">OPEN</div>
-                          <div class="cell green open">OPEN</div>
+                          <a href="" class="cell empty"></a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell green confirmed">David Tilleshowski</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell green confirmed">Prithvi Ramakrishn</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell green pending">Spencer Hood</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell green confirmed">Zachary Gottlieb</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell green confirmed">Rachel Lam <span class="icon icon-notes"></span></a>
+                          <a href="" class="cell empty"></a>
+                          <a href="" class="cell empty"></a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell green open">OPEN</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell green open">OPEN</a>
+                          <a href="" class="cell empty"></a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell green open">OPEN</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell green open">OPEN</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell green open">OPEN</a>
                         </div>
                         <div class="col">
-                          <div class="cell empty"></div>
-                          <div class="cell blue open">OPEN</div>
-                          <div class="cell blue open">OPEN</div>
-                          <div class="cell blue open">OPEN</div>
-                          <div class="cell blue open">OPEN</div>
-                          <div class="cell blue open">OPEN</div>
-                          <div class="cell empty"></div>
-                          <div class="cell empty"></div>
-                          <div class="cell blue open">OPEN</div>
-                          <div class="cell blue confirmed">Steven Johnson</div>
-                          <div class="cell blue confirmed">Rick Siger</div>
-                          <div class="cell blue pending">Ashwin Fujii</div>
-                          <div class="cell blue open">OPEN</div>
-                          <div class="cell blue open">OPEN</div>
+                          <a href="" class="cell empty"></a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell blue open">OPEN</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell blue open">OPEN</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell blue open">OPEN</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell blue open">OPEN</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell blue open">OPEN</a>
+                          <a href="" class="cell empty"></a>
+                          <a href="" class="cell empty"></a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell blue open">OPEN</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell blue confirmed">Steven Johnson</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell blue confirmed">Rick Siger</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell blue pending">Ashwin Fujii</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell blue open">OPEN</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell blue open">OPEN</a>
                         </div>
                       </div>
                     </div>
@@ -467,30 +471,29 @@
                     <div class="timesheet-timeline">
                       <div class="row">
                         <div class="col">
-                          <div class="cell empty"></div>
-                          <div class="cell green confirmed">David Tilleshowski</div>
-                          <div class="cell green confirmed">Prithvi Ramakrishn</div>
-                          <div class="cell green pending">Spencer Hood</div>
-                          <div class="cell green confirmed">Zachary Gottlieb</div>
-                          <div class="cell green confirmed"> Rachel Lam</div>
-                          <div class="cell empty"></div>
-                          <div class="cell empty"></div>
-                          <div class="cell green open">OPEN</div>
-                          <div class="cell green open">OPEN</div>
-                          <div class="cell empty"></div>
-                          <div class="cell green open">OPEN</div>
-                          <div class="cell green open">OPEN</div>
-                          <div class="cell green open">OPEN</div>
+                          <a href="" class="cell empty"></a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell green confirmed">David Tilleshowski</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell green confirmed">Prithvi Ramakrishn</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell green pending">Spencer Hood</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell green confirmed">Zachary Gottlieb</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell green confirmed"> Rachel Lam</a>
+                          <a href="" class="cell empty"></a>
+                          <a href="" class="cell empty"></a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell green open">OPEN</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell green open">OPEN</a>
+                          <a href="" class="cell empty"></a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell green open">OPEN</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell green open">OPEN</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell green open">OPEN</a>
                         </div>
                         <div class="col">
-                          <div class="cell empty"></div>
-                          <div class="cell red open" style="height: 60px">OPEN</div>
-                          <div class="cell red open" style="height: 60px">OPEN</div>
-                          <div class="cell empty" style="height: 90px"></div>
-                          <div class="cell red open">OPEN</div>
-                          <div class="cell red confirmed">Steven Johnson</div>
-                          <div class="cell red open">OPEN</div>
-
+                          <a href="" class="cell empty"></a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell red open" style="height: 60px">OPEN</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell red open" style="height: 60px">OPEN</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell empty" style="height: 90px"></a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell red open">OPEN</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell red confirmed">Steven Johnson</a>
+                          <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#popover" class="cell red open">OPEN</a>
                         </div>
                       </div>
                     </div>
@@ -516,28 +519,31 @@
 
                 </div>
 
-
-
-
-
               </div>
 
               <script>
                 $( document ).ready(function() {
-                  $(".cell").click(
-                    function() {
-                      $(".cell").removeClass("active");
-                      $(this).addClass("active");
-                      $(this).addClass("class");
-                    }
-                  );
-                  $(document).on('click', '.close-this', function() {
-                      $(this).parent().parent().parent().parent().removeClass("active");
-                      $(this).parent().parent().parent().parent().removeClass("class");
-                    }
-                  );
+                  $(function(){
+                    $("[data-toggle=popover]").click(
+                      function(e) {
+                        e.preventDefault();
+                      }
+                    )
+                    $("[data-toggle=popover]").popover({
+                      html : true,
+                      content: function() {
+                        var content = $(this).attr("data-popover-content");
+                        return $(content).children(".popover-body").html();
+                      },
+                      title: function() {
+                        var title = $(this).attr("data-popover-content");
+                        return $(title).children(".popover-heading").html();
+                      }
+                    });
+                  });
                 });
               </script>
+
             </article>
 
             <footer class="container-fluid border-top pt-3">
@@ -604,37 +610,30 @@
               </div>
             </footer>
 
-
-
-
           </div>
 
-            <a href="#popupBottom" role="button" class="btn btn-default" data-toggle="modal-popover" data-placement="bottom">Bottom</a>
+          <div id="popover" class="popover hidden" style="display: none">
+            <div class="popover-heading">
 
-            <div id="popupBottom" class="popover">
-              <div class="info">
-                <div class="card card-body">
-                  <header>
-                    <p class="float-left">
-                      Prithvi Ramakrishnan<br>
-                      (<a href="">prithvir@cs.stanford.edu</a>)
-                    </p>
-
-                  </header>
-                  <div class="pt-3">
-                    <strong>10:00am-10:30am</strong><br>
-                    <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
-                    <p>Room 34, Gates Hall</p>
-                    <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
-                      <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
-                  </div>
-                  <footer class="border-top pt-2">
-                    <span class="note">
-                      This kid was pretty quick. He did well on the algorithms interviews. A little fast to talk..</span>
-                  </footer>
-                </div>
-              </div>
             </div>
+            <div class="popover-body">
+              <p class="pb-1 border-bottom">
+                Prithvi Ramakrishnan<br>
+                (<a href="">prithvir@cs.stanford.edu</a>)
+              </p>
+              <div class="pt-3">
+                <strong>10:00am-10:30am</strong><br>
+                <p>Janis Gailis (<a href="">janis@qualcomm.com</a>)</p>
+                <p>Room 34, Gates Hall</p>
+                <p><span class="e">Qualcomm Grace Hopper Engineering Internship Interviews: Hardware</span><br>
+                  <span class="i">GHC ’18 Hardware Internship Interviews</span></p>
+              </div>
+              <footer class="border-top pt-2">
+                <span class="note">
+                  This kid was pretty quick. He did well on the algorithms interviews. A little fast to talk..</span>
+              </footer>
+            </div>
+          </div>
 
 
         </div>

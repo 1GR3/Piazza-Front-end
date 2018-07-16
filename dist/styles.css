@@ -9612,7 +9612,7 @@ span.pre.i:before {
   content: "I:";
 }
 
-.popover .info {
+.popover {
   position: absolute;
   font-size: 11px;
   width: 270px;
@@ -9621,56 +9621,37 @@ span.pre.i:before {
   z-index: 300;
 }
 
-.popover .info:before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  border: 1px solid #CCC;
-  border-bottom: none;
-  border-right: none;
-  background: white;
-  transform: rotate(-45deg);
-  left: -5px;
-  top: 15px;
-  z-index: 5;
+.popover .popover-heading {
+  padding: 0;
+  height: 0;
+  display: none;
 }
 
-.popover .info .card {
-  border: 1px solid #CCC;
+.popover .popover-body {
   line-height: 15px;
 }
 
-.popover .info .card header {
-  padding: 0;
-  height: auto;
-}
-
-.popover .info .card header p {
-  margin: 0;
-}
-
-.popover .info .card span {
+.popover .popover-body span {
   padding-left: 15px;
   position: relative;
   display: block;
 }
 
-.popover .info .card span:before {
+.popover .popover-body span:before {
   position: absolute;
   left: 0px;
   color: #B3B3B3;
 }
 
-.popover .info .card span.e:before {
+.popover .popover-body span.e:before {
   content: "E:";
 }
 
-.popover .info .card span.i:before {
+.popover .popover-body span.i:before {
   content: "I:";
 }
 
-.popover .info .card span.note:before {
+.popover .popover-body span.note:before {
   content: url("/images/careers_v2/notes.svg");
   width: 10px;
 }
@@ -10268,6 +10249,8 @@ body #container #main.view article .timesheet .cell {
       justify-content: left;
   -ms-flex-align: center;
       align-items: center;
+  text-decoration: none;
+  color: #666;
   /*
               &.notes {
                 &:after {
@@ -10329,7 +10312,7 @@ body #container #main.view article .timesheet .cell.open:before {
   border: none;
 }
 
-body #container #main.view article .timesheet .cell .info {
+body #container #main.view article .popover.hidden {
   display: none;
 }
 
