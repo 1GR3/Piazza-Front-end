@@ -9349,6 +9349,10 @@ span.icon.icon-file:after, i.icon.icon-file:after {
   content: url("/images/careers_v2/file.svg");
 }
 
+span.icon.icon-link:after, i.icon.icon-link:after {
+  content: url("/images/careers_v2/link.svg");
+}
+
 span.icon.icon-notes:after, i.icon.icon-notes:after {
   content: url("/images/careers_v2/notes.svg");
 }
@@ -9854,6 +9858,29 @@ aside ul li .notification {
 
 .dataTables_wrapper .dataTables_info {
   display: none;
+}
+
+.nav.nav-tabs .nav-item {
+  border: none;
+  font-size: 12px;
+  border-radius: 0;
+}
+
+.nav.nav-tabs .nav-item:last-child {
+  border-left: 1px solid #B3B3B3;
+}
+
+.nav.nav-tabs .nav-item.active {
+  position: relative;
+}
+
+.nav.nav-tabs .nav-item.active:after {
+  content: "";
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  bottom: 5px;
+  border-bottom: 3px solid #3E7AAB;
 }
 
 @media print {

@@ -1,0 +1,21 @@
+.nav.nav-tabs {
+  .nav-item {
+    border: none;
+    font-size: 12px;
+    border-radius: 0;
+    &:last-child {
+      border-left: 1px solid $grey-30;
+    }
+    &.active{
+      position: relative;
+      &:after {
+        content: "";
+        width: 80%;
+        position: absolute;
+        left: 10%;
+        bottom: 5px;
+        border-bottom: 3px solid $blue-30;
+      }
+    }
+  }
+}
