@@ -9533,6 +9533,10 @@ input.form-control {
   margin-left: 22px;
 }
 
+form label {
+  color: #808080;
+}
+
 .panel {
   background: white;
   border: 1px solid #D2D7DE;
@@ -9860,14 +9864,23 @@ aside ul li .notification {
   display: none;
 }
 
+.nav.nav-tabs {
+  border-bottom: none;
+}
+
 .nav.nav-tabs .nav-item {
   border: none;
   font-size: 12px;
   border-radius: 0;
+  color: #666;
 }
 
 .nav.nav-tabs .nav-item:last-child {
   border-left: 1px solid #B3B3B3;
+  background-image: url("/images/careers_v2/link.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-right: 25px;
 }
 
 .nav.nav-tabs .nav-item.active {

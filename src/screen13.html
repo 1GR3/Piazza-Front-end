@@ -319,7 +319,7 @@
                 <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-file" role="tab" aria-controls="nav-profile" aria-selected="false">Upload file</a>
                 <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-list" role="tab" aria-controls="nav-contact" aria-selected="false">From target list</a>
                 <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-copy" role="tab" aria-controls="nav-profile" aria-selected="false">Copy/paste emails</a>
-                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-share" role="tab" aria-controls="nav-contact" aria-selected="false">Share link<span class="icon icon-link ml-2"></span></a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-share" role="tab" aria-controls="nav-contact" aria-selected="false">Share link</a>
               </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
@@ -328,7 +328,7 @@
                 <form>
                   <div class="form-row">
                     <div class="col">
-                      <p>Student name (required)</p>
+                      <label>Student name (required)</label>
                     </div>
                   </div>
                   <div class="form-row">
@@ -359,7 +359,7 @@
                 <form>
                   <div class="form-row">
                     <div class="col">
-                      <p>Once invited they receive an email with a link to sign up</p>
+                      <label>Once invited they receive an email with a link to sign up</label>
                     </div>
                   </div>
                   <div class="form-row">
@@ -379,7 +379,7 @@
                 <form>
                   <div class="form-row">
                     <div class="col">
-                      <p>Once invited they receive an email with a link to sign up</p>
+                      <label>Once invited they receive an email with a link to sign up</label>
                     </div>
                   </div>
                   <div class="form-row">
@@ -399,23 +399,25 @@
                 <form>
                   <div class="form-row">
                     <div class="col">
-                      <p>You may want to let them know the link is non-transferable</p>
+                      <label>You may want to let them know the link is non-transferable</label>
                     </div>
                   </div>
                   <div class="form-row">
                     <div class="col">
-                      <div class="border p-3 my-2">piazzacareers.com/palantir/event313413232</div>
+                      <div class="border p-3 my-2 copy-link">http://piazzacareers.com/palantir/event313413232</div>
                     </div>
                     <div class="col"></div>
                   </div>
                   <div class="form-row">
-                    <div class="custom-control custom-checkbox col-xs-4 mb-3">
-                      <input type="checkbox" class="custom-control-input" id="customCheck3">
-                      <label class="custom-control-label" for="customCheck3">Send the interviewer a calendar invite when a student signs up</label>
-                      <div class="tab">
-                        <a href="#">See what they get</a><br>
-                        <input type="checkbox" class="custom-control-input" id="customCheck3b">
-                        <label class="custom-control-label" for="customCheck3b">Send me a copy of the invite</label>
+                    <div class="col">
+                      <div class="custom-control custom-checkbox mb-3">
+                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                        <label class="custom-control-label" for="customCheck3">Send the interviewer a calendar invite when a student signs up</label>
+                        <div class="tab">
+                          <a href="#">See what they get</a><br>
+                          <input type="checkbox" class="custom-control-input" id="customCheck3b">
+                          <label class="custom-control-label" for="customCheck3b">Send me a copy of the invite</label>
+                        </div>
                       </div>
                     </div>
                   </div>
