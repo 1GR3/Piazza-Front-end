@@ -5,18 +5,30 @@
     font-size: 12px;
     border-radius: 0;
     color: $grey-10;
-    &:last-child {
-      border-left: 1px solid $grey-30;
-      background-image:  url("/images/careers_v2/link.svg");
-      background-position: right center;
-      background-repeat: no-repeat;
-      padding-right: 25px;
-    }
+
     &.active{
       position: relative;
       &:after {
         content: "";
         width: 80%;
+        position: absolute;
+        left: 10%;
+        bottom: 5px;
+        border-bottom: 3px solid $blue-30;
+      }
+    }
+  }
+
+  &#invite-students {
+    .nav-item:last-child {
+      border-left: 1px solid $grey-30;
+      background-image:  url("/images/careers_v2/link.svg");
+      background-position: right center;
+      background-repeat: no-repeat;
+      padding-right: 25px;
+      &.active:after {
+        content: "";
+        width: 66%;
         position: absolute;
         left: 10%;
         bottom: 5px;
