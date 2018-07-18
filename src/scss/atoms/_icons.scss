@@ -71,6 +71,11 @@ span, i {
         content: url("/images/careers_v2/pen.svg");
       }
     }
+    &.icon-remove {
+      &:after {
+        content: url("/images/careers_v2/remove.svg");
+      }
+    }
     &.icon-search {
       &:after {
         content: url("/images/careers_v2/search.svg");

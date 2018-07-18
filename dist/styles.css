@@ -9363,6 +9363,10 @@ span.icon.icon-pen:after, span.icon.icon-edit:after, i.icon.icon-pen:after, i.ic
   content: url("/images/careers_v2/pen.svg");
 }
 
+span.icon.icon-remove:after, i.icon.icon-remove:after {
+  content: url("/images/careers_v2/remove.svg");
+}
+
 span.icon.icon-search:after, i.icon.icon-search:after {
   content: url("/images/careers_v2/search.svg");
 }
@@ -9787,6 +9791,26 @@ aside ul li .notification {
 
 .dataTables_wrapper table.dataTable thead tr th {
   border: none;
+  /*
+          &.sorting_asc, &.sorting_desc {
+            &:after {
+              content: url("/images/careers_v2/chevron.svg");
+              position: absolute;
+              width: 10px;
+              height: 10px;
+              top: 15px;
+              right: 5px;
+              z-index: 5;
+              transform: rotate(180deg);
+            }
+          }
+          &.sorting_desc:after {
+              top: 10px;
+              right: 3px;
+              z-index: 5;
+              transform: rotate(0deg);
+          }
+*/
 }
 
 .dataTables_wrapper table.dataTable thead tr th.sorting, .dataTables_wrapper table.dataTable thead tr th.sorting_disabled, .dataTables_wrapper table.dataTable thead tr th.sorting_asc, .dataTables_wrapper table.dataTable thead tr th.sorting_desc {
@@ -9798,24 +9822,6 @@ aside ul li .notification {
 
 .dataTables_wrapper table.dataTable thead tr th.sorting_disabled {
   text-decoration: none;
-}
-
-.dataTables_wrapper table.dataTable thead tr th.sorting_asc:after, .dataTables_wrapper table.dataTable thead tr th.sorting_desc:after {
-  content: url("/images/careers_v2/chevron.svg");
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  top: 15px;
-  right: 5px;
-  z-index: 5;
-  transform: rotate(180deg);
-}
-
-.dataTables_wrapper table.dataTable thead tr th.sorting_desc:after {
-  top: 10px;
-  right: 3px;
-  z-index: 5;
-  transform: rotate(0deg);
 }
 
 .dataTables_wrapper table.dataTable tbody tr.odd {
@@ -9868,6 +9874,8 @@ aside ul li .notification {
 
 .nav.nav-tabs {
   border-bottom: none;
+  margin-right: 3px;
+  width: 100%;
 }
 
 .nav.nav-tabs .nav-item {
@@ -9875,6 +9883,8 @@ aside ul li .notification {
   font-size: 12px;
   border-radius: 0;
   color: #666;
+  padding-left: 0;
+  padding-right: 10px;
 }
 
 .nav.nav-tabs .nav-item.active {
@@ -9885,7 +9895,7 @@ aside ul li .notification {
   content: "";
   width: 80%;
   position: absolute;
-  left: 10%;
+  left: 0;
   bottom: 5px;
   border-bottom: 3px solid #3E7AAB;
 }
@@ -9896,6 +9906,7 @@ aside ul li .notification {
   background-position: right center;
   background-repeat: no-repeat;
   padding-right: 25px;
+  padding-left: 10px;
 }
 
 .nav.nav-tabs#invite-students .nav-item:last-child.active:after {
@@ -10391,4 +10402,30 @@ body .modal .btn-dashed {
   border-color: #CCC;
   margin-top: -1px;
   color: #B3B3B3;
+}
+
+body .invited span {
+  font-size: 12px;
+  padding: 5px 0;
+}
+
+body .invited span.icon {
+  padding: 0 0 0 10px;
+}
+
+body #upload-file .input-group-prepend {
+  height: 30px;
+}
+
+body #upload-file .input-group-text {
+  font-size: inherit;
+  height: 30px;
+}
+
+body #upload-file .custom-file-label {
+  height: 30px;
+}
+
+body #upload-file .custom-file-label:after {
+  height: 28px;
 }

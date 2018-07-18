@@ -419,4 +419,31 @@ body {
       color: $grey-30;
   	}
 	}
+
+	.invited {
+  	span {
+    	font-size: 12px;
+    	padding: 5px 0;
+    	&.icon {
+      	padding: 0 0 0 10px;
+    	}
+  	}
+	}
+
+	#upload-file {
+    .input-group-prepend {
+      height: 30px;
+    }
+    .input-group-text {
+      font-size: inherit;
+      height: 30px;
+    }
+    .custom-file-label {
+      height: 30px;
+      &:after {
+        height: 28px;
+      }
+    }
+	}
+
 }

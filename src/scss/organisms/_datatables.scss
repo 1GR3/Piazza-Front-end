@@ -16,6 +16,7 @@
           &.sorting_disabled {
             text-decoration: none;
           }
+/*
           &.sorting_asc, &.sorting_desc {
             &:after {
               content: url("/images/careers_v2/chevron.svg");
@@ -34,6 +35,7 @@
               z-index: 5;
               transform: rotate(0deg);
           }
+*/
 
         }
       }
