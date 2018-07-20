@@ -48,7 +48,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <!-- jQuery CDN -->
 <!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
-
+    <script src="/js/jquery.min.js"></script>
 
 
     <!-- Bootstrap 4 -->
@@ -91,210 +91,21 @@
     <div id="container" class="container-fluid">
       <div class="row">
 
-        <!-- left column -->
-        <div id="feed" class="col-xs-12 col-sm-12 col-md-5 active">
-
-          <header class="container-fluid">
-            <div class="row">
-              <div class="col">
-                <div class="input-group sorting">
-                  <div class="input-group-prepend">
-                    <label class="input-group-text" for="inputGroupSelect01">Filter on</label>
-                  </div>
-                  <select class="custom-select" id="inputGroupSelect01">
-                    <option selected>Initiative type</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col">
-                <div class="input-group sorting">
-                  <div class="input-group-prepend">
-                    <label class="input-group-text" for="inputGroupSelect01">Sort by</label>
-                  </div>
-                  <select class="custom-select" id="inputGroupSelect01">
-                    <option selected>Initiative creation date</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-          </header>
-
-          <nav class="navbar justify-content-between container-fluid">
-            <div class="row">
-              <div class="col">
-                <form class="form-inline">
-                  <button class="btn btn-primary mr-sm-2" type="">
-                    <span class="icon icon-file"></span> + New
-                  </button>
-                  <span class="search">
-                    <input class="form-control" type="search" placeholder="Search initiatives..." aria-label="Search">
-                  </span>
-                </form>
-
-<!--
-                <form class="form-inline">
-                  <div class="form-row">
-                    <div class="form-group col-md-3">
-                      <button class="btn btn-primary mr-sm-2" type="">
-                        <i class="fas fa-file"></i> + New
-                      </button>
-                    </div>
-                    <div class="form-group col-md-9">
-                      <span class="search">
-                        <input class="form-control" type="search" placeholder="Search initiatives..." aria-label="Search">
-                      </span>
-                    </div>
-                  </div>
-                </form>
--->
-
-              </div>
-            </div>
-          </nav>
-
-          <div class="row">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col">
-                  <div id="accordion">
-                    <div class="card">
-                      <div class="card-header" id="headingOne">
-                        <h5 class="m-0">
-                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          WEEK 04/17 - 04/23
-                          </button>
-                        </h5>
-                      </div>
-                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="card-body">
-                          <article class="event">
-                            <div class="row">
-                              <div class="col">
-                                <div class="tag interview float-left">
-                                  <span class="indicator"></span>
-                                  Interview Schedule
-                                </div>
-                                <div class="date float-right">
-                                  11/11/17
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col">
-                                <h6>Grace Hopper Qualcomm Interviews</h6>
-                                <p>
-                                  9/9/18 - 9/10/18<br>
-                                  Where: GHC ’18, Dallas<br>
-                                  Owner: Elle Bass
-                                </p>
-                                <ul>
-                                  <li class="confirmed">4 confirmed signups</li>
-                                  <li class="pending">4 pending signups</li>
-                                </ul>
-                              </div>
-                            </div>
-                          </article>
-                          <article class="event">
-                            <div class="row">
-                              <div class="col">
-                                <div class="tag interview float-left">
-                                  <span class="indicator"></span>
-                                  Interview Schedule
-                                </div>
-                                <div class="date float-right">
-                                  01/10/17
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col">
-                                <h6>Lorem Ipsum Dolor sit</h6>
-                                <p>
-                                  9/9/18 - 9/10/18<br>
-                                  Where: GHC ’18, Dallas<br>
-                                  Owner: Elle Bass
-                                </p>
-                                <ul>
-                                  <li class="confirmed">4 confirmed signups</li>
-                                  <li class="pending">4 pending signups</li>
-                                </ul>
-                              </div>
-                            </div>
-                          </article>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-header" id="headingTwo">
-                        <h5 class="m-0">
-                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          WEEK 04/10 - 04/16
-                          </button>
-                        </h5>
-                      </div>
-                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                        <div class="card-body">
-                          <article class="event">
-                          </article>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-header" id="headingThree">
-                        <h5 class="m-0">
-                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          WEEK 04/03 - 04/09
-                          </button>
-                        </h5>
-                      </div>
-                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                        <div class="card-body">
-                          <article class="event">
-                          </article>
-                        </div>
-                      </div>
-                    </div>
-                    <script type="text/javascript">
-                      $("#accordion article").click(
-                        function(){
-                          $("#accordion article").removeClass("selected");
-                          $(this).addClass("selected");
-                          $("#feed").removeClass("active");
-                          $("#main").addClass("active");
-                        }
-                      );
-                    </script>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- right column -->
-        <div id="main" class="col-xs-12 col-sm-12 col-md-7 view">
+        <!-- main column -->
+        <div id="main" class="col view">
 
           <div class="panel container-fluid">
 
             <header>
               <div class="row">
-                <div class="col-xs-12">
-                  <h2 class="float-left">Grace Hopper Qualcomm Interviews</h2>
+                <div class="col-xs-12 offset-xs-0 col-sm-10 offset-sm-1 col-md-8 offset-sm-2 col-lg-6 offset-lg-3 border-bottom">
+                  <h2 class="text-center">Select a slot for<br>
+Student Accelerator Interviews: UIUC</h2>
                 </div>
               </div>
               <div class="row">
                 <div class="col-xs-12 col-sm-6">
-                  <span class="text-left">GHC ’18, Dallas</span>
-                </div>
-                <div class="col-xs-12 col-sm-6 text-right">
-                  <span class="indicator confirmed">Confirmed: 17</span>
-                  <span class="indicator pending">Pending: 4</span>
-                  <span class="indicator open">Open: 22</span>
+                  <span class="text-center">Invited by Elle Bass · Qualcomm · Boston · Talent Acquisition Specialist</span>
                 </div>
               </div>
             </header>
