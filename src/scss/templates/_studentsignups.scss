@@ -3,15 +3,23 @@ body.student-signups {
     display: block;
     top: 0;
     position: relative;
+    .logo {
+//       background-position: left center;
+      margin-left: 5px;
+    }
   }
   aside {
 
   }
   #container {
+
     #main.view {
       padding: 0;
       border: none;
       border-radius: none;
+      header {
+        padding: 0;
+      }
       .avatar {
         width: 26px;
         height: 26px;

@@ -10443,10 +10443,18 @@ body.student-signups #toolbar {
   position: relative;
 }
 
+body.student-signups #toolbar .logo {
+  margin-left: 5px;
+}
+
 body.student-signups #container #main.view {
   padding: 0;
   border: none;
   border-radius: none;
+}
+
+body.student-signups #container #main.view header {
+  padding: 0;
 }
 
 body.student-signups #container #main.view .avatar {
