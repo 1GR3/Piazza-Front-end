@@ -9670,6 +9670,13 @@ span.pre.i:before {
   width: 10px;
 }
 
+.avatar {
+  border-radius: 100%;
+  background-image: url("/images/careers_v2/avatar.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
 aside {
   width: 124px;
   height: 100vh;
@@ -10428,4 +10435,34 @@ body #upload-file .custom-file-label {
 
 body #upload-file .custom-file-label:after {
   height: 28px;
+}
+
+body.student-signups #toolbar {
+  display: block;
+  top: 0;
+  position: relative;
+}
+
+body.student-signups #container #main.view {
+  padding: 0;
+  border: none;
+  border-radius: none;
+}
+
+body.student-signups #container #main.view .avatar {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+}
+
+body.student-signups #container #main.view .recruiter {
+  font-weight: bold;
+}
+
+body.student-signups #container #main.view select.custom-select {
+  border-color: white;
+}
+
+body.student-signups #container #main.view .cell {
+  color: #1A1A1A;
 }
