@@ -9764,23 +9764,23 @@ aside ul li .notification {
   }
 }
 
-#container, .container-fluid.with-sidebar {
+.container-fluid.with-sidebar {
   padding: 0 15px;
   margin-top: 45px;
 }
 
 @media (min-width: 576px) {
-  #container, .container-fluid.with-sidebar {
+  .container-fluid.with-sidebar {
     margin-top: 0px;
     padding: 0 15px 0 calc( 124px + 15px);
   }
 }
 
 @media (max-width: 767.98px) {
-  #container #feed, #container #main, .container-fluid.with-sidebar #feed, .container-fluid.with-sidebar #main {
+  .container-fluid.with-sidebar #feed, .container-fluid.with-sidebar #main {
     display: none;
   }
-  #container #feed.active, #container #main.active, .container-fluid.with-sidebar #feed.active, .container-fluid.with-sidebar #main.active {
+  .container-fluid.with-sidebar #feed.active, .container-fluid.with-sidebar #main.active {
     display: block;
   }
 }
