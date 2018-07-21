@@ -9736,6 +9736,10 @@ aside ul li .notification {
   margin-top: 4px;
 }
 
+aside ul li ul {
+  padding-left: 15px;
+}
+
 #toolbar {
   width: 100vw;
   height: 45px;
@@ -10445,6 +10449,18 @@ body.student-signups #toolbar {
 
 body.student-signups #toolbar .logo {
   margin-left: 5px;
+}
+
+body.student-signups aside .logo {
+  margin-bottom: 15px;
+}
+
+body.student-signups #container .recruiter-info small {
+  font-size: 10px;
+}
+
+body.student-signups #container .recruiter-info p {
+  font-size: 12px;
 }
 
 body.student-signups #container #main.view {

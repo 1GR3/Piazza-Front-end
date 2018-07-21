@@ -9,9 +9,21 @@ body.student-signups {
     }
   }
   aside {
-
+    .logo {
+      margin-bottom: 15px;
+    }
   }
   #container {
+
+    .recruiter-info {
+      small {
+        font-size: 10px;
+      }
+      p {
+        font-size: 12px;
+      }
+
+    }
 
     #main.view {
       padding: 0;
