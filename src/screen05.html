@@ -322,14 +322,14 @@
                     <input type="checkbox" class="custom-control-input" id="customCheck1">
                     <label class="custom-control-label" for="customCheck1">Send the student a confirmation email when they sign up</label>
                     <div class="">
-                      <a href="#" class="">See what they get</a>
+                      <a href="#" class="" data-toggle="modal" data-target="#emailModal">See what they get</a>
                     </div>
                   </div>
                   <div class="custom-control custom-checkbox col-xs-4 mb-3">
                     <input type="checkbox" class="custom-control-input" id="customCheck2">
                     <label class="custom-control-label" for="customCheck2">Send the student a calendar invite when they sign up</label>
                     <div class="tab">
-                      <a href="#">See what they get</a><br>
+                      <a href="#" data-toggle="modal" data-target="#emailModal">See what they get</a><br>
                       <input type="checkbox" class="custom-control-input" id="customCheck2b">
                       <label class="custom-control-label" for="customCheck2b">Send me a copy of the invite</label>
                     </div>
@@ -338,7 +338,7 @@
                     <input type="checkbox" class="custom-control-input" id="customCheck3">
                     <label class="custom-control-label" for="customCheck3">Send the interviewer a calendar invite when a student signs up</label>
                     <div class="tab">
-                      <a href="#">See what they get</a><br>
+                      <a href="#" data-toggle="modal" data-target="#emailModal">See what they get</a><br>
                       <input type="checkbox" class="custom-control-input" id="customCheck3b">
                       <label class="custom-control-label" for="customCheck3b">Send me a copy of the invite</label>
                     </div>
@@ -347,7 +347,7 @@
                     <input type="checkbox" class="custom-control-input" id="customCheck4">
                     <label class="custom-control-label" for="customCheck4">Send the student a reminder email before the interview</label>
                     <div class="tab">
-                      <a href="#">See what they get and when</a><br>
+                      <a href="#" data-toggle="modal" data-target="#emailModal">See what they get and when</a><br>
                       <input type="checkbox" class="custom-control-input" id="customCheck4b">
                       <label class="custom-control-label" for="customCheck4b">Add a followup if they don’t respond to the first reminder</label>
                     </div>
@@ -356,7 +356,7 @@
                     <input type="checkbox" class="custom-control-input" id="customCheck5">
                     <label class="custom-control-label" for="customCheck5">Send the interviewer a reminder email before the interview</label>
                     <div class="tab">
-                      <a href="#">See what they get and when</a><br>
+                      <a href="#" data-toggle="modal" data-target="#emailModal">See what they get and when</a><br>
                       <input type="checkbox" class="custom-control-input" id="customCheck5b">
                       <label class="custom-control-label" for="customCheck5b">Add a followup if they don’t respond to the first reminder</label>
                     </div>
@@ -365,7 +365,7 @@
                     <input type="checkbox" class="custom-control-input" id="customCheck6">
                     <label class="custom-control-label" for="customCheck6">Send the student a confirmation email when they sign up</label>
                     <div class="">
-                      <a href="#" class="">See what they get and when</a>
+                      <a href="#" class="" data-toggle="modal" data-target="#emailModal">See what they get and when</a>
                     </div>
                   </div>
 
@@ -373,7 +373,7 @@
               </div>
               <div class="form-row">
                 <div class="col">
-                  <button class="btn btn-primary btn-xs" type="button" data-toggle="modal" data-target="#emailModal">Done</button>
+                  <button class="btn btn-primary btn-xs" type="button">Done</button>
                 </div>
               </div>
             </form>
@@ -390,8 +390,34 @@
                     </button>
                   </div>
                   <div class="modal-body">
+                    <div class="row">
+                      <div class="col">
+                        <div class="avatar" style="width: 50px; height: 50px"></div>
+                      </div>
+                      <div class="col">
+                    Hi Wissem,<br>
+You are confirmed for Monday Sept 9, 2018 at 11:30am with us. We are looking forward to hosting you.<br>
+<br>
 
+INTERVIEW DETAILS:<br>
+Qualcomm Grace Hopper Full-Time Engineer Interviews: Software<br>
+Interviewer: TBD<br>
+Location: TBD<br>
 
+INTERVIEW PREP:<br>
+Here are some resources we’ve compiled to help you get started Seweithwphreapt:<br>
+<a href="#">https://www.qualcomm.com/company/careers/resources</a>
+                      </div>
+                      <div class="col">
+                        <h3>Click to add a tag:</h3>
+
+                        <a href="#" class="tag">Student name</a><br>
+                        <a href="#" class="tag">Interview external name Interview date</a><br>
+                        <a href="#" class="tag">Interview start time Interview end time Interviewer name Location</a><br>
+                        <a href="#" class="tag">Interview prep</a><br>
+                        <a href="#" class="tag">About Qualcomm Intern/new grad life</a><br>
+                      </div>
+                    </div>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-primary float-left">Save</button>
